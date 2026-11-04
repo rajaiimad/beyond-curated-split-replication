@@ -1,0 +1,26 @@
+{
+ "session_in_one_group": true,
+ "train_test_group_and_session_disjoint_every_fold": [
+  "cell_seated_flight",
+  "cell_seated_race",
+  "cell_standing_flight",
+  "cell_standing_race",
+  "flight_to_race",
+  "pooled",
+  "race_to_flight",
+  "seated_to_standing",
+  "standing_to_seated",
+  "within_curated",
+  "within_flight",
+  "within_race",
+  "within_seated",
+  "within_standing"
+ ],
+ "features_past_only": true,
+ "one_row_per_raw_record_no_oversampling": true,
+ "n_folds_checked": 350,
+ "mutation_test_centred_window_caught": true,
+ "stage": "null_nm",
+ "utc": "2026-10-16 00:25:44",
+ "secs": 11.4
+}

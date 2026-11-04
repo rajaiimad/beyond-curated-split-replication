@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Results for the curated 35-session release under different evaluation protocols. Single-column results are reported as released, using the better of the two directions. Record-wise splits allow records of the same participants and sessions to appear in both training and test sets; their point estimates are given to three decimals, with intervals in Supplementary Table~S1. They may reflect label discrimination, identification of sessions seen in training and recognition of context, and are not evidence of generalization to unseen participants. Group-disjoint results: grouped 5-fold cross-validation, 5 repeats. Ctx-strat.: context-stratified AUC; ``--'': undefined for the timestamp, which is itself a stratification variable; VR-LENS is the re-implemented published detector (Section~\ref{sec:vrlens}).}
+\label{tab:curated}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+ & \multicolumn{2}{c}{\sevtwo{}} & \sevone{} \\ \cmidrule(lr){2-3}\cmidrule(lr){4-4}
+Evaluation & AUC [95\,\% CI] & Ctx-strat. & AUC [95\,\% CI] \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{No model: one released column}} \\
+\texttt{StaticFrame} (game alias) & 0.83 & 0.50 & 0.53 \\
+\texttt{TimeStamp} & 0.65 & -- & 0.71 \\
+\multicolumn{4}{@{}l}{\emph{Record-wise stratified 5-fold, default HGB}} \\
+MOT+TIME & 0.999 & 0.999 & 0.999 \\
+CTX+TIME & 0.899 & 0.405 & 0.696 \\
+\multicolumn{4}{@{}l}{\emph{Record-wise 10-fold (the original protocol of VR-LENS)}} \\
+VR-LENS & 0.949 & 0.865 & 0.970 \\
+\multicolumn{4}{@{}l}{\emph{Group-disjoint, HGB-reg and VR-LENS}} \\
+TIME & 0.66 [0.59, 0.71] & 0.52 & 0.71 [0.65, 0.80] \\
+CTX+TIME & 0.86 [0.78, 0.94] & 0.51 & 0.67 [0.62, 0.79] \\
+MOT+TIME & 0.80 [0.67, 0.91] & 0.50 & 0.64 [0.57, 0.75] \\
+MOT+CTX+TIME & 0.83 [0.71, 0.92] & 0.53 & 0.64 [0.58, 0.76] \\
+VR-LENS & 0.77 [0.65, 0.88] & 0.61 & 0.64 [0.56, 0.74] \\
+\bottomrule
+\end{tabular}
+\end{table}

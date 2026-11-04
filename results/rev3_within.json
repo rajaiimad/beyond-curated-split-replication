@@ -1,0 +1,228 @@
+{
+ "event_locked": {
+  "sev1__pooled__CTXB+MOT__lroff": {
+   "did": -0.010802761738944795,
+   "ci": [
+    -0.11214441818006414,
+    0.09476872427539704
+   ],
+   "n_onset_sessions": 31,
+   "n_groups": 19
+  },
+  "sev1__pooled__CTXB+SELFZ__lroff": {
+   "did": 0.05354340377384744,
+   "ci": [
+    -0.09363188058739194,
+    0.19598326970840022
+   ],
+   "n_onset_sessions": 31,
+   "n_groups": 19
+  },
+  "sev1__pooled__CTXB+MOT__xgboff": {
+   "did": 0.05364873068012126,
+   "ci": [
+    -0.074573061869543,
+    0.20239394994501758
+   ],
+   "n_onset_sessions": 31,
+   "n_groups": 19
+  },
+  "sev2__pooled__CTXB+MOT__lroff": {
+   "did": 0.14207935023819115,
+   "ci": [
+    0.02138034747274657,
+    0.2870676719444776
+   ],
+   "n_onset_sessions": 24,
+   "n_groups": 17
+  },
+  "sev2__pooled__CTXB+SELFZ__lroff": {
+   "did": 0.013268304541760636,
+   "ci": [
+    -0.15943991887979614,
+    0.1748844673006447
+   ],
+   "n_onset_sessions": 24,
+   "n_groups": 17
+  },
+  "sev2__pooled__CTXB+MOT__xgboff": {
+   "did": -0.06152712292143625,
+   "ci": [
+    -0.176443928920271,
+    0.08389199585379277
+   ],
+   "n_onset_sessions": 24,
+   "n_groups": 17
+  }
+ },
+ "pair_share_same_session": {
+  "sev1__within_seated": {
+   "share": 0.005747499228490613,
+   "pairs": 1017486,
+   "same_session_pairs": 5848,
+   "sessions_both_classes": 27
+  },
+  "sev1__within_standing": {
+   "share": 0.0075579365749370835,
+   "pairs": 876562,
+   "same_session_pairs": 6625,
+   "sessions_both_classes": 27
+  },
+  "sev1__pooled": {
+   "share": 0.00658536636875095,
+   "pairs": 1894048,
+   "same_session_pairs": 12473,
+   "sessions_both_classes": 54
+  },
+  "sev1__seated_to_standing": {
+   "share": 0.0075579365749370835,
+   "pairs": 876562,
+   "same_session_pairs": 6625,
+   "sessions_both_classes": 27
+  },
+  "sev1__standing_to_seated": {
+   "share": 0.005747499228490613,
+   "pairs": 1017486,
+   "same_session_pairs": 5848,
+   "sessions_both_classes": 27
+  },
+  "sev1__flight_to_race": {
+   "share": 0.013428212705657961,
+   "pairs": 520099,
+   "same_session_pairs": 6984,
+   "sessions_both_classes": 25
+  },
+  "sev1__race_to_flight": {
+   "share": 0.003995053673753538,
+   "pairs": 1373949,
+   "same_session_pairs": 5489,
+   "sessions_both_classes": 29
+  },
+  "sev1__within_flight": {
+   "share": 0.003995053673753538,
+   "pairs": 1373949,
+   "same_session_pairs": 5489,
+   "sessions_both_classes": 29
+  },
+  "sev1__within_race": {
+   "share": 0.013428212705657961,
+   "pairs": 520099,
+   "same_session_pairs": 6984,
+   "sessions_both_classes": 25
+  },
+  "sev1__within_curated": {
+   "share": 0.0063406081909641995,
+   "pairs": 922309,
+   "same_session_pairs": 5848,
+   "sessions_both_classes": 26
+  },
+  "sev1__cell_seated_flight": {
+   "share": 0.0030150382057711794,
+   "pairs": 675945,
+   "same_session_pairs": 2038,
+   "sessions_both_classes": 13
+  },
+  "sev1__cell_seated_race": {
+   "share": 0.011155322494224705,
+   "pairs": 341541,
+   "same_session_pairs": 3810,
+   "sessions_both_classes": 14
+  },
+  "sev1__cell_standing_flight": {
+   "share": 0.00494409774156022,
+   "pairs": 698004,
+   "same_session_pairs": 3451,
+   "sessions_both_classes": 16
+  },
+  "sev1__cell_standing_race": {
+   "share": 0.017775736735402503,
+   "pairs": 178558,
+   "same_session_pairs": 3174,
+   "sessions_both_classes": 11
+  },
+  "sev2__within_seated": {
+   "share": 0.01226118568406887,
+   "pairs": 321013,
+   "same_session_pairs": 3936,
+   "sessions_both_classes": 15
+  },
+  "sev2__within_standing": {
+   "share": 0.007401405164202195,
+   "pairs": 625692,
+   "same_session_pairs": 4631,
+   "sessions_both_classes": 23
+  },
+  "sev2__pooled": {
+   "share": 0.009049281455152344,
+   "pairs": 946705,
+   "same_session_pairs": 8567,
+   "sessions_both_classes": 38
+  },
+  "sev2__seated_to_standing": {
+   "share": 0.007401405164202195,
+   "pairs": 625692,
+   "same_session_pairs": 4631,
+   "sessions_both_classes": 23
+  },
+  "sev2__standing_to_seated": {
+   "share": 0.01226118568406887,
+   "pairs": 321013,
+   "same_session_pairs": 3936,
+   "sessions_both_classes": 15
+  },
+  "sev2__flight_to_race": {
+   "share": 0.014874394006170119,
+   "pairs": 344888,
+   "same_session_pairs": 5130,
+   "sessions_both_classes": 22
+  },
+  "sev2__race_to_flight": {
+   "share": 0.0057110384053624275,
+   "pairs": 601817,
+   "same_session_pairs": 3437,
+   "sessions_both_classes": 16
+  },
+  "sev2__within_flight": {
+   "share": 0.0057110384053624275,
+   "pairs": 601817,
+   "same_session_pairs": 3437,
+   "sessions_both_classes": 16
+  },
+  "sev2__within_race": {
+   "share": 0.014874394006170119,
+   "pairs": 344888,
+   "same_session_pairs": 5130,
+   "sessions_both_classes": 22
+  },
+  "sev2__within_curated": {
+   "share": 0.012356104436707926,
+   "pairs": 318547,
+   "same_session_pairs": 3936,
+   "sessions_both_classes": 15
+  },
+  "sev2__cell_seated_flight": {
+   "share": 0.016667352565949214,
+   "pairs": 24299,
+   "same_session_pairs": 405,
+   "sessions_both_classes": 2
+  },
+  "sev2__cell_seated_race": {
+   "share": 0.011900348483725069,
+   "pairs": 296714,
+   "same_session_pairs": 3531,
+   "sessions_both_classes": 13
+  },
+  "sev2__cell_standing_flight": {
+   "share": 0.005250052812206719,
+   "pairs": 577518,
+   "same_session_pairs": 3032,
+   "sessions_both_classes": 14
+  },
+  "sev2__cell_standing_race": {
+   "share": 0.033192178353468674,
+   "pairs": 48174,
+   "same_session_pairs": 1599,
+   "sessions_both_classes": 9
+  }
+ }
+}

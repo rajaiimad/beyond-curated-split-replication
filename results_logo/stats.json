@@ -1,0 +1,168 @@
+{
+ "B": 10000,
+ "design": "leave-one-group-out, scores pooled across folds",
+ "tests": {
+  "sev2_hgb_shift_cost_MOT+TIME__seated": {
+   "pooled": {
+    "delta": 0.3879517810038051,
+    "ci": [
+     0.2245461396538324,
+     0.5640085122935341
+    ],
+    "p_boot": 0.0024,
+    "p_holm": 0.021599999999999998
+   }
+  },
+  "sev2_hgb_shift_cost_MOT+TIME__standing": {
+   "pooled": {
+    "delta": 0.16169136654467103,
+    "ci": [
+     -0.13047508336703842,
+     0.3755906738930196
+    ],
+    "p_boot": 0.2656,
+    "p_holm": 0.4068
+   }
+  },
+  "sev2_hgb_shift_cost_MOT+TIME__flight": {
+   "pooled": {
+    "delta": 0.2356657581026575,
+    "ci": [
+     -0.016933050352774655,
+     0.4654917901074022
+    ],
+    "p_boot": 0.0692,
+    "p_holm": 0.4068
+   }
+  },
+  "sev2_hgb_shift_cost_MOT+TIME__race": {
+   "pooled": {
+    "delta": 0.2571426239652659,
+    "ci": [
+     0.1165668970863768,
+     0.4560005199758319
+    ],
+    "p_boot": 0.0042,
+    "p_holm": 0.0336
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__within_seated": {
+   "pooled": {
+    "delta": -0.04996426476770177,
+    "ci": [
+     -0.08849463373989055,
+     -0.020742219815108282
+    ],
+    "p_boot": 0.0001,
+    "p_holm": 0.0013000000000000002
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__within_standing": {
+   "pooled": {
+    "delta": -0.1630650188296604,
+    "ci": [
+     -0.31533192358359086,
+     0.01621883145478475
+    ],
+    "p_boot": 0.0678,
+    "p_holm": 0.4068
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__within_flight": {
+   "pooled": {
+    "delta": -0.09943838669624461,
+    "ci": [
+     -0.25694432371603965,
+     0.011140993740749207
+    ],
+    "p_boot": 0.089,
+    "p_holm": 0.4068
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__within_race": {
+   "pooled": {
+    "delta": -0.15151921030156656,
+    "ci": [
+     -0.2348997008385575,
+     -0.08603347144735188
+    ],
+    "p_boot": 0.0001,
+    "p_holm": 0.0013000000000000002
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__pooled": {
+   "pooled": {
+    "delta": -0.12268186381807455,
+    "ci": [
+     -0.1855314682733943,
+     -0.05706185781349485
+    ],
+    "p_boot": 0.0004,
+    "p_holm": 0.004
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__seated_to_standing": {
+   "pooled": {
+    "delta": -0.08841135929825039,
+    "ci": [
+     -0.17575580859375023,
+     0.03469584315157307
+    ],
+    "p_boot": 0.13,
+    "p_holm": 0.4068
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__standing_to_seated": {
+   "pooled": {
+    "delta": 0.25762465658205685,
+    "ci": [
+     0.1633743021690487,
+     0.3530761933011061
+    ],
+    "p_boot": 0.0001,
+    "p_holm": 0.0013000000000000002
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__flight_to_race": {
+   "pooled": {
+    "delta": 0.1020851666064177,
+    "ci": [
+     -0.023908437976409944,
+     0.2506630641966397
+    ],
+    "p_boot": 0.1904,
+    "p_holm": 0.4068
+   }
+  },
+  "sev2_hgb_telemetry_gain_over_context__race_to_flight": {
+   "pooled": {
+    "delta": 0.17029547690705132,
+    "ci": [
+     0.03277377965888648,
+     0.2817464986093202
+    ],
+    "p_boot": 0.0194,
+    "p_holm": 0.1358
+   }
+  }
+ },
+ "primary_family": {
+  "tests": [
+   "sev2_hgb_shift_cost_MOT+TIME__seated",
+   "sev2_hgb_shift_cost_MOT+TIME__standing",
+   "sev2_hgb_shift_cost_MOT+TIME__flight",
+   "sev2_hgb_shift_cost_MOT+TIME__race",
+   "sev2_hgb_telemetry_gain_over_context__within_seated",
+   "sev2_hgb_telemetry_gain_over_context__within_standing",
+   "sev2_hgb_telemetry_gain_over_context__within_flight",
+   "sev2_hgb_telemetry_gain_over_context__within_race",
+   "sev2_hgb_telemetry_gain_over_context__pooled",
+   "sev2_hgb_telemetry_gain_over_context__seated_to_standing",
+   "sev2_hgb_telemetry_gain_over_context__standing_to_seated",
+   "sev2_hgb_telemetry_gain_over_context__flight_to_race",
+   "sev2_hgb_telemetry_gain_over_context__race_to_flight"
+  ],
+  "m": 13,
+  "correction": "Holm"
+ }
+}

@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the article below and the UFFCSData archive (Porcino et al.)."
+title: "Beyond the Curated Split: reproducibility package (data, code, results and verification)"
+type: software
+version: "1.0-submission"
+license: MIT
+repository-code: "https://github.com/rajaiimad/beyond-curated-split-replication"
+authors:
+  - given-names: "Rajai"
+    family-names: "Darabee"
+    email: "rajai_24006920@utp.edu.my"
+    affiliation: "Faculty of Science, Management & Computing, Universiti Teknologi PETRONAS, 32610 Seri Iskandar, Perak, Malaysia"
+  - given-names: "Manoranjitham"
+    family-names: "Muniandy"
+    email: "manoranjitham@utp.edu.my"
+    affiliation: "Faculty of Science, Management & Computing, Universiti Teknologi PETRONAS, 32610 Seri Iskandar, Perak, Malaysia"
+  - given-names: "Wai Khuen"
+    family-names: "Cheng"
+    affiliation: "Faculty of Science, Management & Computing, Universiti Teknologi PETRONAS, 32610 Seri Iskandar, Perak, Malaysia"
+  - given-names: "Ebrahim Hamid"
+    family-names: "Sumiea"
+    affiliation: "Faculty of Science, Management & Computing, Universiti Teknologi PETRONAS, 32610 Seri Iskandar, Perak, Malaysia"
+  - given-names: "Omar"
+    family-names: "Shindi"
+    affiliation: "School of Information Technology, Crown Institute of Higher Education, Sydney, Australia"
+preferred-citation:
+  type: article
+  title: "Beyond the Curated Split: Context Shortcuts and Evaluation Design in Cybersickness Detection on the Full UFFCSData Archive"
+  authors:
+    - given-names: "Rajai"
+      family-names: "Darabee"
+    - given-names: "Manoranjitham"
+      family-names: "Muniandy"
+    - given-names: "Wai Khuen"
+      family-names: "Cheng"
+    - given-names: "Ebrahim Hamid"
+      family-names: "Sumiea"
+    - given-names: "Omar"
+      family-names: "Shindi"
+  status: submitted
+  year: 2026
+references:
+  - type: data
+    title: "UFFCSData: Raw and selected datasets with user tests reporting the level of discomfort during virtual experiments"
+    authors:
+      - given-names: "Thiago"
+        family-names: "Porcino"
+    repository-code: "https://github.com/tmp1986/UFFCSData"
+    commit: "b5128e681786b81501d269a73e860d57c495d0aa"
+    license: AGPL-3.0-only
+    year: 2020

@@ -1,0 +1,28 @@
+\begin{table*}[ht]
+\centering
+\footnotesize
+\caption{Post hoc (specified after the main results; addendum 3, P2 and P4): what the decision rule would have detected with the six same-setting tests as a family of 6. Format of Table~\mref{tab:mde}: percentage of \V{a3.pw.p2.nseeds} realizations of the planted channel of addendum 1 (added to the 28 telemetry features) in which a planted signal of the given within-stratum AUC is declared (Holm-adjusted permutation $p<0.05$ within the family of 6 against the label-transplant null of the learner, and a bootstrap interval of the gain above 0). The realizations are those of Table~\mref{tab:mde}, refitted for these protocols (the refitted planted gains reproduce the stored ones; largest difference \V{a3.chk.b1.maxdiff}). Session grouping: every session its own group for the folds, the null (\V{a3.sess.c.nperm} permutations) and the bootstrap. Conditional on the observed data; near 50\,\% the Monte Carlo standard error is about \V{a3.pw.mcse} points. B: between sessions; W: within sessions.}
+\label{tab:a3_power6}
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{@{}lcccccccccccc@{}}
+\toprule
+ & \multicolumn{6}{c}{\sevtwo{}} & \multicolumn{6}{c}{\sevone{}} \\
+\cmidrule(lr){2-7}\cmidrule(lr){8-13}
+ & \multicolumn{3}{c}{B} & \multicolumn{3}{c}{W} & \multicolumn{3}{c}{B} & \multicolumn{3}{c}{W} \\
+Protocol & 0.65 & 0.70 & 0.80 & 0.65 & 0.70 & 0.80 & 0.65 & 0.70 & 0.80 & 0.65 & 0.70 & 0.80 \\
+\midrule
+\multicolumn{13}{@{}l}{\emph{LR+offset (inferred groups)}} \\
+Within seated & 0 & 0 & 70 & 0 & 0 & 60 & 0 & 0 & 100 & 0 & 0 & 0 \\
+Within standing & 0 & 0 & 70 & 0 & 0 & 30 & 0 & 60 & 100 & 0 & 0 & 35 \\
+All cells (pooled) & 0 & 15 & 100 & 0 & 10 & 100 & 80 & 100 & 100 & 0 & 0 & 65 \\
+\multicolumn{13}{@{}l}{\emph{Boosting+offset (inferred groups)}} \\
+Within seated & 0 & 0 & 15 & 0 & 0 & 55 & 0 & 0 & 50 & 0 & 0 & 0 \\
+Within standing & 0 & 0 & 5 & 0 & 0 & 75 & 0 & 0 & 100 & 0 & 20 & 95 \\
+All cells (pooled) & 0 & 0 & 100 & 0 & 15 & 100 & 0 & 75 & 100 & 0 & 10 & 95 \\
+\multicolumn{13}{@{}l}{\emph{LR+offset, every session its own group}} \\
+Within seated & 0 & 0 & 80 & 0 & 0 & 75 & 0 & 0 & 100 & 0 & 0 & 0 \\
+Within standing & 0 & 0 & 100 & 0 & 0 & 20 & 0 & 5 & 100 & 0 & 0 & 50 \\
+All cells (pooled) & 0 & 35 & 100 & 0 & 5 & 100 & 10 & 100 & 100 & 0 & 0 & 60 \\
+\bottomrule
+\end{tabular}
+\end{table*}

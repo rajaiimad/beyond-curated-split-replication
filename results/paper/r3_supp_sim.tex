@@ -1,0 +1,24 @@
+\begin{table*}[ht]
+\centering
+\scriptsize
+\caption{The simulation in full: mean and 2.5--97.5 percentiles over \V{sim.reps} replications. Step labels (N, S, M): each session's label switches on once; episodic labels (Ne, Me, Me2): after onset the label alternates between on- and off-episodes of 20--60\,s, so exposure time no longer orders the records of a session. N, Ne: no information in the telemetry; S: between-session information; M, Me, Me2: the first feature shifted by 0.5, 0.5 and 1.0 standard deviations while the label is on.}
+\label{tab:supp_sim}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{Step labels} & \multicolumn{3}{c}{Episodic labels} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Quantity & N & S & M & Ne & Me & Me2 \\
+\midrule
+Record-wise AUC (HGB) & 0.95 {\tiny [0.94, 0.96]} & 0.97 {\tiny [0.96, 0.97]} & 0.96 {\tiny [0.94, 0.96]} & 0.91 {\tiny [0.89, 0.92]} & 0.91 {\tiny [0.90, 0.92]} & 0.92 {\tiny [0.91, 0.94]} \\
+Group-disjoint AUC (HGB) & 0.78 {\tiny [0.69, 0.82]} & 0.83 {\tiny [0.78, 0.87]} & 0.78 {\tiny [0.69, 0.82]} & 0.64 {\tiny [0.58, 0.68]} & 0.67 {\tiny [0.63, 0.70]} & 0.72 {\tiny [0.66, 0.77]} \\
+Within-session AUC (HGB) & 0.94 {\tiny [0.92, 0.96]} & 0.94 {\tiny [0.91, 0.96]} & 0.94 {\tiny [0.92, 0.96]} & 0.68 {\tiny [0.64, 0.70]} & 0.71 {\tiny [0.68, 0.74]} & 0.77 {\tiny [0.73, 0.80]} \\
+Prevalence score, pooled leave-one-out & 0.18 {\tiny [0.14, 0.20]} & 0.18 {\tiny [0.14, 0.20]} & 0.18 {\tiny [0.14, 0.20]} & 0.27 {\tiny [0.22, 0.31]} & 0.27 {\tiny [0.22, 0.31]} & 0.27 {\tiny [0.22, 0.31]} \\
+HGB, shifted training labels & 0.33 {\tiny [0.28, 0.40]} & 0.43 {\tiny [0.34, 0.50]} & 0.34 {\tiny [0.27, 0.41]} & 0.43 {\tiny [0.40, 0.49]} & 0.44 {\tiny [0.40, 0.50]} & 0.45 {\tiny [0.41, 0.51]} \\
+Time-only baseline, within-session AUC & 1.00 {\tiny [1.00, 1.00]} & 1.00 {\tiny [1.00, 1.00]} & 1.00 {\tiny [1.00, 1.00]} & 0.72 {\tiny [0.69, 0.74]} & 0.72 {\tiny [0.69, 0.74]} & 0.72 {\tiny [0.69, 0.74]} \\
+Offset model: gain between sessions & $-$0.02 {\tiny [$-$0.18, 0.13]} & +0.17 {\tiny [0.07, 0.25]} & +0.01 {\tiny [$-$0.11, 0.13]} & $-$0.03 {\tiny [$-$0.09, 0.04]} & +0.04 {\tiny [$-$0.05, 0.12]} & +0.14 {\tiny [0.04, 0.22]} \\
+Offset model: gain within sessions & $-$0.03 {\tiny [$-$0.04, $-$0.01]} & $-$0.05 {\tiny [$-$0.08, $-$0.03]} & $-$0.03 {\tiny [$-$0.04, $-$0.02]} & $-$0.01 {\tiny [$-$0.03, 0.01]} & +0.02 {\tiny [$-$0.01, 0.06]} & +0.09 {\tiny [0.06, 0.13]} \\
+First feature alone: within-session AUC & 0.50 {\tiny [0.47, 0.53]} & 0.50 {\tiny [0.47, 0.53]} & 0.64 {\tiny [0.61, 0.66]} & 0.50 {\tiny [0.47, 0.54]} & 0.64 {\tiny [0.61, 0.68]} & 0.76 {\tiny [0.74, 0.79]} \\
+\bottomrule
+\end{tabular}
+\end{table*}

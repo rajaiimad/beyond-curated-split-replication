@@ -1,0 +1,3 @@
+# Used by src/fa_rev3.py (boosting+offset) and src/fa_vrlens.py; the paper's results were produced with xgboost 3.4.1
+# and the pinned versions in requirements.txt (see results/vrlens.json and Supplementary Note S2).
+xgboost==3.4.1

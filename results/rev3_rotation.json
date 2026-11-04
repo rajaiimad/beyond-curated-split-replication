@@ -1,0 +1,110 @@
+{
+ "constant_rotation_sessions": {
+  "seated|Flight": {
+   "constant": 0,
+   "sessions": 22
+  },
+  "seated|Race": {
+   "constant": 0,
+   "sessions": 15
+  },
+  "standing|Flight": {
+   "constant": 25,
+   "sessions": 25
+  },
+  "standing|Race": {
+   "constant": 12,
+   "sessions": 12
+  }
+ },
+ "rotation_features": [
+  "CameraRotationX",
+  "CameraRotationX_mean",
+  "CameraRotationX_std",
+  "CameraRotationX_diff",
+  "CameraRotationY",
+  "CameraRotationY_mean",
+  "CameraRotationY_std",
+  "CameraRotationY_diff",
+  "CameraRotationZ",
+  "CameraRotationZ_mean",
+  "CameraRotationZ_std",
+  "CameraRotationZ_diff",
+  "rot_step",
+  "rot_instability"
+ ],
+ "non_rotation_features": [
+  "PlayerSpeed",
+  "PlayerSpeed_mean",
+  "PlayerSpeed_std",
+  "PlayerSpeed_diff",
+  "PlayerAcceleration",
+  "PlayerAcceleration_mean",
+  "PlayerAcceleration_std",
+  "PlayerAcceleration_diff",
+  "roi_background",
+  "roi_background_frac",
+  "roi_middleground",
+  "roi_middleground_frac",
+  "roi_foreground",
+  "roi_foreground_frac"
+ ],
+ "seated_features_zero_everywhere": [],
+ "seated_features_constant_within_every_session": [],
+ "standing_features_zero_everywhere": [
+  "CameraRotationX_std",
+  "CameraRotationX_diff",
+  "CameraRotationY_std",
+  "CameraRotationY_diff",
+  "CameraRotationZ_std",
+  "CameraRotationZ_diff",
+  "rot_step",
+  "rot_instability"
+ ],
+ "standing_features_constant_within_every_session": [
+  "CameraRotationX",
+  "CameraRotationX_mean",
+  "CameraRotationX_std",
+  "CameraRotationX_diff",
+  "CameraRotationY",
+  "CameraRotationY_mean",
+  "CameraRotationY_std",
+  "CameraRotationY_diff",
+  "CameraRotationZ",
+  "CameraRotationZ_mean",
+  "CameraRotationZ_std",
+  "CameraRotationZ_diff",
+  "rot_step",
+  "rot_instability"
+ ],
+ "single_feature_campaign_auc": {
+  "PlayerSpeed": 0.5146948789905528,
+  "PlayerSpeed_mean": 0.5157871019253208,
+  "PlayerSpeed_std": 0.506601117899337,
+  "PlayerSpeed_diff": 0.5008541188110064,
+  "PlayerAcceleration": 0.5011527010013892,
+  "PlayerAcceleration_mean": 0.5023435310317934,
+  "PlayerAcceleration_std": 0.5027134861471193,
+  "PlayerAcceleration_diff": 0.5003080192440684,
+  "CameraRotationX": 0.6017139331754732,
+  "CameraRotationX_mean": 0.5961539733970764,
+  "CameraRotationX_std": 0.9980753646677472,
+  "CameraRotationX_diff": 0.5121555915721232,
+  "CameraRotationY": 0.5114092074988423,
+  "CameraRotationY_mean": 0.5160133115532957,
+  "CameraRotationY_std": 0.9980753646677472,
+  "CameraRotationY_diff": 0.5036466774716369,
+  "CameraRotationZ": 0.529794968167735,
+  "CameraRotationZ_mean": 0.5266364350909689,
+  "CameraRotationZ_std": 0.9980753646677472,
+  "CameraRotationZ_diff": 0.502532414910859,
+  "rot_step": 0.9969611021069692,
+  "rot_instability": 0.9980753646677472,
+  "roi_background": 0.5693542760873009,
+  "roi_background_frac": 0.6210080132367233,
+  "roi_middleground": 0.5040829002205676,
+  "roi_middleground_frac": 0.5195843378896492,
+  "roi_foreground": 0.5734371763078686,
+  "roi_foreground_frac": 0.6547544649997411
+ }
+}

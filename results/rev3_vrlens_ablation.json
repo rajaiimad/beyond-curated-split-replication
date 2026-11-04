@@ -1,0 +1,30 @@
+{
+ "sensVRLENSA_": {
+  "features": [
+   "PlayerPositionZ",
+   "PlayerSpeed",
+   "PlayerPositionX",
+   "StaticFrame",
+   "CameraRotationY"
+  ],
+  "accuracy_4class_mean_over_repeats": 0.5724813631522897,
+  "secs": 604
+ },
+ "sensVRLENSB_": {
+  "features": [
+   "PlayerSpeed",
+   "StaticFrame",
+   "CameraRotationY"
+  ],
+  "accuracy_4class_mean_over_repeats": 0.5693929712460063,
+  "secs": 508
+ },
+ "sensVRLENSC_": {
+  "features": [
+   "PlayerSpeed",
+   "CameraRotationY"
+  ],
+  "accuracy_4class_mean_over_repeats": 0.5594036208732694,
+  "secs": 437
+ }
+}

@@ -1,0 +1,17 @@
+# Local configuration (no secrets are needed; never commit credentials)
+.env
+.env.*
+!.env.example
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+# Data unpacked or fetched by scripts/prepare_data.sh and scripts/fetch_second_archive.sh
+data/raw/UFFCSData/RAW_DATABASE/
+data/raw/UFFCSData/DATABASE_SELECTED_DATA/
+data/raw/yalcin/
+# Run logs and verification output
+results/logs/
+verification/fa_verify_output.txt

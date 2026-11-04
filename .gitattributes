@@ -1,0 +1,13 @@
+# Normalise line endings in text files; keep binaries untouched
+* text=auto
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.pdf binary
+*.png binary
+*.zip binary
+*.gz binary
+*.npz binary
+# Data and result files are stored byte for byte (data/SHA256SUMS checks them); some upstream files use CRLF
+data/** -text
+results/** -text
+results_logo/** -text

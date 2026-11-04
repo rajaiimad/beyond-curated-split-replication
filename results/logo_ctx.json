@@ -1,0 +1,20 @@
+{
+ "sev1__within_seated__CTX__hgb": {
+  "logo_pooled_auc": 0.4149036988593514
+ },
+ "sev1__within_curated__CTX__hgb": {
+  "logo_pooled_auc": 0.3939604431294501
+ },
+ "sev1__pooled__CTX__hgb": {
+  "logo_pooled_auc": 0.47360219618964394
+ },
+ "sev2__within_seated__CTX__hgb": {
+  "logo_pooled_auc": 0.7765048309984796
+ },
+ "sev2__within_curated__CTX__hgb": {
+  "logo_pooled_auc": 0.7645450285372615
+ },
+ "sev2__pooled__CTX__hgb": {
+  "logo_pooled_auc": 0.7142182108919326
+ }
+}

@@ -1,0 +1,338 @@
+{
+ "a3.b1.70.wauc.max": [
+  "results_telemetry.tex"
+ ],
+ "a3.b1.70.wauc.min": [
+  "results_telemetry.tex"
+ ],
+ "a3.cSF.np.max": [
+  "body_2.tex"
+ ],
+ "a3.cSF.np.min": [
+  "body_2.tex"
+ ],
+ "a3.n.lp.c.14.minph": [
+  "results_telemetry.tex"
+ ],
+ "a3.n.lp.c.14.nraww": [
+  "supp_notes.tex"
+ ],
+ "a3.n.lp.w.14.minph": [
+  "results_telemetry.tex"
+ ],
+ "a3.n.lp.w.14.nraww": [
+  "supp_notes.tex"
+ ],
+ "a3.n.lp.w.14.s1.cTR.ph": [
+  "supp_notes.tex"
+ ],
+ "a3.n.ls.c.14.minph": [
+  "results_telemetry.tex"
+ ],
+ "a3.n.ls.w.14.minph": [
+  "results_telemetry.tex"
+ ],
+ "a3.p2.c14.lo.70.c.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.p2.c14.lo.70.w.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.p2.c14.lo.80.c.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.p2.c14.lo.80.w.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.p7.70.cauc.max": [
+  "results_telemetry.tex"
+ ],
+ "a3.p7.70.cauc.min": [
+  "results_telemetry.tex"
+ ],
+ "a3.p7.70.nest": [
+  "results_telemetry.tex"
+ ],
+ "a3.p7.70.wabove": [
+  "results_telemetry.tex"
+ ],
+ "a3.p7.70.wauc.max": [
+  "results_telemetry.tex"
+ ],
+ "a3.p7.70.wauc.min": [
+  "results_telemetry.tex"
+ ],
+ "a3.pw.p4.nseeds": [
+  "supp_notes.tex"
+ ],
+ "a3.pw.p7.nseeds": [
+  "body_2.tex"
+ ],
+ "a3.pwn.p2.lo.70.c.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.pwn.p2.lo.70.w.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.pwn.p2.lo.80.c.n50": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.pwn.p2.lo.80.w.n50": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.pwn.p4.lo.80.c.n50": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.pwn.p4.lo.80.w.n50": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.pwn.p7.lp.70.c.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.pwn.p7.lp.70.w.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.pwn.p7.lp.80.c.n": [
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "a3.pwn.p7.lp.80.c.n50": [
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "a3.pwn.p7.lp.80.w.n": [
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "a3.pwn.p7.lp.80.w.n50": [
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "a3.pwn.p7.xo.70.c.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.pwn.p7.xo.70.w.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.pwn.p7.xo.80.c.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.pwn.p7.xo.80.w.n50": [
+  "results_telemetry.tex"
+ ],
+ "a3.sec.block.c.floor": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.sec.block.c.nperm": [
+  "body_2.tex",
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.sec.block.c.nraww": [
+  "supp_notes.tex"
+ ],
+ "a3.sec.block.w.minph": [
+  "results_telemetry.tex"
+ ],
+ "a3.sec.block.w.nraww": [
+  "supp_notes.tex"
+ ],
+ "a3.sec.block.w.s1.cTR.ph": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.sec.minph": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.sec.nm.n.floor": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.sec.nm.n.m": [
+  "supp_notes.tex"
+ ],
+ "a3.sec.nm.n.minph": [
+  "discussion.tex",
+  "results_telemetry.tex"
+ ],
+ "a3.sec.nm.n.nperm": [
+  "discussion.tex"
+ ],
+ "a3.sec.nm.n.nraww": [
+  "supp_notes.tex"
+ ],
+ "a3.sec.nm.n.s1.cTR.ph": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.sec.nr.c.nraww": [
+  "supp_notes.tex"
+ ],
+ "a3.sec.nr.w.nraww": [
+  "supp_notes.tex"
+ ],
+ "a3.sec.nr.w.s1.cTR.ph": [
+  "supp_notes.tex"
+ ],
+ "a3.sess.c.minph": [
+  "supp_notes.tex"
+ ],
+ "a3.sess.c.nperm": [
+  "supp_notes.tex"
+ ],
+ "a3.sess.w.minph": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrl.rw.s2.cauc": [
+  "results.tex"
+ ],
+ "a3.vrl.rwnd.acc": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrl.rwnd.f1x": [
+  "supp_notes.tex"
+ ],
+ "a3.vrl.rwnd.maj": [
+  "supp_notes.tex"
+ ],
+ "a3.vrl.rwnd.s1.auc": [
+  "supp_notes.tex"
+ ],
+ "a3.vrl.rwnd.s1.cauc": [
+  "supp_notes.tex"
+ ],
+ "a3.vrl.rwnd.s2.auc": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrl.rwnd.s2.cauc": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.all.minph": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.az.rho.max": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.az.rho.min": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.cl.dates.null": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.cl.dates.obs": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.cl.dates.p": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.cl.groups.null": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.cl.groups.obs": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.cl.groups.p": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.cl.groups.units": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.date.2019-10-28": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.date.2019-10-29": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.date.2019-10-30": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.date.2019-12-06": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.date.2019-12-09": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.date.2019-12-10": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.diff": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.diff.ci": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.fisher.p": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.ge2.az": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.ge2.n": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.lt2.az": [
+  "discussion.tex",
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.lt2.n": [
+  "discussion.tex",
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max0.az": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max0.n": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max1.az": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max1.n": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max2.az": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max2.n": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max3.az": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.max3.n": [
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.n": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.ndates": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ],
+ "a3.vrsq.nz.nholmw": [
+  "results_labels_sens.tex",
+  "supp_notes.tex"
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "python": "3.13.16",
+ "committed_revision": "3f1f25a",
+ "files": {
+  "cell.json": {
+   "values": 768,
+   "differ": 0,
+   "examples": []
+  },
+  "context.json": {
+   "values": 2400,
+   "differ": 0,
+   "examples": []
+  },
+  "control.json": {
+   "values": 407,
+   "differ": 0,
+   "examples": []
+  },
+  "es_check.json": {
+   "values": 270,
+   "differ": 0,
+   "examples": []
+  },
+  "hgbreg.json": {
+   "values": 2880,
+   "differ": 0,
+   "examples": []
+  },
+  "leakage_checks.json": {
+   "values": 20,
+   "differ": 0,
+   "examples": []
+  },
+  "logo_ctx.json": {
+   "values": 6,
+   "differ": 0,
+   "examples": []
+  },
+  "main.json": {
+   "values": 2880,
+   "differ": 0,
+   "examples": []
+  },
+  "mitigation.json": {
+   "values": 1344,
+   "differ": 0,
+   "examples": []
+  },
+  "posctl.json": {
+   "values": 1476,
+   "differ": 0,
+   "examples": []
+  },
+  "posctl_reg.json": {
+   "values": 756,
+   "differ": 0,
+   "examples": []
+  },
+  "rowwise_reference.json": {
+   "values": 108,
+   "differ": 0,
+   "examples": []
+  },
+  "sensitivity.json": {
+   "values": 1504,
+   "differ": 0,
+   "examples": []
+  },
+  "vrlens.json": {
+   "values": 16,
+   "differ": 5,
+   "examples": [
+    [
+     "/recordwise_10fold/accuracy_4class",
+     0.8572949946751863,
+     0.857188498402556
+    ],
+    [
+     "/recordwise_10fold/macro_f1_4class",
+     0.7361649737647517,
+     0.7360232533887405
+    ],
+    [
+     "/recordwise_10fold/auc_sev1",
+     0.9700418820625072,
+     0.9700465272952729
+    ],
+    [
+     "/recordwise_10fold/auc_sev2",
+     0.9492750060730675,
+     0.9492839214465593
+    ],
+    [
+     "/grouped_5x5/accuracy_4class_mean_over_repeats",
+     0.5308200212992544,
+     0.5310756123535676
+    ]
+   ]
+  },
+  "vrsq.json": {
+   "values": 98,
+   "differ": 0,
+   "examples": []
+  }
+ },
+ "total_values": 14933,
+ "total_differ": 5
+}

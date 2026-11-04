@@ -1,0 +1,134 @@
+[
+ {
+  "label": "sev>=1",
+  "protocol": "within_curated",
+  "features": "MOT+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.9987296894615046,
+  "pr_auc": 0.9983646259001046,
+  "prevalence": 0.44164004259850903,
+  "n_rows": 9390
+ },
+ {
+  "label": "sev>=1",
+  "protocol": "within_curated",
+  "features": "CTX+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.6955154864514389,
+  "pr_auc": 0.5732999732945823,
+  "prevalence": 0.44164004259850903,
+  "n_rows": 9390
+ },
+ {
+  "label": "sev>=1",
+  "protocol": "within_seated",
+  "features": "MOT+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.9987599907751562,
+  "pr_auc": 0.9983536966311995,
+  "prevalence": 0.4213938411669368,
+  "n_rows": 9872
+ },
+ {
+  "label": "sev>=1",
+  "protocol": "within_seated",
+  "features": "CTX+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.6974897230526826,
+  "pr_auc": 0.5556237468046079,
+  "prevalence": 0.4213938411669368,
+  "n_rows": 9872
+ },
+ {
+  "label": "sev>=1",
+  "protocol": "pooled",
+  "features": "MOT+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.9961255242926458,
+  "pr_auc": 0.9950537371131182,
+  "prevalence": 0.4120430809399478,
+  "n_rows": 18384
+ },
+ {
+  "label": "sev>=1",
+  "protocol": "pooled",
+  "features": "CTX+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.6992033286037458,
+  "pr_auc": 0.5704461545875674,
+  "prevalence": 0.4120430809399478,
+  "n_rows": 18384
+ },
+ {
+  "label": "sev>=2",
+  "protocol": "within_curated",
+  "features": "MOT+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.999109311431508,
+  "pr_auc": 0.9967680373127826,
+  "prevalence": 0.15878594249201278,
+  "n_rows": 9390
+ },
+ {
+  "label": "sev>=2",
+  "protocol": "within_curated",
+  "features": "CTX+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.8992263151347857,
+  "pr_auc": 0.5115502789403674,
+  "prevalence": 0.15878594249201278,
+  "n_rows": 9390
+ },
+ {
+  "label": "sev>=2",
+  "protocol": "within_seated",
+  "features": "MOT+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.9991461315437573,
+  "pr_auc": 0.9970779195488079,
+  "prevalence": 0.15103322528363047,
+  "n_rows": 9872
+ },
+ {
+  "label": "sev>=2",
+  "protocol": "within_seated",
+  "features": "CTX+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.9035776848241087,
+  "pr_auc": 0.5111065772740743,
+  "prevalence": 0.15103322528363047,
+  "n_rows": 9872
+ },
+ {
+  "label": "sev>=2",
+  "protocol": "pooled",
+  "features": "MOT+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.9982140900452192,
+  "pr_auc": 0.9942395263488896,
+  "prevalence": 0.16998476936466492,
+  "n_rows": 18384
+ },
+ {
+  "label": "sev>=2",
+  "protocol": "pooled",
+  "features": "CTX+TIME",
+  "model": "hgb",
+  "split": "record-wise stratified 5-fold (participants on both sides)",
+  "roc_auc": 0.8445655940756275,
+  "pr_auc": 0.4628457122466878,
+  "prevalence": 0.16998476936466492,
+  "n_rows": 18384
+ }
+]

@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Earlier analysis: exploratory comparison family (\sevtwo{}): differences in overall ROC-AUC on identical target records, with group-bootstrap 95\,\% CI, two-sided bootstrap $p$ and Holm-adjusted $p$ (within each learner). The family was fixed after a first run had been seen (Table~S4); the Holm adjustment is a descriptive guard, not confirmatory testing; $p$ has four decimals where three would round to 0.050. HGB-reg was the main learner of the earlier analysis.}
+\label{tab:supp_tests}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{HGB-reg} & \multicolumn{2}{c}{LR} & \multicolumn{2}{c}{default HGB} \\ \cmidrule(lr){2-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Comparison & $\Delta$AUC [95\,\% CI] & $p$ & $p_\mathrm{Holm}$ & $\Delta$AUC & $p_\mathrm{Holm}$ & $\Delta$AUC & $p_\mathrm{Holm}$ \\
+\midrule
+\multicolumn{8}{l}{\emph{Shift cost: same setting minus cross setting (MOT+TIME)}} \\
+on standing (seated \ra{} standing) & +0.20 [$-$0.22, 0.54] & 0.318 & 0.396 & +0.09 & 1.000 & +0.25 & 0.684 \\
+on seated (standing \ra{} seated) & +0.35 [0.17, 0.48] & 0.003 & 0.025 & +0.37 & 0.068 & +0.37 & 0.034 \\
+on racing (flight \ra{} racing) & +0.39 [0.19, 0.56] & 0.004 & 0.028 & +0.30 & 0.042 & +0.28 & 0.063 \\
+on flight (racing \ra{} flight) & +0.27 [0.11, 0.39] & 0.003 & 0.025 & +0.28 & 0.042 & +0.29 & 0.063 \\
+\multicolumn{8}{l}{\emph{Telemetry gain over context: MOT+CTX+TIME minus CTX+TIME}} \\
+Within seated & $-$0.02 [$-$0.04, $-$0.01] & 0.012 & 0.0496 & $-$0.05 & 0.301 & $-$0.05 & 0.002 \\
+Within standing & $-$0.15 [$-$0.33, 0.02] & 0.102 & 0.306 & $-$0.10 & 1.000 & $-$0.06 & 0.855 \\
+Within flight game & $-$0.11 [$-$0.24, $-$0.03] & $<$0.001 & 0.009 & $-$0.04 & 1.000 & $-$0.02 & 0.855 \\
+Within racing game & $-$0.07 [$-$0.16, $-$0.02] & 0.004 & 0.028 & $-$0.08 & 0.244 & $-$0.12 & 0.002 \\
+All cells (pooled) & $-$0.10 [$-$0.17, $-$0.03] & 0.005 & 0.028 & +0.06 & 1.000 & $-$0.14 & 0.001 \\
+Seated \ra{} standing & $-$0.05 [$-$0.11, 0.04] & 0.198 & 0.396 & +0.02 & 1.000 & $-$0.04 & 0.334 \\
+Standing \ra{} seated & +0.31 [0.19, 0.38] & $<$0.001 & 0.001 & +0.10 & 1.000 & +0.26 & 0.002 \\
+Flight \ra{} racing & +0.10 [0.04, 0.16] & 0.001 & 0.010 & +0.13 & 1.000 & +0.07 & 0.684 \\
+Racing \ra{} flight & +0.21 [0.11, 0.27] & $<$0.001 & 0.002 & +0.02 & 1.000 & +0.25 & 0.018 \\
+\bottomrule
+\end{tabular}
+\end{table}

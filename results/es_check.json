@@ -1,0 +1,488 @@
+{
+ "sev1__within_seated": [
+  {
+   "n_train": 6851,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8560,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7315,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8559,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8203,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev1__within_standing": [
+  {
+   "n_train": 7036,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6718,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7742,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 5040,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7512,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev1__pooled": [
+  {
+   "n_train": 12681,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 15111,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 13781,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 15834,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 16129,
+   "early_stopping": true,
+   "n_iter": 150
+  }
+ ],
+ "sev1__seated_to_standing": [
+  {
+   "n_train": 9570,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9088,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9872,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7954,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9570,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev1__standing_to_seated": [
+  {
+   "n_train": 5396,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8512,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8210,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8496,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8210,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev1__flight_to_race": [
+  {
+   "n_train": 11045,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 11224,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8863,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 11298,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 11601,
+   "early_stopping": true,
+   "n_iter": 150
+  }
+ ],
+ "sev1__race_to_flight": [
+  {
+   "n_train": 4971,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6481,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6073,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6783,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6605,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev1__within_flight": [
+  {
+   "n_train": 7811,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9002,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 10002,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 10054,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9535,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev1__within_race": [
+  {
+   "n_train": 5934,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 5272,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 4726,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6189,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 5011,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev2__within_seated": [
+  {
+   "n_train": 6851,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8560,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7315,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8559,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8203,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev2__within_standing": [
+  {
+   "n_train": 7036,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6718,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7742,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 5040,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7512,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev2__pooled": [
+  {
+   "n_train": 12681,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 15111,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 13781,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 15834,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 16129,
+   "early_stopping": true,
+   "n_iter": 150
+  }
+ ],
+ "sev2__seated_to_standing": [
+  {
+   "n_train": 9570,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9088,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9872,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 7954,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9570,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev2__standing_to_seated": [
+  {
+   "n_train": 5396,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8512,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8210,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8496,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 8210,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev2__flight_to_race": [
+  {
+   "n_train": 11045,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 11224,
+   "early_stopping": true,
+   "n_iter": 107
+  },
+  {
+   "n_train": 8863,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 11298,
+   "early_stopping": true,
+   "n_iter": 130
+  },
+  {
+   "n_train": 11601,
+   "early_stopping": true,
+   "n_iter": 150
+  }
+ ],
+ "sev2__race_to_flight": [
+  {
+   "n_train": 4971,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6481,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6073,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6783,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6605,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev2__within_flight": [
+  {
+   "n_train": 7811,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 9002,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 10002,
+   "early_stopping": true,
+   "n_iter": 150
+  },
+  {
+   "n_train": 10054,
+   "early_stopping": true,
+   "n_iter": 120
+  },
+  {
+   "n_train": 9535,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ],
+ "sev2__within_race": [
+  {
+   "n_train": 5934,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 5272,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 4726,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 6189,
+   "early_stopping": false,
+   "n_iter": 150
+  },
+  {
+   "n_train": 5011,
+   "early_stopping": false,
+   "n_iter": 150
+  }
+ ]
+}

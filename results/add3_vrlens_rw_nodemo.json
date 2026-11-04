@@ -1,0 +1,22 @@
+{
+ "status": "post hoc (addendum 3, P6)",
+ "features": [
+  "PlayerPositionZ",
+  "PlayerSpeed",
+  "PlayerPositionX",
+  "StaticFrame",
+  "CameraRotationY"
+ ],
+ "n_records": 9390,
+ "folds": "StratifiedKFold(10, shuffle=True, random_state=0), as the original record-wise run",
+ "accuracy_4class": 0.7329073482428115,
+ "macro_f1_4class": 0.5348498454521898,
+ "majority_class_share": 0.5583599574014909,
+ "secs": 294,
+ "auc_sev1": 0.8681679721687088,
+ "ctx_auc_sev1": 0.8376773521206266,
+ "stored_with_demographics_ctx_auc_sev1": 0.9578697120029527,
+ "auc_sev2": 0.9022534582946047,
+ "ctx_auc_sev2": 0.7026065241142501,
+ "stored_with_demographics_ctx_auc_sev2": 0.8653035742157016
+}

@@ -1,0 +1,142 @@
+{
+ "sev1__within_seated": {
+  "pairs_mean": 230185.0,
+  "share_between_sessions": 0.9744778244892276,
+  "share_same_group_among_between": 0.3643992724662629
+ },
+ "sev1__within_standing": {
+  "pairs_mean": 209681.6,
+  "share_between_sessions": 0.9675421046938604,
+  "share_same_group_among_between": 0.3148408322187025
+ },
+ "sev1__pooled": {
+  "pairs_mean": 463437.2,
+  "share_between_sessions": 0.9729497473202595,
+  "share_same_group_among_between": 0.3198371315545979
+ },
+ "sev1__seated_to_standing": {
+  "pairs_mean": 209681.6,
+  "share_between_sessions": 0.9675421046938604,
+  "share_same_group_among_between": 0.3148408322187025
+ },
+ "sev1__standing_to_seated": {
+  "pairs_mean": 230185.0,
+  "share_between_sessions": 0.9744778244892276,
+  "share_same_group_among_between": 0.3643992724662629
+ },
+ "sev1__flight_to_race": {
+  "pairs_mean": 148615.6,
+  "share_between_sessions": 0.9527874710324215,
+  "share_same_group_among_between": 0.49856025158116457
+ },
+ "sev1__race_to_flight": {
+  "pairs_mean": 280910.0,
+  "share_between_sessions": 0.9801634360630992,
+  "share_same_group_among_between": 0.27003884604925943
+ },
+ "sev1__within_flight": {
+  "pairs_mean": 280910.0,
+  "share_between_sessions": 0.9801634360630992,
+  "share_same_group_among_between": 0.27003884604925943
+ },
+ "sev1__within_race": {
+  "pairs_mean": 148615.6,
+  "share_between_sessions": 0.9527874710324215,
+  "share_same_group_among_between": 0.49856025158116457
+ },
+ "sev1__within_curated": {
+  "pairs_mean": 220302.6,
+  "share_between_sessions": 0.9721000743274069,
+  "share_same_group_among_between": 0.3620731380756094
+ },
+ "sev1__cell_seated_flight": {
+  "pairs_mean": 135839.0,
+  "share_between_sessions": 0.9845171790213307,
+  "share_same_group_among_between": 0.24429728407436171
+ },
+ "sev1__cell_seated_race": {
+  "pairs_mean": 84441.2,
+  "share_between_sessions": 0.954819777929776,
+  "share_same_group_among_between": 0.6174467732483769
+ },
+ "sev1__cell_standing_flight": {
+  "pairs_mean": 146453.0,
+  "share_between_sessions": 0.9762687920394392,
+  "share_same_group_among_between": 0.29289757381865394
+ },
+ "sev1__cell_standing_race": {
+  "pairs_mean": 41066.8,
+  "share_between_sessions": 0.9216044303682726,
+  "share_same_group_among_between": 0.5511430681718711
+ },
+ "sev2__within_seated": {
+  "pairs_mean": 78825.8,
+  "share_between_sessions": 0.9496191097262787,
+  "share_same_group_among_between": 0.5057144229159245
+ },
+ "sev2__within_standing": {
+  "pairs_mean": 140109.0,
+  "share_between_sessions": 0.9661455646684007,
+  "share_same_group_among_between": 0.212678104861739
+ },
+ "sev2__pooled": {
+  "pairs_mean": 241297.4,
+  "share_between_sessions": 0.963643585712046,
+  "share_same_group_among_between": 0.2891017679189149
+ },
+ "sev2__seated_to_standing": {
+  "pairs_mean": 140109.0,
+  "share_between_sessions": 0.9661455646684007,
+  "share_same_group_among_between": 0.212678104861739
+ },
+ "sev2__standing_to_seated": {
+  "pairs_mean": 78825.8,
+  "share_between_sessions": 0.9496191097262787,
+  "share_same_group_among_between": 0.5057144229159245
+ },
+ "sev2__flight_to_race": {
+  "pairs_mean": 95509.2,
+  "share_between_sessions": 0.9457840199198287,
+  "share_same_group_among_between": 0.45021811254604743
+ },
+ "sev2__race_to_flight": {
+  "pairs_mean": 124837.4,
+  "share_between_sessions": 0.9708595007224519,
+  "share_same_group_among_between": 0.22149651906977658
+ },
+ "sev2__within_flight": {
+  "pairs_mean": 124837.4,
+  "share_between_sessions": 0.9708595007224519,
+  "share_same_group_among_between": 0.22149651906977658
+ },
+ "sev2__within_race": {
+  "pairs_mean": 95509.2,
+  "share_between_sessions": 0.9457840199198287,
+  "share_same_group_among_between": 0.45021811254604743
+ },
+ "sev2__within_curated": {
+  "pairs_mean": 83799.8,
+  "share_between_sessions": 0.9508815224474556,
+  "share_same_group_among_between": 0.4932870171004747
+ },
+ "sev2__cell_seated_flight": {
+  "pairs_mean": 5105.25,
+  "share_between_sessions": 0.9054233419445705,
+  "share_same_group_among_between": 0.0
+ },
+ "sev2__cell_seated_race": {
+  "pairs_mean": 67198.2,
+  "share_between_sessions": 0.9473246664873031,
+  "share_same_group_among_between": 0.5905847494652019
+ },
+ "sev2__cell_standing_flight": {
+  "pairs_mean": 111533.4,
+  "share_between_sessions": 0.9726697707432704,
+  "share_same_group_among_between": 0.23467458056620813
+ },
+ "sev2__cell_standing_race": {
+  "pairs_mean": 8090.8,
+  "share_between_sessions": 0.8021047204714181,
+  "share_same_group_among_between": 0.42727074736939885
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "features": [
+  "PlayerPositionZ",
+  "UserGlassesUse",
+  "UserGenere",
+  "UserAge",
+  "PlayerSpeed",
+  "UserVisionProblems",
+  "UserExperience",
+  "PlayerPositionX",
+  "StaticFrame",
+  "CameraRotationY"
+ ],
+ "n_records": 9390,
+ "assumptions": ", and what we assume (stated in the manuscript):\n  * standardisation: StandardScaler inside the pipeline, fitted on training records only;\n  * stacking: scikit-learn StackingClassifier with a shuffled, stratified internal 5-fold CV\n    (StratifiedKFold(5, shuffle=True, random_state=0)), predict_proba passed on. The records of\n    dataset.csv are ordered by session, so scikit-learn's default (unshuffled) internal folds would\n    split the training records by session; a first run with that default reached only 51 % record-wise\n    accuracy (paper: 81 %), because the meta-learner then learns from session-disjoint base-learner\n    predictions. Shuffled internal folds match the record-wise design of the original evaluation\n    (results/vrlens_attempt1.json keeps the first run);\n  * record-wise folds: StratifiedKFold(10, shuffle=True, random_state=0);\n  * random_state=0 for every stochastic learner; XGBoost with its library defaults otherwise.",
+ "versions": {
+  "sklearn": "1.8.0",
+  "xgboost": "3.4.1",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2"
+ },
+ "recordwise_10fold": {
+  "accuracy_4class": 0.857188498402556,
+  "macro_f1_4class": 0.7360232533887405,
+  "secs": 260,
+  "auc_sev1": 0.9700465272952729,
+  "auc_sev2": 0.9492839214465593
+ },
+ "grouped_5x5": {
+  "accuracy_4class_mean_over_repeats": 0.5310756123535676
+ }
+}

@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Primary label \sevtwo{}, logistic regression (no CTX-only model was fitted with it). Group-disjoint results (grouped 5-fold, 5 repeats). Overall ROC-AUC for the three context baselines and, with 95\,\% group-bootstrap intervals, for the two telemetry models; context-stratified AUC of MOT+TIME (0.5 = no knowledge beyond game, campaign and 30-s exposure bin); recall and false-positive rate on the target at a threshold set for a 10\,\% false-alarm budget on training groups. Group-disjoint: no inferred participant group is on both sides of a split. Seated and standing denote the two recording campaigns.}
+\label{tab:supp_lr}
+\footnotesize
+\setlength{\tabcolsep}{2.4pt}
+\begin{tabular}{lrccccccc}
+\toprule
+ & & \multicolumn{5}{c}{Overall ROC-AUC} & Context-strat. AUC & Recall / FPR (\%) \\
+\cmidrule(lr){3-7}\cmidrule(lr){8-8}\cmidrule(lr){9-9}
+Protocol & Prev. (\%) & TIME & CTX & CTX+TIME & MOT+TIME & MOT+CTX+TIME & MOT+TIME & MOT+TIME \\
+\midrule
+\multicolumn{9}{l}{\emph{Held-out groups, same setting}} \\
+Curated release (seated) & 15.9 & 0.67 & -- & 0.86 & 0.76 [0.63, 0.89] & 0.80 [0.67, 0.92] & 0.47 [0.36, 0.62] & 43.0 / 11.7 \\
+Within seated & 15.1 & 0.66 & -- & 0.88 & 0.79 [0.63, 0.91] & 0.83 [0.69, 0.93] & 0.48 [0.34, 0.65] & 36.6 / 9.2 \\
+Within standing & 19.2 & 0.62 & -- & 0.72 & 0.60 [0.44, 0.77] & 0.62 [0.46, 0.78] & 0.51 [0.33, 0.70] & 6.5 / 4.0 \\
+Within flight game & 13.1 & 0.62 & -- & 0.84 & 0.80 [0.70, 0.87] & 0.80 [0.71, 0.88] & 0.54 [0.37, 0.70] & 28.1 / 6.2 \\
+Within racing game & 23.8 & 0.67 & -- & 0.78 & 0.70 [0.60, 0.76] & 0.70 [0.60, 0.74] & 0.54 [0.39, 0.63] & 19.4 / 9.2 \\
+All cells (pooled) & 17.0 & 0.63 & -- & 0.65 & 0.66 [0.58, 0.72] & 0.71 [0.64, 0.77] & 0.52 [0.38, 0.66] & 22.3 / 9.4 \\
+\multicolumn{9}{l}{\emph{Held-out groups and a new setting (campaign or game)}} \\
+Seated \ra{} standing & 19.2 & 0.62 & -- & 0.46 & 0.51 [0.38, 0.71] & 0.48 [0.39, 0.63] & 0.53 [0.35, 0.76] & 5.3 / 7.8 \\
+Standing \ra{} seated & 15.1 & 0.66 & -- & 0.30 & 0.42 [0.24, 0.58] & 0.40 [0.22, 0.57] & 0.53 [0.32, 0.60] & 8.4 / 3.6 \\
+Flight \ra{} racing & 23.8 & 0.67 & -- & 0.47 & 0.39 [0.24, 0.53] & 0.60 [0.50, 0.71] & 0.48 [0.29, 0.64] & 5.9 / 18.9 \\
+Racing \ra{} flight & 13.1 & 0.62 & -- & 0.30 & 0.51 [0.41, 0.61] & 0.31 [0.22, 0.45] & 0.61 [0.42, 0.71] & 2.2 / 3.8 \\
+\bottomrule
+\end{tabular}
+\end{table}

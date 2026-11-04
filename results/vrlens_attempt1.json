@@ -1,0 +1,32 @@
+{
+ "features": [
+  "PlayerPositionZ",
+  "UserGlassesUse",
+  "UserGenere",
+  "UserAge",
+  "PlayerSpeed",
+  "UserVisionProblems",
+  "UserExperience",
+  "PlayerPositionX",
+  "StaticFrame",
+  "CameraRotationY"
+ ],
+ "n_records": 9390,
+ "assumptions": ", and what we assume (stated in the manuscript):\n  * standardisation: StandardScaler inside the pipeline, fitted on training records only;\n  * stacking: scikit-learn StackingClassifier, internal 5-fold CV, predict_proba passed on;\n  * record-wise folds: StratifiedKFold(10, shuffle=True, random_state=0);\n  * random_state=0 for every stochastic learner; XGBoost with its library defaults otherwise.",
+ "versions": {
+  "sklearn": "1.6.0",
+  "xgboost": "3.4.1",
+  "numpy": "2.2.1",
+  "pandas": "2.2.3"
+ },
+ "recordwise_10fold": {
+  "accuracy_4class": 0.5121405750798722,
+  "macro_f1_4class": 0.31838306100263836,
+  "secs": 115,
+  "auc_sev1": 0.38967188145402776,
+  "auc_sev2": 0.8601374037362548
+ },
+ "grouped_5x5": {
+  "accuracy_4class_mean_over_repeats": 0.5088604898828542
+ }
+}

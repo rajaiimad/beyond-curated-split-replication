@@ -1,0 +1,22 @@
+\begin{table*}[ht]
+\centering
+\scriptsize
+\caption{Post hoc (specified after the main results; addendum 3, P2 and P4): the six same-setting tests (within seated, within standing, pooled; both labels) as a family of 6, Holm within each family; rule unchanged (Holm-adjusted $p<0.05$ and interval above 0). Holm-adjusted $p$ within the family of 6 for LR+offset with the 28 telemetry features (MOT) and with self-normalized features (SELFZ; \V{a3.f6.lo.M.c.nperm} permutations), boosting+offset (MOT; \V{a3.f6.xo.M.c.nperm} permutations), and LR+offset with every session as its own group (P4: gain [95\,\% session-bootstrap interval] and Holm $p$; null with session grouping, \V{a3.sess.c.nperm} permutations). Smallest attainable Holm-adjusted $p$: \V{a3.f6.lo.M.c.floor} (1000 permutations), \V{a3.f6.xo.M.c.floor} (400). The real-data $p$-values of these six tests were known before this family was defined (they are the same tests as in the families of 14).}
+\label{tab:a3_family6}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llcccccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{LR + offset, MOT} & \multicolumn{2}{c}{LR + offset, SELFZ} & \multicolumn{2}{c}{Boosting + offset} & \multicolumn{2}{c}{Session grouping, LR + offset} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+Label & Protocol & B & W & B & W & B & W & B & W \\
+\midrule
+\sevtwo{} & Within seated & 1.000 & 1.000 & 0.791 & 1.000 & 1.000 & 1.000 & $-$0.02 [$-$0.12, 0.11] (1.000) & $-$0.02 [$-$0.09, 0.05] (0.827) \\
+ & Within standing & 1.000 & 1.000 & 0.280 & 0.881 & 1.000 & 0.928 & +0.07 [$-$0.09, 0.19] (1.000) & $-$0.08 [$-$0.16, 0.00] (0.827) \\
+ & All cells (pooled) & 1.000 & 1.000 & 0.216 & 1.000 & 1.000 & 1.000 & +0.04 [$-$0.07, 0.14] (1.000) & $-$0.03 [$-$0.08, 0.01] (0.827) \\
+\midrule
+\sevone{} & Within seated & 1.000 & 0.849 & 0.791 & 1.000 & 1.000 & 0.878 & $-$0.00 [$-$0.12, 0.11] (1.000) & $-$0.04 [$-$0.09, 0.02] (0.495) \\
+ & Within standing & 0.575 & 0.943 & 0.440 & 1.000 & 0.838 & 0.254 & +0.11 [$-$0.05, 0.22] (0.342) & +0.00 [$-$0.07, 0.07] (0.827) \\
+ & All cells (pooled) & 1.000 & 0.144 & 0.440 & 1.000 & 1.000 & 0.262 & +0.00 [$-$0.09, 0.09] (1.000) & $-$0.00 [$-$0.04, 0.03] (0.216) \\
+\bottomrule
+\end{tabular}
+\end{table*}

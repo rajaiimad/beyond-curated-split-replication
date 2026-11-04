@@ -1,0 +1,91 @@
+{
+ "n_with_vrsq": 70,
+ "all_zero": 32,
+ "post_zero": 33,
+ "all_zero_by_cell": {
+  "seated|Flight": {
+   "n": 19,
+   "all_zero": 9
+  },
+  "seated|Race": {
+   "n": 15,
+   "all_zero": 8
+  },
+  "standing|Flight": {
+   "n": 24,
+   "all_zero": 10
+  },
+  "standing|Race": {
+   "n": 12,
+   "all_zero": 5
+  }
+ },
+ "all_zero_with_ingame_max_ge2": 16,
+ "ingame_max_ge2": 38,
+ "correlations_without_all_zero": {
+  "ing_max~vrsq_post_total": {
+   "rho": 0.46160933229787854,
+   "ci": [
+    0.1488984872222928,
+    0.7441128419586138
+   ],
+   "n": 38
+  },
+  "ing_max~vrsq_delta_total": {
+   "rho": 0.5087659847033625,
+   "ci": [
+    0.22204763126950394,
+    0.7592948482397536
+   ],
+   "n": 38
+  },
+  "ing_mean~vrsq_post_total": {
+   "rho": 0.3567083521030378,
+   "ci": [
+    0.014332864747326327,
+    0.6575710263778853
+   ],
+   "n": 38
+  },
+  "ing_mean~vrsq_delta_total": {
+   "rho": 0.39816020816609604,
+   "ci": [
+    0.07884196607565731,
+    0.672548612576055
+   ],
+   "n": 38
+  },
+  "ing_frac_ge1~vrsq_post_total": {
+   "rho": 0.12730596759837598,
+   "ci": [
+    -0.20105822499514905,
+    0.43328291566221366
+   ],
+   "n": 38
+  },
+  "ing_frac_ge1~vrsq_delta_total": {
+   "rho": 0.1682413743054224,
+   "ci": [
+    -0.1561687684707444,
+    0.45689430405065506
+   ],
+   "n": 38
+  },
+  "ing_frac_ge2~vrsq_post_total": {
+   "rho": 0.5490103387804771,
+   "ci": [
+    0.24062955830860433,
+    0.8081907006635974
+   ],
+   "n": 38
+  },
+  "ing_frac_ge2~vrsq_delta_total": {
+   "rho": 0.586479586600935,
+   "ci": [
+    0.3130917405761447,
+    0.8085981774058693
+   ],
+   "n": 38
+  }
+ }
+}

@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{What the telemetry encodes, at the session level (plan stage 1): ROC-AUC over held-out sessions, each scored by the mean of its records' scores, compared within the models of a fold and averaged over repeats (no interval). Record-level values: Table~\mref{tab:decode}.}
+\label{tab:supp_decode_session}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{MOT (28)} & \multicolumn{2}{c}{SELFZ (28)} & \multicolumn{2}{c}{Without rotation (14)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Target & LR & HGB & LR & HGB & LR & HGB \\
+\midrule
+Game (racing vs flight) & 0.97 & 0.99 & 0.98 & 1.00 & 0.99 & 1.00 \\
+Campaign (standing vs seated) & 1.00 & 1.00 & 0.96 & 1.00 & 0.63 & 0.67 \\
+Cell: seated, flight & 1.00 & 1.00 & 0.90 & 1.00 & 0.91 & 0.88 \\
+Cell: seated, racing & 0.99 & 1.00 & 0.94 & 1.00 & 0.83 & 0.91 \\
+Cell: standing, flight & 0.98 & 0.99 & 0.95 & 1.00 & 0.88 & 0.89 \\
+Cell: standing, racing & 0.98 & 0.97 & 0.93 & 1.00 & 0.92 & 0.93 \\
+\bottomrule
+\end{tabular}
+\end{table}

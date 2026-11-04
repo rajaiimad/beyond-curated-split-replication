@@ -1,0 +1,702 @@
+{
+ "n_sessions": 70,
+ "n_all_zero": 32,
+ "B": 10000,
+ "groups": 35,
+ "by_ingame_max": {
+  "0": {
+   "n": 16,
+   "all_zero": 7
+  },
+  "1": {
+   "n": 16,
+   "all_zero": 9
+  },
+  "2": {
+   "n": 13,
+   "all_zero": 5
+  },
+  "3": {
+   "n": 25,
+   "all_zero": 11
+  }
+ },
+ "ge2_vs_lt2": {
+  "table_[allzero,not]_ge2_then_lt2": [
+   [
+    16,
+    22
+   ],
+   [
+    16,
+    16
+   ]
+  ],
+  "share_ge2": 0.42105263157894735,
+  "share_lt2": 0.5,
+  "difference": -0.07894736842105265,
+  "fisher_odds_ratio": 0.7272727272727273,
+  "fisher_p_two_sided": 0.63106089236772,
+  "diff_ci_group_bootstrap": [
+   -0.3426586840269705,
+   0.12954545454545452
+  ],
+  "diff_boot_nan": 0
+ },
+ "all_files": {
+  "m": 8,
+  "correlations": {
+   "ing_max~vrsq_post_total": {
+    "rho": 0.18110707584192975,
+    "ci": [
+     -0.0289557566574677,
+     0.43855831980587057
+    ],
+    "p_boot": 0.0958,
+    "n": 70,
+    "p_holm": 0.2928
+   },
+   "ing_max~vrsq_delta_total": {
+    "rho": 0.2335704035442959,
+    "ci": [
+     0.02722196098005565,
+     0.48010425391624123
+    ],
+    "p_boot": 0.0242,
+    "n": 70,
+    "p_holm": 0.1452
+   },
+   "ing_mean~vrsq_post_total": {
+    "rho": 0.23499074094030264,
+    "ci": [
+     -0.019360033708112435,
+     0.4753983501163333
+    ],
+    "p_boot": 0.0732,
+    "n": 70,
+    "p_holm": 0.2928
+   },
+   "ing_mean~vrsq_delta_total": {
+    "rho": 0.26572626721253995,
+    "ci": [
+     0.011147171045859366,
+     0.5059190542505163
+    ],
+    "p_boot": 0.039,
+    "n": 70,
+    "p_holm": 0.195
+   },
+   "ing_frac_ge1~vrsq_post_total": {
+    "rho": 0.17740153940076303,
+    "ci": [
+     -0.042881979911570195,
+     0.39071911768765955
+    ],
+    "p_boot": 0.1168,
+    "n": 70,
+    "p_holm": 0.2928
+   },
+   "ing_frac_ge1~vrsq_delta_total": {
+    "rho": 0.2002505003428554,
+    "ci": [
+     -0.029397379931615432,
+     0.4205986765156802
+    ],
+    "p_boot": 0.0884,
+    "n": 70,
+    "p_holm": 0.2928
+   },
+   "ing_frac_ge2~vrsq_post_total": {
+    "rho": 0.2957039911072827,
+    "ci": [
+     0.04897287245893554,
+     0.5611243297253327
+    ],
+    "p_boot": 0.0204,
+    "n": 70,
+    "p_holm": 0.1428
+   },
+   "ing_frac_ge2~vrsq_delta_total": {
+    "rho": 0.33714868637981227,
+    "ci": [
+     0.09797937284799234,
+     0.5851515505275531
+    ],
+    "p_boot": 0.0064,
+    "n": 70,
+    "p_holm": 0.0512
+   }
+  }
+ },
+ "without_all_zero": {
+  "m": 8,
+  "correlations": {
+   "ing_max~vrsq_post_total": {
+    "rho": 0.46160933229787854,
+    "ci": [
+     0.1488984872222928,
+     0.7441128419586138
+    ],
+    "p_boot": 0.0022,
+    "n": 38,
+    "p_holm": 0.011000000000000001
+   },
+   "ing_max~vrsq_delta_total": {
+    "rho": 0.5087659847033625,
+    "ci": [
+     0.22204763126950394,
+     0.7592948482397536
+    ],
+    "p_boot": 0.0002,
+    "n": 38,
+    "p_holm": 0.0012000000000000001
+   },
+   "ing_mean~vrsq_post_total": {
+    "rho": 0.3567083521030378,
+    "ci": [
+     0.014332864747326327,
+     0.6575710263778853
+    ],
+    "p_boot": 0.0416,
+    "n": 38,
+    "p_holm": 0.1248
+   },
+   "ing_mean~vrsq_delta_total": {
+    "rho": 0.39816020816609604,
+    "ci": [
+     0.07884196607565731,
+     0.672548612576055
+    ],
+    "p_boot": 0.0154,
+    "n": 38,
+    "p_holm": 0.0616
+   },
+   "ing_frac_ge1~vrsq_post_total": {
+    "rho": 0.12730596759837598,
+    "ci": [
+     -0.20105822499514905,
+     0.43328291566221366
+    ],
+    "p_boot": 0.4664,
+    "n": 38,
+    "p_holm": 0.5744
+   },
+   "ing_frac_ge1~vrsq_delta_total": {
+    "rho": 0.1682413743054224,
+    "ci": [
+     -0.1561687684707444,
+     0.45689430405065506
+    ],
+    "p_boot": 0.2872,
+    "n": 38,
+    "p_holm": 0.5744
+   },
+   "ing_frac_ge2~vrsq_post_total": {
+    "rho": 0.5490103387804771,
+    "ci": [
+     0.24062955830860433,
+     0.8081907006635974
+    ],
+    "p_boot": 0.0001,
+    "n": 38,
+    "p_holm": 0.0008
+   },
+   "ing_frac_ge2~vrsq_delta_total": {
+    "rho": 0.586479586600935,
+    "ci": [
+     0.3130917405761447,
+     0.8085981774058693
+    ],
+    "p_boot": 0.0001,
+    "n": 38,
+    "p_holm": 0.0008
+   }
+  },
+  "note": "selects on a VRSQ total above 0 (only sessions whose file is not zero in every item)"
+ },
+ "allzero_indicator_all_files": {
+  "m": 4,
+  "correlations": {
+   "ing_max~all_zero": {
+    "rho": -0.03395319524049817,
+    "ci": [
+     -0.3066058690589488,
+     0.16855791160865075
+    ],
+    "p_boot": 0.7426,
+    "n": 70,
+    "p_holm": 0.7426
+   },
+   "ing_mean~all_zero": {
+    "rho": -0.15777392640733695,
+    "ci": [
+     -0.3868619471477737,
+     0.05037328484731631
+    ],
+    "p_boot": 0.1362,
+    "n": 70,
+    "p_holm": 0.40859999999999996
+   },
+   "ing_frac_ge1~all_zero": {
+    "rho": -0.15991565391512885,
+    "ci": [
+     -0.36349457899365467,
+     0.024679990704733822
+    ],
+    "p_boot": 0.0908,
+    "n": 70,
+    "p_holm": 0.3632
+   },
+   "ing_frac_ge2~all_zero": {
+    "rho": -0.11789398584810537,
+    "ci": [
+     -0.3983780515700641,
+     0.11631996119847561
+    ],
+    "p_boot": 0.3206,
+    "n": 70,
+    "p_holm": 0.6412
+   }
+  }
+ },
+ "all_zero_files": [
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_28_13_56_48",
+   "date": "2019-10-28",
+   "group_id": 27,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 2
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_28_14_17_6",
+   "date": "2019-10-28",
+   "group_id": 3,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 0
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_28_14_26_0",
+   "date": "2019-10-28",
+   "group_id": 22,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_28_14_46_57",
+   "date": "2019-10-28",
+   "group_id": 18,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 2
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_28_16_12_59",
+   "date": "2019-10-28",
+   "group_id": 22,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 0
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_10_28_11_6_8",
+   "date": "2019-10-28",
+   "group_id": 5,
+   "game": "Race",
+   "campaign": "standing",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_10_28_13_59_9",
+   "date": "2019-10-28",
+   "group_id": 27,
+   "game": "Race",
+   "campaign": "standing",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_10_28_16_1_59",
+   "date": "2019-10-28",
+   "group_id": 23,
+   "game": "Race",
+   "campaign": "standing",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_29_15_33_33",
+   "date": "2019-10-29",
+   "group_id": 10,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_29_15_9_5",
+   "date": "2019-10-29",
+   "group_id": 3,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 2
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_10_29_14_23_50",
+   "date": "2019-10-29",
+   "group_id": 33,
+   "game": "Race",
+   "campaign": "standing",
+   "ing_max": 2
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_10_29_14_34_17",
+   "date": "2019-10-29",
+   "group_id": 28,
+   "game": "Race",
+   "campaign": "standing",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_30_16_0_23",
+   "date": "2019-10-30",
+   "group_id": 19,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_30_16_36_15",
+   "date": "2019-10-30",
+   "group_id": 24,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 0
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_10_30_9_12_57",
+   "date": "2019-10-30",
+   "group_id": 28,
+   "game": "Flight",
+   "campaign": "standing",
+   "ing_max": 0
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_16_27_18",
+   "date": "2019-12-06",
+   "group_id": 18,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_16_36_23",
+   "date": "2019-12-06",
+   "group_id": 33,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_17_16_33",
+   "date": "2019-12-06",
+   "group_id": 6,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_17_18_3",
+   "date": "2019-12-06",
+   "group_id": 6,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_17_41_6",
+   "date": "2019-12-06",
+   "group_id": 0,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 0
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_17_50_7",
+   "date": "2019-12-06",
+   "group_id": 32,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_17_56_36",
+   "date": "2019-12-06",
+   "group_id": 6,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Race_2019_12_6_18_3_49",
+   "date": "2019-12-06",
+   "group_id": 6,
+   "game": "Race",
+   "campaign": "seated",
+   "ing_max": 3
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_19_40_59",
+   "date": "2019-12-10",
+   "group_id": 30,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 2
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_19_49_49",
+   "date": "2019-12-10",
+   "group_id": 33,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_19_57_40",
+   "date": "2019-12-10",
+   "group_id": 4,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 0
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_20_11_27",
+   "date": "2019-12-10",
+   "group_id": 27,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_20_28_12",
+   "date": "2019-12-10",
+   "group_id": 26,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_20_34_59",
+   "date": "2019-12-10",
+   "group_id": 26,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_20_5_3",
+   "date": "2019-12-10",
+   "group_id": 14,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 1
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_21_1_27",
+   "date": "2019-12-10",
+   "group_id": 34,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 0
+  },
+  {
+   "session_id": "DATA_EXPORT_Flight_2019_12_10_21_7_47",
+   "date": "2019-12-10",
+   "group_id": 27,
+   "game": "Flight",
+   "campaign": "seated",
+   "ing_max": 1
+  }
+ ],
+ "by_date": {
+  "2019-10-28": {
+   "n": 24,
+   "all_zero": 8
+  },
+  "2019-10-29": {
+   "n": 9,
+   "all_zero": 4
+  },
+  "2019-10-30": {
+   "n": 3,
+   "all_zero": 3
+  },
+  "2019-12-06": {
+   "n": 15,
+   "all_zero": 8
+  },
+  "2019-12-09": {
+   "n": 5,
+   "all_zero": 0
+  },
+  "2019-12-10": {
+   "n": 14,
+   "all_zero": 9
+  }
+ },
+ "by_group": {
+  "0": {
+   "n": 1,
+   "all_zero": 1
+  },
+  "1": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "2": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "3": {
+   "n": 2,
+   "all_zero": 2
+  },
+  "4": {
+   "n": 1,
+   "all_zero": 1
+  },
+  "5": {
+   "n": 2,
+   "all_zero": 1
+  },
+  "6": {
+   "n": 6,
+   "all_zero": 4
+  },
+  "7": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "8": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "10": {
+   "n": 1,
+   "all_zero": 1
+  },
+  "11": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "12": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "13": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "14": {
+   "n": 1,
+   "all_zero": 1
+  },
+  "16": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "17": {
+   "n": 2,
+   "all_zero": 0
+  },
+  "18": {
+   "n": 2,
+   "all_zero": 2
+  },
+  "19": {
+   "n": 2,
+   "all_zero": 1
+  },
+  "20": {
+   "n": 2,
+   "all_zero": 0
+  },
+  "21": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "22": {
+   "n": 3,
+   "all_zero": 2
+  },
+  "23": {
+   "n": 2,
+   "all_zero": 1
+  },
+  "24": {
+   "n": 1,
+   "all_zero": 1
+  },
+  "25": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "26": {
+   "n": 2,
+   "all_zero": 2
+  },
+  "27": {
+   "n": 12,
+   "all_zero": 4
+  },
+  "28": {
+   "n": 5,
+   "all_zero": 2
+  },
+  "29": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "30": {
+   "n": 1,
+   "all_zero": 1
+  },
+  "32": {
+   "n": 1,
+   "all_zero": 1
+  },
+  "33": {
+   "n": 4,
+   "all_zero": 3
+  },
+  "34": {
+   "n": 2,
+   "all_zero": 1
+  },
+  "35": {
+   "n": 1,
+   "all_zero": 0
+  },
+  "36": {
+   "n": 2,
+   "all_zero": 0
+  },
+  "37": {
+   "n": 1,
+   "all_zero": 0
+  }
+ },
+ "clustering_dates": {
+  "homogeneous_observed": 2,
+  "units": 6,
+  "homogeneous_null_mean": 0.3092,
+  "p_one_sided": 0.015798420157984203,
+  "n_perm": 10000
+ },
+ "clustering_groups_with_2plus_sessions": {
+  "homogeneous_observed": 6,
+  "units": 15,
+  "homogeneous_null_mean": 5.4061,
+  "p_one_sided": 0.47215278472152783,
+  "n_perm": 10000
+ }
+}

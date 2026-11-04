@@ -1,0 +1,32 @@
+{
+ "session_in_one_group": true,
+ "train_test_group_and_session_disjoint_every_fold": [
+  "cell_seated_flight",
+  "cell_seated_race",
+  "cell_standing_flight",
+  "cell_standing_race",
+  "flight_to_race",
+  "pooled",
+  "race_to_flight",
+  "seated_to_standing",
+  "standing_to_seated",
+  "within_curated",
+  "within_flight",
+  "within_race",
+  "within_seated",
+  "within_standing"
+ ],
+ "features_past_only": true,
+ "one_row_per_raw_record_no_oversampling": true,
+ "n_folds_checked": 350,
+ "session_grouping_folds_disjoint": [
+  "sess:pooled",
+  "sess:within_seated",
+  "sess:within_standing"
+ ],
+ "n_session_grouping_folds_checked": 75,
+ "mutation_test_centred_window_caught": true,
+ "stage": "posctl_sess",
+ "utc": "2026-10-16 02:03:03",
+ "secs": 18.3
+}

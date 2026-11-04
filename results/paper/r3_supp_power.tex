@@ -1,0 +1,35 @@
+\begin{table}[ht]
+\centering
+\scriptsize
+\caption{Power of the decision rule in full, for the positive control as specified in the revision addendum (\V{r3pw.nseeds} realizations of a planted channel added to the 28 telemetry features; the channel alone was fitted in one realization only, Table~S19): percentage of realizations in which the planted signal is declared (Holm-adjusted permutation $p<0.05$ within the family of 14 and bootstrap interval of the gain above 0), for both offset learners, every planted within-stratum AUC, between sessions (B) and within sessions (W). The channel is added to the observed telemetry and labels and only its noise changes between realizations, so each entry is conditional on the observed data; with \V{r3pw.nseeds} realizations, an entry near 50\,\% has a Monte Carlo standard error of about \V{r3pw.mcse} percentage points. Second-last row: share of realizations reaching the single-protocol criterion of a signal confined to one protocol (unadjusted permutation $p\le 0.05/14$), mean over the estimable combinations. Last row: mean realized AUC of the planted channel on the target records. n/e: fewer than three groups with a positive record, so no interval is reported and the rule is not applied.}
+\label{tab:supp_power}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llcccccccccccccccccccc@{}}
+\toprule
+ & & \multicolumn{10}{c}{LR + offset} & \multicolumn{10}{c}{Boosting + offset} \\
+\cmidrule(lr){3-12}\cmidrule(lr){13-22}
+ & & \multicolumn{5}{c}{B} & \multicolumn{5}{c}{W} & \multicolumn{5}{c}{B} & \multicolumn{5}{c}{W} \\
+\cmidrule(lr){3-7}\cmidrule(lr){8-12}\cmidrule(lr){13-17}\cmidrule(lr){18-22}
+Label & Protocol & 0.55 & 0.60 & 0.65 & 0.70 & 0.80 & 0.55 & 0.60 & 0.65 & 0.70 & 0.80 & 0.55 & 0.60 & 0.65 & 0.70 & 0.80 & 0.55 & 0.60 & 0.65 & 0.70 & 0.80 \\
+\midrule
+\sevtwo{} & Within seated & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 60 & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 0 & 50 \\
+ & Within standing & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 50 \\
+ & All cells (pooled) & 0 & 0 & 0 & 0 & 100 & 0 & 0 & 0 & 10 & 100 & 0 & 0 & 0 & 0 & 25 & 0 & 0 & 0 & 15 & 100 \\
+ & Seated, flight game & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e \\
+ & Seated, racing game & 0 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 5 & 65 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 35 \\
+ & Standing, flight game & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 \\
+ & Standing, racing game & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 \\
+\midrule
+\sevone{} & Within seated & 0 & 0 & 0 & 0 & 75 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ & Within standing & 0 & 0 & 0 & 0 & 100 & 0 & 0 & 0 & 0 & 30 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & 10 & 95 \\
+ & All cells (pooled) & 0 & 0 & 40 & 100 & 100 & 0 & 0 & 0 & 0 & 65 & 0 & 0 & 0 & 5 & 100 & 0 & 0 & 0 & 10 & 95 \\
+ & Seated, flight game & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ & Seated, racing game & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ & Standing, flight game & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ & Standing, racing game & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 10 & 35 & 100 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 5 & 15 & 100 \\
+\midrule
+\multicolumn{2}{@{}l}{Single-protocol criterion} & 0 & 0 & 3 & 8 & 29 & 0 & 0 & 3 & 13 & 47 & 0 & 0 & 0 & 0 & 11 & 0 & 0 & 3 & 11 & 51 \\
+\multicolumn{2}{@{}l}{Realized channel AUC} & 0.54 & 0.59 & 0.64 & 0.69 & 0.80 & 0.54 & 0.59 & 0.64 & 0.69 & 0.79 & 0.54 & 0.59 & 0.64 & 0.69 & 0.80 & 0.54 & 0.59 & 0.64 & 0.69 & 0.79 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+{
+ "features": [
+  "PlayerPositionZ",
+  "UserGlassesUse",
+  "UserGenere",
+  "UserAge",
+  "PlayerSpeed",
+  "UserVisionProblems",
+  "UserExperience",
+  "PlayerPositionX",
+  "StaticFrame",
+  "CameraRotationY"
+ ],
+ "inner_cv": "StratifiedGroupKFold(5, shuffle=True, random_state=0) over inferred groups",
+ "status": "post hoc (addendum 2)",
+ "accuracy_4class_mean_over_repeats": 0.522087326943557,
+ "secs": 388
+}

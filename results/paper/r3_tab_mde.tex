@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{What the decision rule would have detected (positive control as specified in the revision addendum: \V{r3pw.nseeds} realizations of a planted channel added to the 28 telemetry features; the channel alone was fitted in one realization only and has no power estimate, Supplementary Table~S19). Percentage of realizations in which a planted signal of the given within-stratum AUC, added to the 28 telemetry features, is declared by the rule applied to the real data: Holm-adjusted permutation $p<0.05$ against the label-transplant null and a bootstrap interval of the gain above 0. Entries are conditional on the observed data (only the channel's noise varies between realizations; near 50\,\% the Monte Carlo standard error is about \V{r3pw.mcse} points) and assume that the signal is present in every test of the family. B: between sessions (context-stratified AUC); W: within sessions. Main learner (logistic regression with the context baseline as offset). Smaller planted sizes and both learners: Supplementary Table~S18. n/e: not estimable (fewer than three groups with a positive record).}
+\label{tab:mde}
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{@{}lcccccccc@{}}
+\toprule
+ & \multicolumn{4}{c}{\sevtwo{}} & \multicolumn{4}{c}{\sevone{}} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-9}
+ & \multicolumn{2}{c}{B} & \multicolumn{2}{c}{W} & \multicolumn{2}{c}{B} & \multicolumn{2}{c}{W} \\
+Protocol & 0.70 & 0.80 & 0.70 & 0.80 & 0.70 & 0.80 & 0.70 & 0.80 \\
+\midrule
+Within seated & 0 & 0 & 0 & 60 & 0 & 75 & 0 & 0 \\
+Within standing & 0 & 0 & 0 & 10 & 0 & 100 & 0 & 30 \\
+All cells (pooled) & 0 & 100 & 10 & 100 & 100 & 100 & 0 & 65 \\
+Seated, flight game & n/e & n/e & n/e & n/e & 0 & 0 & 0 & 0 \\
+Seated, racing game & 0 & 5 & 5 & 65 & 0 & 0 & 0 & 0 \\
+Standing, flight game & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+Standing, racing game & 0 & 0 & 0 & 0 & 0 & 0 & 35 & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}

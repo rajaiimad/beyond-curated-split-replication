@@ -1,0 +1,2010 @@
+{
+ "runs": [
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.6944490660601013,
+   "roc_auc_repeats": [
+    0.6919389203501277,
+    0.6924943426336512,
+    0.7020536764642059,
+    0.6979896594155827,
+    0.687768731436939
+   ],
+   "pr_auc": 0.5683312813060493,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8926761860893597,
+   "per_group_auc_iqr": [
+    0.6668936702197656,
+    0.9503260869565218
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev1__within_seated__SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 13.4
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.7273240853789015,
+   "roc_auc_repeats": [
+    0.721298662958882,
+    0.7258540007063533,
+    0.7214720559598228,
+    0.7454010805329784,
+    0.722594626736471
+   ],
+   "pr_auc": 0.62326402483932,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.948010437051533,
+   "per_group_auc_iqr": [
+    0.6740945839874412,
+    0.9802554845876145
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev1__within_seated__SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.7
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.5503193975717577,
+   "roc_auc_repeats": [
+    0.5480807097901159,
+    0.5300483206124345,
+    0.5766667322091557,
+    0.5417314933641755,
+    0.5550697318829074
+   ],
+   "pr_auc": 0.42747008381254414,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7646831156265118,
+   "per_group_auc_iqr": [
+    0.5735601175593279,
+    0.8769577089577089
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev1__within_seated__MOT+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.645319941770419,
+   "roc_auc_repeats": [
+    0.6643014706530972,
+    0.6440365881175686,
+    0.6664843876905537,
+    0.6302016889269135,
+    0.621575573463962
+   ],
+   "pr_auc": 0.5285411963500215,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8878401360544217,
+   "per_group_auc_iqr": [
+    0.5932205992016494,
+    0.956949716949717
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev1__within_seated__MOT+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.4
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.7083696214709125,
+   "roc_auc_repeats": [
+    0.6994787054928128,
+    0.6977513195071224,
+    0.7041277419567409,
+    0.7211010240241668,
+    0.7193893163737196
+   ],
+   "pr_auc": 0.5937040498823595,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7187809799535028,
+   "per_group_auc_iqr": [
+    0.7025171698585251,
+    0.9447278911564625
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev1__within_seated__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 33.5
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.6774774991989139,
+   "roc_auc_repeats": [
+    0.6798222976359736,
+    0.6711328794359639,
+    0.6571940055902429,
+    0.7012544956192468,
+    0.6779838177131421
+   ],
+   "pr_auc": 0.5488496026914061,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8651360544217687,
+   "per_group_auc_iqr": [
+    0.6750482840588322,
+    0.9401832824215495
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev1__within_seated__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.8
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6187122971705892,
+   "roc_auc_repeats": [
+    0.6328579121967509,
+    0.6189227542559496,
+    0.6099426375232297,
+    0.6191139432064784,
+    0.6127242386705372
+   ],
+   "pr_auc": 0.4931859134374812,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.5828381352541017,
+   "per_group_auc_iqr": [
+    0.46099526147716546,
+    0.7454075399191679
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK60_sev1__within_standing__SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 8.9
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6664786240791682,
+   "roc_auc_repeats": [
+    0.677447695221139,
+    0.6657287871176175,
+    0.6678693033076919,
+    0.6716941398147238,
+    0.6496531949346686
+   ],
+   "pr_auc": 0.5396494000723142,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6956480129679248,
+   "per_group_auc_iqr": [
+    0.44463761474118735,
+    0.8247794518092137
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK60_sev1__within_standing__SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.6
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6567671756940532,
+   "roc_auc_repeats": [
+    0.657487215492995,
+    0.6171464107822225,
+    0.6571134649352443,
+    0.6772965780300757,
+    0.6747922092297284
+   ],
+   "pr_auc": 0.4873391092601344,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7255528112844308,
+   "per_group_auc_iqr": [
+    0.5213113499862857,
+    0.842354391409624
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK60_sev1__within_standing__MOT+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6618712249786916,
+   "roc_auc_repeats": [
+    0.677194080113736,
+    0.6791181304685947,
+    0.6754922413941901,
+    0.6333110497747102,
+    0.6442406231422267
+   ],
+   "pr_auc": 0.5179080189060332,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7522321353656474,
+   "per_group_auc_iqr": [
+    0.4923560771643465,
+    0.8914256002618072
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK60_sev1__within_standing__MOT+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.4
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6542981006740616,
+   "roc_auc_repeats": [
+    0.6843136265091616,
+    0.6701290559908012,
+    0.6132968177346136,
+    0.6688485276801032,
+    0.6349024754556286
+   ],
+   "pr_auc": 0.5299331624976606,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6383937115847447,
+   "per_group_auc_iqr": [
+    0.5914660044956902,
+    0.8124339082904963
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK60_sev1__within_standing__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 28.0
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6455939750622779,
+   "roc_auc_repeats": [
+    0.6476451291216399,
+    0.6347538590713914,
+    0.6387643765786188,
+    0.6720459720684424,
+    0.6347605384712967
+   ],
+   "pr_auc": 0.5116993998852494,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.64186756055678,
+   "per_group_auc_iqr": [
+    0.5139097699253082,
+    0.8819953907488922
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK60_sev1__within_standing__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.4
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6824100557419746,
+   "roc_auc_repeats": [
+    0.6836817327005003,
+    0.6628775606352186,
+    0.6748188665289634,
+    0.697133913153897,
+    0.6935382056912935
+   ],
+   "pr_auc": 0.5684897571205124,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7403786648398756,
+   "per_group_auc_iqr": [
+    0.6041284331801748,
+    0.924142822935177
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK60_sev1__pooled__SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 7.7
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6950033143865151,
+   "roc_auc_repeats": [
+    0.6946602619475248,
+    0.6755433722864228,
+    0.6886253892063762,
+    0.7052791531536374,
+    0.7109083953386145
+   ],
+   "pr_auc": 0.5856328877880671,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8263166651275895,
+   "per_group_auc_iqr": [
+    0.6503877736531919,
+    0.9413849672289007
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK60_sev1__pooled__SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 1.0
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.5995658794045873,
+   "roc_auc_repeats": [
+    0.6017749344908698,
+    0.6005804454237311,
+    0.6084791923846238,
+    0.5989895814892432,
+    0.5880052432344688
+   ],
+   "pr_auc": 0.4501479549909838,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6598502186262634,
+   "per_group_auc_iqr": [
+    0.5184051630417145,
+    0.888337188683759
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK60_sev1__pooled__MOT+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.4
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6719401232498668,
+   "roc_auc_repeats": [
+    0.6619185456333457,
+    0.6564384905327945,
+    0.6688470040390102,
+    0.6840366249048797,
+    0.688459951139304
+   ],
+   "pr_auc": 0.5325042390210946,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.772671568627451,
+   "per_group_auc_iqr": [
+    0.6310237298448432,
+    0.9460789467661838
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK60_sev1__pooled__MOT+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 3.1
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6645296857697812,
+   "roc_auc_repeats": [
+    0.6402813986331383,
+    0.6902563011454099,
+    0.6446891408164956,
+    0.6803136675697494,
+    0.667107920684113
+   ],
+   "pr_auc": 0.5324932573807662,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7144917934284611,
+   "per_group_auc_iqr": [
+    0.5967450836489476,
+    0.862381715107563
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK60_sev1__pooled__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 39.9
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6595655776174925,
+   "roc_auc_repeats": [
+    0.665387094854328,
+    0.620794391620608,
+    0.6525704647168283,
+    0.6711131831861614,
+    0.6879627537095364
+   ],
+   "pr_auc": 0.522650536682961,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7669795193031403,
+   "per_group_auc_iqr": [
+    0.6207863506606657,
+    0.9252502890944672
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK60_sev1__pooled__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 2.3
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.63371634049702,
+   "roc_auc_repeats": [
+    0.6230376010801604,
+    0.6450007196502368,
+    0.6274860894903387,
+    0.6262930870317818,
+    0.6467642052325822
+   ],
+   "pr_auc": 0.1979716252379559,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6651134479900539,
+   "per_group_auc_iqr": [
+    0.6253283695694601,
+    0.7547110607513293
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK60_sev2__within_seated__SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 8.4
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.6513663443613009,
+   "roc_auc_repeats": [
+    0.6450289501298797,
+    0.6643516083412524,
+    0.6483659064730287,
+    0.6332883293575935,
+    0.6657969275047501
+   ],
+   "pr_auc": 0.20067911907214234,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6880633802816901,
+   "per_group_auc_iqr": [
+    0.47159159159159164,
+    0.8471454719776867
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK60_sev2__within_seated__SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.5
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.8101123829651226,
+   "roc_auc_repeats": [
+    0.8136144429241814,
+    0.7758329126203762,
+    0.8455469622592328,
+    0.8297133891880086,
+    0.7858542078338133
+   ],
+   "pr_auc": 0.39392892780296995,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6581395348837209,
+   "per_group_auc_iqr": [
+    0.6034754479097545,
+    0.6936927816901409
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK60_sev2__within_seated__MOT+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.7890581363864879,
+   "roc_auc_repeats": [
+    0.7995754966937585,
+    0.7419976874358752,
+    0.8177355539666614,
+    0.815654310393742,
+    0.7703276334424025
+   ],
+   "pr_auc": 0.352116333524058,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.5748117348117349,
+   "per_group_auc_iqr": [
+    0.4887367957746479,
+    0.7791859147563847
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK60_sev2__within_seated__MOT+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.2
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.8441623473040906,
+   "roc_auc_repeats": [
+    0.8391401932269213,
+    0.8388014280325555,
+    0.8487978203349007,
+    0.8561763487396167,
+    0.8378959461864581
+   ],
+   "pr_auc": 0.44723985124921956,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7405909526714896,
+   "per_group_auc_iqr": [
+    0.6673767605633802,
+    0.8521049178063269
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK60_sev2__within_seated__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 31.7
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.7042541131535913,
+   "roc_auc_repeats": [
+    0.7251377164766658,
+    0.6664229685946397,
+    0.7359943265798858,
+    0.7099241150578328,
+    0.6837914390589324
+   ],
+   "pr_auc": 0.2723499371818246,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6536377640845069,
+   "per_group_auc_iqr": [
+    0.6073520809898763,
+    0.6919688492885757
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK60_sev2__within_seated__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.4
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6104240433320249,
+   "roc_auc_repeats": [
+    0.6076353515271343,
+    0.5817390396985453,
+    0.6231228683454514,
+    0.6193800127135264,
+    0.6202429443754675
+   ],
+   "pr_auc": 0.28085823004068117,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.5785782279936059,
+   "per_group_auc_iqr": [
+    0.5154320987654322,
+    0.6593307633973711
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev2__within_standing__SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 7.3
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6637259081184254,
+   "roc_auc_repeats": [
+    0.6623326681823087,
+    0.6422765258344159,
+    0.691621519394361,
+    0.6696800429194225,
+    0.652718784261619
+   ],
+   "pr_auc": 0.3140134787740518,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6720196353436185,
+   "per_group_auc_iqr": [
+    0.4795514406576742,
+    0.9169382341796135
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev2__within_standing__SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.6
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6472221957931911,
+   "roc_auc_repeats": [
+    0.7257422591601539,
+    0.5970893779638031,
+    0.6663603752602937,
+    0.7010865105878428,
+    0.5458324559938622
+   ],
+   "pr_auc": 0.2415566141458989,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.653901070882203,
+   "per_group_auc_iqr": [
+    0.5647058823529412,
+    0.7823116219667944
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev2__within_standing__MOT+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6245789915466589,
+   "roc_auc_repeats": [
+    0.649276259595459,
+    0.5796769739074806,
+    0.6470206849966347,
+    0.631599424735473,
+    0.6153216144982465
+   ],
+   "pr_auc": 0.286620867141942,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6656407987866532,
+   "per_group_auc_iqr": [
+    0.5616999623712927,
+    0.7980392156862746
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev2__within_standing__MOT+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.2
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6296810482876881,
+   "roc_auc_repeats": [
+    0.6703894700069319,
+    0.5353686460677883,
+    0.6534009685233947,
+    0.63485377190491,
+    0.6543923849354157
+   ],
+   "pr_auc": 0.35250053218146693,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.692156862745098,
+   "per_group_auc_iqr": [
+    0.5251416713225316,
+    0.7605533596837943
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev2__within_standing__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 27.4
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6894772736350732,
+   "roc_auc_repeats": [
+    0.673658830565732,
+    0.7034864141282144,
+    0.6759536812879304,
+    0.7094747329934042,
+    0.6848127092000842
+   ],
+   "pr_auc": 0.339549503987906,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7497793263646922,
+   "per_group_auc_iqr": [
+    0.6642006802721088,
+    0.8848775561726837
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK60_sev2__within_standing__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.3
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.6326858928882616,
+   "roc_auc_repeats": [
+    0.6446772129058451,
+    0.6213398805334709,
+    0.6348268904706871,
+    0.6322887610079997,
+    0.630296719523305
+   ],
+   "pr_auc": 0.22615764209908823,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6422685947828263,
+   "per_group_auc_iqr": [
+    0.5286989637627204,
+    0.8034717793846855
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK60_sev2__pooled__SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 7.0
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.6519832685639717,
+   "roc_auc_repeats": [
+    0.6619631492487379,
+    0.6392637356937502,
+    0.6480722505488378,
+    0.649051267105375,
+    0.6615659402231574
+   ],
+   "pr_auc": 0.25348845712569174,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6802434210526316,
+   "per_group_auc_iqr": [
+    0.46520129691249285,
+    0.9352399889005917
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK60_sev2__pooled__SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.8
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.6991149594588351,
+   "roc_auc_repeats": [
+    0.7297189768400002,
+    0.6982054756162379,
+    0.6977022952611401,
+    0.6598855483256728,
+    0.710062501251124
+   ],
+   "pr_auc": 0.2660389066948029,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6332917532917532,
+   "per_group_auc_iqr": [
+    0.5347660242641503,
+    0.7003433290462486
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK60_sev2__pooled__MOT+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.4
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.6718708344672557,
+   "roc_auc_repeats": [
+    0.6828548900642435,
+    0.6724885338506682,
+    0.6621875872961747,
+    0.6711631681668124,
+    0.6706599929583795
+   ],
+   "pr_auc": 0.30071526813088023,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6262323862323862,
+   "per_group_auc_iqr": [
+    0.4234874282096504,
+    0.7457930618777411
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK60_sev2__pooled__MOT+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.7
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.7133092856428954,
+   "roc_auc_repeats": [
+    0.7419960604317737,
+    0.7328278109076322,
+    0.6896926785895771,
+    0.6833832432106094,
+    0.7186466350748849
+   ],
+   "pr_auc": 0.3392128160491977,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6780353874313605,
+   "per_group_auc_iqr": [
+    0.5852657200102629,
+    0.7999940365278768
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK60_sev2__pooled__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 41.3
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.6514998691527923,
+   "roc_auc_repeats": [
+    0.6312624286235193,
+    0.6581131416052934,
+    0.6480213792670648,
+    0.6667900478012851,
+    0.653312348466799
+   ],
+   "pr_auc": 0.25419868578160915,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.674147413307755,
+   "per_group_auc_iqr": [
+    0.5701424876060134,
+    0.7526505439844822
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK60_sev2__pooled__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 2.3
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.756702623635169,
+   "roc_auc_repeats": [
+    0.7544752465970208,
+    0.754050698831901,
+    0.762129833293565,
+    0.7597543186991355,
+    0.7531030207542228
+   ],
+   "pr_auc": 0.6580638711594189,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8612376824927972,
+   "per_group_auc_iqr": [
+    0.7281723039337065,
+    0.9479830917874397
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev1__within_seated__SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 7.9
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.7763315611401087,
+   "roc_auc_repeats": [
+    0.7712655442031984,
+    0.7769481124671349,
+    0.773943424077795,
+    0.7888306900940582,
+    0.770670034858357
+   ],
+   "pr_auc": 0.6996132324690951,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.908724832214765,
+   "per_group_auc_iqr": [
+    0.7409963985594239,
+    0.9609830602610385
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev1__within_seated__SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.5
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.5925251749550442,
+   "roc_auc_repeats": [
+    0.5936108147292309,
+    0.5797752014414839,
+    0.6131240331375739,
+    0.5781687976297987,
+    0.5979470278371335
+   ],
+   "pr_auc": 0.46198637756819505,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8075680272108844,
+   "per_group_auc_iqr": [
+    0.6148549843014128,
+    0.8925243525490482
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev1__within_seated__MOT+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.7055000675697225,
+   "roc_auc_repeats": [
+    0.7186773903871121,
+    0.7060397291004461,
+    0.7265347703789755,
+    0.690838495703746,
+    0.6854099522783329
+   ],
+   "pr_auc": 0.6051591841073302,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8683626875407697,
+   "per_group_auc_iqr": [
+    0.6408681226167483,
+    0.9397364194691266
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev1__within_seated__MOT+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.2
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.7163573636860621,
+   "roc_auc_repeats": [
+    0.7143081453712447,
+    0.7060916427945427,
+    0.7101452510126757,
+    0.7212448838400642,
+    0.7299968954117827
+   ],
+   "pr_auc": 0.5985396557367814,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7363622406456989,
+   "per_group_auc_iqr": [
+    0.711489883704977,
+    0.9471476510067113
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev1__within_seated__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 31.4
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.4213938411669368,
+   "roc_auc": 0.6924412163816411,
+   "roc_auc_repeats": [
+    0.6947050568487998,
+    0.6854150724666116,
+    0.6727422782533742,
+    0.7184109933404101,
+    0.69093268099901
+   ],
+   "pr_auc": 0.5651680064423417,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8734339622641508,
+   "per_group_auc_iqr": [
+    0.6754650951649911,
+    0.9395408163265305
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev1__within_seated__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.2
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.7101132168968357,
+   "roc_auc_repeats": [
+    0.7208504624653281,
+    0.7083828940809859,
+    0.7012885556968361,
+    0.7099699732444437,
+    0.7100741989965849
+   ],
+   "pr_auc": 0.6004907390250659,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6846738873251025,
+   "per_group_auc_iqr": [
+    0.5396901248656467,
+    0.8395417320774463
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK70_sev1__within_standing__SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 8.5
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.7410064725778691,
+   "roc_auc_repeats": [
+    0.746907169832568,
+    0.7348502941878919,
+    0.7415664501429747,
+    0.7459546933811207,
+    0.7357537553447903
+   ],
+   "pr_auc": 0.6426370015302988,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7648483554890173,
+   "per_group_auc_iqr": [
+    0.6086231347885066,
+    0.8476606197553846
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK70_sev1__within_standing__SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.6
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6913435764895334,
+   "roc_auc_repeats": [
+    0.684014263604873,
+    0.6592986355156534,
+    0.6957913087505105,
+    0.7116167825768388,
+    0.7059968919997911
+   ],
+   "pr_auc": 0.5104794454933297,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7335633752585378,
+   "per_group_auc_iqr": [
+    0.573466009328543,
+    0.8776825634451528
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK70_sev1__within_standing__MOT+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.7185935915698612,
+   "roc_auc_repeats": [
+    0.7289356878199463,
+    0.7308264124764059,
+    0.7253601983809628,
+    0.6970833844988976,
+    0.710762274673094
+   ],
+   "pr_auc": 0.5710110751942948,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7277692285960218,
+   "per_group_auc_iqr": [
+    0.5935131200601096,
+    0.9040942909416497
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK70_sev1__within_standing__MOT+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.3
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6631005763511391,
+   "roc_auc_repeats": [
+    0.6870655324448958,
+    0.6721445263953385,
+    0.6341298106520451,
+    0.6792660488753851,
+    0.6428969633880312
+   ],
+   "pr_auc": 0.5405635330649015,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6477582220420541,
+   "per_group_auc_iqr": [
+    0.6043811249065365,
+    0.8407567848659097
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK70_sev1__within_standing__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 27.4
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.4011983082706767,
+   "roc_auc": 0.6667408581544437,
+   "roc_auc_repeats": [
+    0.673421646401323,
+    0.6556762399795129,
+    0.6584045521756892,
+    0.689397085371676,
+    0.6568047668440179
+   ],
+   "pr_auc": 0.5379284932657545,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6541447347449717,
+   "per_group_auc_iqr": [
+    0.6278149257081999,
+    0.8781397449552212
+   ],
+   "n_groups_both_classes": 18,
+   "key": "sensSPK70_sev1__within_standing__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.4
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.7537790330288587,
+   "roc_auc_repeats": [
+    0.7541394094360958,
+    0.7373199824532075,
+    0.7480179587957052,
+    0.7656575129507265,
+    0.7637603015085588
+   ],
+   "pr_auc": 0.661100957924706,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7866812934295394,
+   "per_group_auc_iqr": [
+    0.6855061709586883,
+    0.9326604571583718
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK70_sev1__pooled__SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 9.0
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.757164360358008,
+   "roc_auc_repeats": [
+    0.7563648843251434,
+    0.7418145062929671,
+    0.7515156698815209,
+    0.767165621463402,
+    0.7689611198270075
+   ],
+   "pr_auc": 0.6734227857231913,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8126540220415683,
+   "per_group_auc_iqr": [
+    0.7307810872034655,
+    0.9074401809162532
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK70_sev1__pooled__SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 1.0
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6411992321318863,
+   "roc_auc_repeats": [
+    0.6406893601825745,
+    0.639467068982438,
+    0.6436804958025399,
+    0.6392510128399652,
+    0.6429082228519141
+   ],
+   "pr_auc": 0.4903112053736901,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.692993163817027,
+   "per_group_auc_iqr": [
+    0.559937352502449,
+    0.9328257700370908
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK70_sev1__pooled__MOT+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.4
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.7314701329860653,
+   "roc_auc_repeats": [
+    0.7232145668054072,
+    0.7225419357265008,
+    0.7247344790436514,
+    0.7425926084695759,
+    0.7442670748851914
+   ],
+   "pr_auc": 0.5975568229090151,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8174769907963185,
+   "per_group_auc_iqr": [
+    0.6396942507780157,
+    0.9230415779872301
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK70_sev1__pooled__MOT+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 2.5
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6775087168571515,
+   "roc_auc_repeats": [
+    0.6543340317636542,
+    0.7086259795048724,
+    0.6528991780866259,
+    0.6918633972937176,
+    0.6798209976368871
+   ],
+   "pr_auc": 0.5438787970594275,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7274053887804119,
+   "per_group_auc_iqr": [
+    0.5960309733649557,
+    0.884669824798857
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK70_sev1__pooled__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 40.9
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.4120430809399478,
+   "roc_auc": 0.6777470068373737,
+   "roc_auc_repeats": [
+    0.6833064770466354,
+    0.6395856875666344,
+    0.6693433523672059,
+    0.6907372761255245,
+    0.7057622410808685
+   ],
+   "pr_auc": 0.5434558466242454,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7626504635686275,
+   "per_group_auc_iqr": [
+    0.6245853530091282,
+    0.932204417348253
+   ],
+   "n_groups_both_classes": 30,
+   "key": "sensSPK70_sev1__pooled__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=1",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 2.4
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.6898630471963846,
+   "roc_auc_repeats": [
+    0.6853288078952998,
+    0.6924639635694123,
+    0.6844659543825569,
+    0.6863125732091877,
+    0.7007439369254663
+   ],
+   "pr_auc": 0.2454838271331826,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7126726726726726,
+   "per_group_auc_iqr": [
+    0.66150342519224,
+    0.8147626546681664
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK70_sev2__within_seated__SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 8.2
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.7093664037909984,
+   "roc_auc_repeats": [
+    0.7101747685306262,
+    0.7064456452797766,
+    0.7077186764155519,
+    0.700597254835207,
+    0.7218956738938302
+   ],
+   "pr_auc": 0.2741112293557578,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7141730746711425,
+   "per_group_auc_iqr": [
+    0.5522519083969466,
+    0.9121066852610478
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK70_sev2__within_seated__SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.6
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.8158597124188021,
+   "roc_auc_repeats": [
+    0.8095622183400002,
+    0.781448605309038,
+    0.8504341709976977,
+    0.83862887887246,
+    0.7992246885748143
+   ],
+   "pr_auc": 0.3971355230858621,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.726915713028169,
+   "per_group_auc_iqr": [
+    0.59955965299192,
+    0.7632267061797263
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK70_sev2__within_seated__MOT+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.8039233595945954,
+   "roc_auc_repeats": [
+    0.8120176857138838,
+    0.7610061370539765,
+    0.83166892622952,
+    0.8291776553317275,
+    0.7857463936438687
+   ],
+   "pr_auc": 0.38908250692170077,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.5823053823053822,
+   "per_group_auc_iqr": [
+    0.5741131161971831,
+    0.8461082541619455
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK70_sev2__within_seated__MOT+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.1
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.8453598241609491,
+   "roc_auc_repeats": [
+    0.8355298589810695,
+    0.8402640566177672,
+    0.8496540757320037,
+    0.8602684848583776,
+    0.8410826446155274
+   ],
+   "pr_auc": 0.4516372653565467,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7486902286902286,
+   "per_group_auc_iqr": [
+    0.6970992366412214,
+    0.8377866418013538
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK70_sev2__within_seated__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 31.6
+  },
+  {
+   "n_rows": 9872,
+   "n_groups": 23,
+   "prevalence": 0.15103322528363047,
+   "roc_auc": 0.7130734182419346,
+   "roc_auc_repeats": [
+    0.7335798059361924,
+    0.6751578058722579,
+    0.742933198973076,
+    0.7219380002222995,
+    0.6917582802058472
+   ],
+   "pr_auc": 0.2857466029386919,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6813562276649525,
+   "per_group_auc_iqr": [
+    0.646533183352081,
+    0.6976078345070423
+   ],
+   "n_groups_both_classes": 9,
+   "key": "sensSPK70_sev2__within_seated__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_seated",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.6
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.706885757255554,
+   "roc_auc_repeats": [
+    0.7079068684921435,
+    0.6776913314895504,
+    0.7193432539891453,
+    0.7125158355536921,
+    0.7169714967532389
+   ],
+   "pr_auc": 0.3822227100280811,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.6682494460272239,
+   "per_group_auc_iqr": [
+    0.6295971443141255,
+    0.7836909871244636
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev2__within_standing__SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 8.5
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.7424550498271367,
+   "roc_auc_repeats": [
+    0.7379897867919663,
+    0.7249285176531165,
+    0.7621508865172116,
+    0.7505506940593568,
+    0.7366553641140323
+   ],
+   "pr_auc": 0.4402581688324501,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.778174111392496,
+   "per_group_auc_iqr": [
+    0.6348901098901099,
+    0.916458254389289
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev2__within_standing__SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 0.6
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6849270438916932,
+   "roc_auc_repeats": [
+    0.7611979028538088,
+    0.6420415020199697,
+    0.7521111023817836,
+    0.7304317639792436,
+    0.5388529482236599
+   ],
+   "pr_auc": 0.27024287907212696,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7006221315655278,
+   "per_group_auc_iqr": [
+    0.6244134727061557,
+    0.8473391166909137
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev2__within_standing__MOT+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.2
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.686886639113595,
+   "roc_auc_repeats": [
+    0.7033149029800108,
+    0.6599914052148631,
+    0.7039260915731661,
+    0.6945832262601945,
+    0.6726175695397416
+   ],
+   "pr_auc": 0.36017873423442015,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7963895971443142,
+   "per_group_auc_iqr": [
+    0.6390842490842491,
+    0.90612820374661
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev2__within_standing__MOT+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.3
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.6525616065217599,
+   "roc_auc_repeats": [
+    0.6913529299872152,
+    0.5565102246736647,
+    0.681338349006976,
+    0.665005116968951,
+    0.6686014119719929
+   ],
+   "pr_auc": 0.3731909869652267,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7407810714525777,
+   "per_group_auc_iqr": [
+    0.5839189616967394,
+    0.8535326086956522
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev2__within_standing__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 27.8
+  },
+  {
+   "n_rows": 8512,
+   "n_groups": 21,
+   "prevalence": 0.19196428571428573,
+   "roc_auc": 0.7204312290458901,
+   "roc_auc_repeats": [
+    0.7029253232323047,
+    0.7332834029627954,
+    0.7102338856837858,
+    0.7378741360888323,
+    0.7178393972617327
+   ],
+   "pr_auc": 0.3693198851657278,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.8003360892653089,
+   "per_group_auc_iqr": [
+    0.7157714103280389,
+    0.8998617023187313
+   ],
+   "n_groups_both_classes": 17,
+   "key": "sensSPK70_sev2__within_standing__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "within_standing",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 1.2
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.7192041794264027,
+   "roc_auc_repeats": [
+    0.7265701885955513,
+    0.7129719409262915,
+    0.7165473283413574,
+    0.7179952310911911,
+    0.7219362081776215
+   ],
+   "pr_auc": 0.318924094272102,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7212951185436954,
+   "per_group_auc_iqr": [
+    0.6368660984556727,
+    0.8766205614016007
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK70_sev2__pooled__SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "hgb",
+   "secs": 8.3
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.7253878156182607,
+   "roc_auc_repeats": [
+    0.7317142760479515,
+    0.7210351851876663,
+    0.7207790859052672,
+    0.721529064110996,
+    0.7318814668394232
+   ],
+   "pr_auc": 0.35457950622669626,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7682697368421053,
+   "per_group_auc_iqr": [
+    0.6104978505614639,
+    0.9224113115920567
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK70_sev2__pooled__SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SPK+TIME",
+   "model": "logreg",
+   "secs": 1.0
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.7301176889714215,
+   "roc_auc_repeats": [
+    0.7506520680853623,
+    0.7400637392154652,
+    0.7542301192420623,
+    0.6800074477468963,
+    0.7256350705673215
+   ],
+   "pr_auc": 0.29833710185282164,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7302325581395349,
+   "per_group_auc_iqr": [
+    0.6213269957172396,
+    0.765180565897245
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK70_sev2__pooled__MOT+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "hgb",
+   "secs": 0.4
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.7262844075545737,
+   "roc_auc_repeats": [
+    0.7429632845774174,
+    0.7248246654801294,
+    0.717385038400598,
+    0.7235481835565075,
+    0.7227008657582165
+   ],
+   "pr_auc": 0.3666820118224146,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7109425621608961,
+   "per_group_auc_iqr": [
+    0.5682322615655949,
+    0.8894072294534155
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK70_sev2__pooled__MOT+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "MOT+SPK+TIME",
+   "model": "logreg",
+   "secs": 2.0
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.7228366248857719,
+   "roc_auc_repeats": [
+    0.7466666854623166,
+    0.7468567257198319,
+    0.6923614215746439,
+    0.6935443421432949,
+    0.7347539495287727
+   ],
+   "pr_auc": 0.34845922161508447,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.690334072729717,
+   "per_group_auc_iqr": [
+    0.6145289385869096,
+    0.8620421398601715
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK70_sev2__pooled__SELFZ+SPK+TIME__hgb",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "hgb",
+   "secs": 42.7
+  },
+  {
+   "n_rows": 18384,
+   "n_groups": 38,
+   "prevalence": 0.16998476936466492,
+   "roc_auc": 0.6846075248411472,
+   "roc_auc_repeats": [
+    0.6671265022423211,
+    0.6917195864970552,
+    0.6794703833062223,
+    0.6961882388643095,
+    0.6885329132958278
+   ],
+   "pr_auc": 0.28195104811957045,
+   "coverage": 1.0,
+   "per_group_auc_median": 0.7189172070813438,
+   "per_group_auc_iqr": [
+    0.623137504471742,
+    0.8262249206978858
+   ],
+   "n_groups_both_classes": 23,
+   "key": "sensSPK70_sev2__pooled__SELFZ+SPK+TIME__logreg",
+   "label": "sev>=2",
+   "protocol": "pooled",
+   "features": "SELFZ+SPK+TIME",
+   "model": "logreg",
+   "secs": 2.6
+  }
+ ],
+ "planted": {
+  "sensSPK60_sev1__within_seated": {
+   "d": 0.3582869092425833,
+   "target_auc": 0.6,
+   "channel_auc_on_target": 0.6112836420625942
+  },
+  "sensSPK60_sev1__within_standing": {
+   "d": 0.3582869092425833,
+   "target_auc": 0.6,
+   "channel_auc_on_target": 0.6064721561300808
+  },
+  "sensSPK60_sev1__pooled": {
+   "d": 0.3582869092425833,
+   "target_auc": 0.6,
+   "channel_auc_on_target": 0.6079635995794972
+  },
+  "sensSPK60_sev2__within_seated": {
+   "d": 0.3582869092425833,
+   "target_auc": 0.6,
+   "channel_auc_on_target": 0.5773932462451599
+  },
+  "sensSPK60_sev2__within_standing": {
+   "d": 0.3582869092425833,
+   "target_auc": 0.6,
+   "channel_auc_on_target": 0.6294776277439679
+  },
+  "sensSPK60_sev2__pooled": {
+   "d": 0.3582869092425833,
+   "target_auc": 0.6,
+   "channel_auc_on_target": 0.6032285418441575
+  },
+  "sensSPK70_sev1__within_seated": {
+   "d": 0.7416143171871158,
+   "target_auc": 0.7,
+   "channel_auc_on_target": 0.7116724995286576
+  },
+  "sensSPK70_sev1__within_standing": {
+   "d": 0.7416143171871158,
+   "target_auc": 0.7,
+   "channel_auc_on_target": 0.7044891046350866
+  },
+  "sensSPK70_sev1__pooled": {
+   "d": 0.7416143171871158,
+   "target_auc": 0.7,
+   "channel_auc_on_target": 0.7073918049590139
+  },
+  "sensSPK70_sev2__within_seated": {
+   "d": 0.7416143171871158,
+   "target_auc": 0.7,
+   "channel_auc_on_target": 0.6778899543704577
+  },
+  "sensSPK70_sev2__within_standing": {
+   "d": 0.7416143171871158,
+   "target_auc": 0.7,
+   "channel_auc_on_target": 0.7259175744564383
+  },
+  "sensSPK70_sev2__pooled": {
+   "d": 0.7416143171871158,
+   "target_auc": 0.7,
+   "channel_auc_on_target": 0.7017174284029097
+  }
+ }
+}

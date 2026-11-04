@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Primary label \sevtwo{}, default HGB (sensitivity learner). Group-disjoint results (grouped 5-fold, 5 repeats). Overall ROC-AUC for the three context baselines and, with 95\,\% group-bootstrap intervals, for the two telemetry models; context-stratified AUC of MOT+TIME (0.5 = no knowledge beyond game, campaign and 30-s exposure bin); recall and false-positive rate on the target at a threshold set for a 10\,\% false-alarm budget on training groups. Group-disjoint: no inferred participant group is on both sides of a split. Seated and standing denote the two recording campaigns.}
+\label{tab:supp_hgb}
+\footnotesize
+\setlength{\tabcolsep}{2.4pt}
+\begin{tabular}{lrccccccc}
+\toprule
+ & & \multicolumn{5}{c}{Overall ROC-AUC} & Context-strat. AUC & Recall / FPR (\%) \\
+\cmidrule(lr){3-7}\cmidrule(lr){8-8}\cmidrule(lr){9-9}
+Protocol & Prev. (\%) & TIME & CTX & CTX+TIME & MOT+TIME & MOT+CTX+TIME & MOT+TIME & MOT+TIME \\
+\midrule
+\multicolumn{9}{l}{\emph{Held-out groups, same setting}} \\
+Curated release (seated) & 15.9 & 0.66 & 0.77 & 0.86 & 0.78 [0.67, 0.87] & 0.79 [0.70, 0.86] & 0.44 [0.25, 0.52] & 47.8 / 14.4 \\
+Within seated & 15.1 & 0.66 & 0.79 & 0.88 & 0.81 [0.67, 0.89] & 0.82 [0.72, 0.89] & 0.42 [0.22, 0.49] & 45.6 / 15.2 \\
+Within standing & 19.2 & 0.57 & 0.63 & 0.70 & 0.64 [0.46, 0.79] & 0.64 [0.47, 0.79] & 0.55 [0.37, 0.71] & 9.2 / 8.7 \\
+Within flight game & 13.1 & 0.57 & 0.78 & 0.82 & 0.78 [0.62, 0.85] & 0.80 [0.64, 0.87] & 0.54 [0.37, 0.65] & 21.2 / 11.8 \\
+Within racing game & 23.8 & 0.65 & 0.65 & 0.79 & 0.66 [0.55, 0.77] & 0.67 [0.56, 0.77] & 0.45 [0.30, 0.52] & 26.4 / 10.2 \\
+All cells (pooled) & 17.0 & 0.62 & 0.76 & 0.82 & 0.68 [0.58, 0.78] & 0.68 [0.58, 0.77] & 0.50 [0.38, 0.64] & 24.5 / 11.0 \\
+\multicolumn{9}{l}{\emph{Held-out groups and a new setting (campaign or game)}} \\
+Seated \ra{} standing & 19.2 & 0.61 & 0.37 & 0.41 & 0.39 [0.26, 0.62] & 0.36 [0.27, 0.47] & 0.50 [0.38, 0.72] & 0.0 / 1.2 \\
+Standing \ra{} seated & 15.1 & 0.63 & 0.21 & 0.18 & 0.44 [0.36, 0.51] & 0.44 [0.36, 0.51] & 0.56 [0.49, 0.61] & 2.0 / 4.6 \\
+Flight \ra{} racing & 23.8 & 0.64 & 0.35 & 0.32 & 0.38 [0.25, 0.48] & 0.39 [0.27, 0.48] & 0.48 [0.38, 0.51] & 1.2 / 10.5 \\
+Racing \ra{} flight & 13.1 & 0.61 & 0.22 & 0.24 & 0.49 [0.34, 0.59] & 0.49 [0.34, 0.59] & 0.63 [0.42, 0.73] & 0.0 / 1.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

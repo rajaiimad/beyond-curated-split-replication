@@ -1,0 +1,28 @@
+\begin{table}[h]
+\centering
+\footnotesize
+\caption{Comparison family (\sevtwo{}, default HGB) in the first run (leave-one-group-out folds, scores pooled across folds) and in the final run (repeated grouped 5-fold, within-fold AUC): difference in overall ROC-AUC and Holm-adjusted $p$. The family was fixed before the final run, after these first-run values had been seen.}
+\label{tab:supp_first}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & \multicolumn{2}{c}{First run} & \multicolumn{2}{c}{Final run} \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Comparison & $\Delta$AUC & $p_\mathrm{Holm}$ & $\Delta$AUC & $p_\mathrm{Holm}$ \\
+\midrule
+Shift cost on standing & +0.16 & 0.407 & +0.25 & 0.684 \\
+Shift cost on seated & +0.39 & 0.022 & +0.37 & 0.034 \\
+Shift cost on racing$^{*}$ & +0.26 & 0.034 & +0.28 & 0.063 \\
+Shift cost on flight & +0.24 & 0.407 & +0.29 & 0.063 \\
+Gain over context, within seated & $-$0.05 & 0.001 & $-$0.05 & 0.002 \\
+Gain over context, within standing & $-$0.16 & 0.407 & $-$0.06 & 0.855 \\
+Gain over context, within flight game & $-$0.10 & 0.407 & $-$0.02 & 0.855 \\
+Gain over context, within racing game & $-$0.15 & 0.001 & $-$0.12 & 0.002 \\
+Gain over context, pooled & $-$0.12 & 0.004 & $-$0.14 & 0.001 \\
+Gain over context, seated \ra{} standing & $-$0.09 & 0.407 & $-$0.04 & 0.334 \\
+Gain over context, standing \ra{} seated & +0.26 & 0.001 & +0.26 & 0.002 \\
+Gain over context, flight \ra{} racing & +0.10 & 0.407 & +0.07 & 0.684 \\
+Gain over context, racing \ra{} flight$^{*}$ & +0.17 & 0.136 & +0.25 & 0.018 \\
+\bottomrule
+\multicolumn{5}{@{}l}{$^{*}$Significance at the 5\,\% level after Holm correction differs between the runs.}
+\end{tabular}
+\end{table}

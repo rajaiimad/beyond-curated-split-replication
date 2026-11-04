@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{As Table~\mref{tab:gain} for gradient boosting with the context baseline as offset instead of logistic regression (\sevtwo{}); Holm-adjusted permutation $p$ against its own null.}
+\label{tab:supp_gain_xgb}
+\setlength{\tabcolsep}{1.5pt}
+\begin{tabular}{@{}lrcccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Overall ROC-AUC} & \multicolumn{3}{c}{Telemetry gain, $\Delta$AUC [95\,\% CI] ($p_{\mathrm{Holm}}$)} & \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-7}
+Protocol & Prev. (\%) & Baseline & Telemetry & Overall & Between sessions & Within sessions & Rec. / FPR (\%) \\
+\midrule
+\multicolumn{8}{l}{\emph{Same setting, held-out groups}} \\
+Curated release (seated) & 15.9 & 0.87 & 0.83 & $-$0.04 [$-$0.08, $-$0.00] & $-$0.07 [$-$0.24, 0.00] & $-$0.05 [$-$0.10, 0.01] & 54.8 / 14.9 \\
+Within seated & 15.1 & 0.89 & 0.85 & $-$0.04 [$-$0.07, $-$0.02] & $-$0.09 [$-$0.28, $-$0.01] (1.000) & $-$0.07 [$-$0.11, $-$0.02] (1.000) & 47.6 / 13.7 \\
+Within standing & 19.2 & 0.72 & 0.65 & $-$0.07 [$-$0.17, 0.06] & $-$0.05 [$-$0.23, 0.12] (1.000) & $-$0.00 [$-$0.03, 0.03] (1.000) & 10.1 / 4.2 \\
+Within flight game & 13.1 & 0.84 & 0.87 & +0.03 [$-$0.06, 0.12] & +0.19 [$-$0.05, 0.31] & +0.03 [$-$0.06, 0.13] & 46.9 / 9.4 \\
+Within racing game & 23.8 & 0.81 & 0.75 & $-$0.06 [$-$0.09, $-$0.00] & $-$0.04 [$-$0.19, 0.06] & $-$0.06 [$-$0.09, $-$0.00] & 27.7 / 13.1 \\
+All cells (pooled) & 17.0 & 0.81 & 0.77 & $-$0.04 [$-$0.08, 0.01] & +0.01 [$-$0.10, 0.14] (1.000) & $-$0.05 [$-$0.08, $-$0.01] (1.000) & 26.3 / 11.3 \\
+\multicolumn{8}{l}{\emph{One game--campaign cell (context constant)}} \\
+Seated, flight game & 0.7 & 0.32$^\dagger$ & 0.32$^\dagger$ & +0.00$^\dagger$ & +0.00$^\dagger$ (1.000) & +0.00$^\dagger$ (1.000) & -- / -- \\
+Seated, racing game & 36.3 & 0.74 & 0.60 & $-$0.14 [$-$0.17, $-$0.03] & $-$0.15 [$-$0.33, $-$0.09] (1.000) & $-$0.09 [$-$0.17, 0.00] (1.000) & 9.8 / 12.5 \\
+Standing, flight game & 25.7 & 0.65 & 0.61 & $-$0.03 [$-$0.26, 0.12] & +0.02 [$-$0.23, 0.22] (1.000) & $-$0.05 [$-$0.14, 0.05] (1.000) & 21.2 / 7.9 \\
+Standing, racing game & 5.8 & 0.67 & 0.64 & $-$0.03 [$-$0.14, 0.21] & $-$0.10 [$-$0.22, 0.04] (1.000) & $-$0.05 [$-$0.15, 0.19] (1.000) & 13.4 / 8.5 \\
+\multicolumn{8}{l}{\emph{Shifted setting (campaign or game), held-out groups}} \\
+Seated \ra{} standing & 19.2 & 0.32 & 0.32 & +0.00 [$-$0.03, 0.09] & $-$0.02 [$-$0.16, 0.19] & +0.01 [$-$0.00, 0.01] & 1.6 / 7.2 \\
+Standing \ra{} seated & 15.1 & 0.14 & 0.20 & +0.06 [0.02, 0.09] & +0.03 [$-$0.01, 0.10] & +0.03 [$-$0.04, 0.07] & 0.0 / 3.2 \\
+Flight \ra{} racing & 23.8 & 0.21 & 0.30 & +0.09 [0.02, 0.17] & +0.04 [$-$0.10, 0.19] & +0.12 [0.04, 0.18] & 3.3 / 9.0 \\
+Racing \ra{} flight & 13.1 & 0.20 & 0.21 & +0.01 [$-$0.01, 0.03] & +0.08 [$-$0.04, 0.14] & $-$0.02 [$-$0.07, 0.00] & 0.0 / 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

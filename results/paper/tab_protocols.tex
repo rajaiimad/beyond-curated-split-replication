@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Evaluation protocols. The inferred participant groups of the target are split into five folds (five repeats); for each fold, training uses the source records of all groups outside the fold. Seated and standing denote the two recording campaigns.}
+\label{tab:protocols}
+\setlength{\tabcolsep}{1.3pt}
+\begin{tabular}{@{}llrr@{\hspace{6pt}}l@{}}
+\toprule
+Train on (source) & Test on (target) & Groups$^{a}$ & Records$^{b}$ & RQ$^{c}$ \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Same setting}} \\
+Curated release & Curated release & 22 & 9,390 & 2, 3 \\
+Seated & Seated & 23 & 9,872 & 1, 3 \\
+Standing & Standing & 21 & 8,512 & 1, 3 \\
+Flight game & Flight game & 29 & 11,601 & 1, 3 \\
+Racing game & Racing game & 14 & 6,783 & 1, 3 \\
+All cells & All cells & 38 & 18,384 & 1, 3 \\
+\multicolumn{5}{@{}l}{\emph{Shifted setting}} \\
+Seated & Standing & 21 & 8,512 & 2, 3 \\
+Standing & Seated & 23 & 9,872 & 2, 3 \\
+Flight game & Racing game & 14 & 6,783 & 2, 3 \\
+Racing game & Flight game & 29 & 11,601 & 2, 3 \\
+\multicolumn{5}{@{}l}{\emph{One game--campaign cell}} \\
+Seated, flight game & Seated, flight game & 16 & 5,879 & 3 \\
+Seated, racing game & Seated, racing game & 8 & 3,993 & 3 \\
+Standing, flight game & Standing, flight game & 16 & 5,722 & 3 \\
+Standing, racing game & Standing, racing game & 8 & 2,790 & 3 \\
+\bottomrule
+\multicolumn{5}{@{}l}{$^{a}$Inferred groups with target records. $^{b}$Target records.}
+\\
+\multicolumn{5}{@{}l}{$^{c}$Research questions (Section~\ref{sec:intro}) the protocol serves.}
+\end{tabular}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{What the telemetry encodes. ROC-AUC (95\,\% group-bootstrap interval) with which the 28 telemetry features (MOT), their self-normalized versions (SELFZ) and the 14 MOT features not derived from the camera-rotation fields (speed, acceleration, region of interest) recognize the game, the campaign and each game--campaign cell of records from held-out groups (pooled protocol folds; cells one-vs-rest). The rotation fields are constant within every standing-campaign session (Section~\ref{sec:parsing}); without the features derived from them, the campaign is recognized only weakly. LR: logistic regression; HGB: histogram gradient boosting (scikit-learn, 150 iterations).}
+\label{tab:decode}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{MOT (28)} & \multicolumn{2}{c}{SELFZ (28)} & \multicolumn{2}{c}{MOT without rotation (14)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Target & LR & HGB & LR & HGB & LR & HGB \\
+\midrule
+Game (racing vs flight) & 0.96 {\scriptsize [0.92, 0.98]} & 0.99 {\scriptsize [0.97, 1.00]} & 0.79 {\scriptsize [0.75, 0.83]} & 0.98 {\scriptsize [0.97, 1.00]} & 0.94 {\scriptsize [0.91, 0.98]} & 1.00 {\scriptsize [0.99, 1.00]} \\
+Campaign (standing vs seated) & 1.00 {\scriptsize [1.00, 1.00]} & 1.00 {\scriptsize [1.00, 1.00]} & 0.70 {\scriptsize [0.65, 0.77]} & 1.00 {\scriptsize [1.00, 1.00]} & 0.62 {\scriptsize [0.50, 0.71]} & 0.64 {\scriptsize [0.55, 0.71]} \\
+Cell: seated, flight & 1.00 {\scriptsize [0.99, 1.00]} & 1.00 {\scriptsize [1.00, 1.00]} & 0.69 {\scriptsize [0.61, 0.75]} & 1.00 {\scriptsize [0.99, 1.00]} & 0.87 {\scriptsize [0.79, 0.93]} & 0.86 {\scriptsize [0.79, 0.92]} \\
+Cell: seated, racing & 0.99 {\scriptsize [0.99, 1.00]} & 0.99 {\scriptsize [0.99, 1.00]} & 0.76 {\scriptsize [0.72, 0.80]} & 0.99 {\scriptsize [0.97, 1.00]} & 0.80 {\scriptsize [0.72, 0.90]} & 0.87 {\scriptsize [0.80, 0.94]} \\
+Cell: standing, flight & 0.97 {\scriptsize [0.94, 0.99]} & 0.99 {\scriptsize [0.97, 1.00]} & 0.73 {\scriptsize [0.65, 0.83]} & 0.99 {\scriptsize [0.99, 1.00]} & 0.82 {\scriptsize [0.74, 0.87]} & 0.86 {\scriptsize [0.78, 0.91]} \\
+Cell: standing, racing & 0.96 {\scriptsize [0.87, 0.98]} & 0.98 {\scriptsize [0.91, 1.00]} & 0.76 {\scriptsize [0.72, 0.84]} & 0.98 {\scriptsize [0.97, 1.00]} & 0.86 {\scriptsize [0.74, 0.93]} & 0.88 {\scriptsize [0.77, 0.94]} \\
+\bottomrule
+\end{tabular}
+\end{table*}

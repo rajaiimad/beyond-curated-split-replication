@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Label-shift control (\sevtwo{}). Overall ROC-AUC on held-out groups with correct training labels and with each training session's labels circularly displaced (test labels unchanged). Inside a single cell, game and campaign are constant, so a telemetry-only model that stays predictive under the shift there must use differences between sessions. Default HGB on MOT alone is the telemetry-only model; the other columns also contain exposure time (MOT+TIME for default HGB and HGB-reg; context baseline plus MOT for the offset learners), so their drop under the shift can also reflect the lost time course. n/e: not estimable (fewer than three groups with a positive record).}
+\label{tab:control}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+ & \multicolumn{2}{c}{Default HGB, MOT} & \multicolumn{2}{c}{Default HGB, MOT+TIME} & \multicolumn{2}{c}{HGB-reg, MOT+TIME} & \multicolumn{2}{c}{LR + offset} & \multicolumn{2}{c}{Boosting + offset} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}
+Protocol & correct & shifted & correct & shifted & correct & shifted & correct & shifted & correct & shifted \\
+\midrule
+Within seated & 0.79 & 0.77 & 0.81 & 0.72 & 0.83 & 0.75 & 0.86 & 0.79 & 0.85 & 0.77 \\
+Within standing & 0.62 & 0.64 & 0.64 & 0.63 & 0.57 & 0.59 & 0.65 & 0.56 & 0.65 & 0.60 \\
+All cells (pooled) & 0.66 & 0.63 & 0.68 & 0.61 & 0.68 & 0.60 & 0.76 & 0.70 & 0.77 & 0.73 \\
+Seated, flight game & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e \\
+Seated, racing game & 0.52 & 0.48 & 0.64 & 0.42 & 0.68 & 0.40 & 0.65 & 0.47 & 0.60 & 0.46 \\
+Standing, flight game & 0.55 & 0.51 & 0.57 & 0.54 & 0.52 & 0.48 & 0.63 & 0.56 & 0.61 & 0.52 \\
+Standing, racing game & 0.49 & 0.50 & 0.60 & 0.54 & 0.52 & 0.42 & 0.74 & 0.47 & 0.64 & 0.62 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Session-level condition fields of the raw archive. None varies within a session; a game alias takes one value per game.}
+\label{tab:fields}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{2.1cm}@{}}
+\toprule
+Field & Values (flight / racing game) & Carries \\
+\midrule
+{\scriptsize\texttt{StaticFrame}} & False / True & game alias \\
+{\scriptsize\texttt{CameraAutoMovement}} & True / False & game alias \\
+{\scriptsize\texttt{CameraFieldOfView}} & 111.8 / 96.0 seated; 95.6 / 95.6 standing$^{a}$ & game alias (seated) \\
+{\scriptsize\texttt{DegreeOfControl}} & total / TOTAL & game alias (letter case only) \\
+{\scriptsize\texttt{HapticFeedback}} & False (both) & nothing (constant) \\
+{\scriptsize\texttt{DofSimulation}} & False (both) & nothing (constant) \\
+{\scriptsize\texttt{Locomotion}} & False (both) & nothing (constant) \\
+{\scriptsize\texttt{UserSymptoms}} & ``none'' (both) & nothing (constant) \\
+\bottomrule
+\multicolumn{3}{@{}l}{$^{a}$One standing flight-game session: 60.}
+\end{tabular}
+\end{table}

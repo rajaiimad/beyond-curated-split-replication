@@ -1,0 +1,1381 @@
+{
+ "aud.biggroup": [
+  "supp_notes.tex"
+ ],
+ "aud.biggroup.dates": [
+  "supp_notes.tex"
+ ],
+ "aud.cur.identical": [
+  "body_1.tex"
+ ],
+ "aud.dates.seated": [
+  "body_1.tex"
+ ],
+ "aud.dates.standing": [
+  "body_1.tex"
+ ],
+ "aud.dt": [
+  "body_1.tex"
+ ],
+ "aud.flag.any": [
+  "body_1.tex",
+  "supp_notes.tex"
+ ],
+ "aud.fps.others": [
+  "results_audit.tex"
+ ],
+ "aud.groups.bothgame": [
+  "body_1.tex",
+  "body_2.tex",
+  "results_audit.tex"
+ ],
+ "aud.groups.bothpost": [
+  "body_1.tex",
+  "body_2.tex"
+ ],
+ "aud.ngroups": [
+  "body_1.tex",
+  "discussion.tex",
+  "fig_pipeline.tex",
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "aud.nrec": [
+  "body_2.tex",
+  "fig_pipeline.tex"
+ ],
+ "aud.nsess": [
+  "abstract.tex",
+  "body_1.tex",
+  "body_2.tex",
+  "fig_pipeline.tex",
+  "supp_notes.tex"
+ ],
+ "aud.nvrsq": [
+  "body_1.tex",
+  "body_2.tex",
+  "fig_pipeline.tex"
+ ],
+ "aud.prev1": [
+  "body_2.tex"
+ ],
+ "aud.prev2": [
+  "body_2.tex"
+ ],
+ "aud.prev2.first": [
+  "results_audit.tex"
+ ],
+ "aud.prev2.late": [
+  "results_audit.tex"
+ ],
+ "aud.rchg.med": [
+  "body_1.tex",
+  "discussion.tex",
+  "supp_notes.tex"
+ ],
+ "aud.rchg.none": [
+  "body_1.tex"
+ ],
+ "aud.seatF.sev2": [
+  "results_audit.tex"
+ ],
+ "aud.seatR.sev2": [
+  "results_audit.tex",
+  "supp_notes.tex"
+ ],
+ "aud.seatR.vrsqmed": [
+  "supp_notes.tex"
+ ],
+ "aud.standF.sev2": [
+  "results_audit.tex",
+  "supp_notes.tex"
+ ],
+ "aud.standR.fps": [
+  "results_audit.tex"
+ ],
+ "aud.standR.sev2": [
+  "results_audit.tex",
+  "supp_notes.tex"
+ ],
+ "aud.standR.vrsqmed": [
+  "supp_notes.tex"
+ ],
+ "chk.nfolds": [
+  "body_2.tex",
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "ctl.s2.ws.M.hgb.auc": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "cur.col.StaticFrame": [
+  "results.tex",
+  "results_audit.tex"
+ ],
+ "cur.col.TimeStamp": [
+  "results_audit.tex"
+ ],
+ "cur.raceshare": [
+  "abstract.tex",
+  "results_audit.tex"
+ ],
+ "es.minit": [
+  "supp_notes.tex"
+ ],
+ "es.nactive": [
+  "supp_notes.tex"
+ ],
+ "es.nfold": [
+  "supp_notes.tex"
+ ],
+ "es.nstop": [
+  "supp_notes.tex"
+ ],
+ "fam.m": [
+  "supp_notes.tex"
+ ],
+ "grp.mrg.all": [
+  "body_2.tex",
+  "discussion.tex",
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "grp.mrg.curated": [
+  "supp_notes.tex"
+ ],
+ "grp.mrgdate.all": [
+  "supp_notes.tex"
+ ],
+ "hgbr.nit.med": [
+  "supp_notes.tex"
+ ],
+ "hgbr.nit.q1": [
+  "supp_notes.tex"
+ ],
+ "hgbr.nit.q3": [
+  "supp_notes.tex"
+ ],
+ "hgbr.nsel": [
+  "supp_notes.tex"
+ ],
+ "logo.fam.ndiff": [
+  "supp_notes.tex"
+ ],
+ "logo.fam.nsig": [
+  "supp_notes.tex"
+ ],
+ "logo.s1.pool.C.hgb.auc": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "logo.s1.ws.C.hgb.auc": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "null.nsim": [
+  "body_2.tex",
+  "supp_notes.tex",
+  "supplementary.tex"
+ ],
+ "r3.ctl.s2.cTR.B.cb.auc": [
+  "supp_notes.tex"
+ ],
+ "r3.s1.cTR.B.cb.ngroups": [
+  "supp_notes.tex"
+ ],
+ "r3.s2.cTR.B.cb.auc": [
+  "supp_notes.tex"
+ ],
+ "r3.s2.f2r.B.cb.auc": [
+  "results.tex"
+ ],
+ "r3.s2.f2r.B.cb.wauc": [
+  "results.tex"
+ ],
+ "r3.s2.f2r.M.lo.auc": [
+  "results.tex"
+ ],
+ "r3.s2.f2r.M.lo.ci": [
+  "results.tex"
+ ],
+ "r3.s2.f2r.M.lo.wauc": [
+  "results.tex"
+ ],
+ "r3.s2.f2r.M.lo.wci": [
+  "results.tex"
+ ],
+ "r3.s2.pool.B.cb.auc": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "r3.s2.ws.B.cb.auc": [
+  "results.tex"
+ ],
+ "r3.s2.wt.B.cb.auc": [
+  "results.tex"
+ ],
+ "r3.sess.s2.pool.MT.hgbr.auc": [
+  "supp_notes.tex"
+ ],
+ "r3.sess.s2.ws.MT.hgbr.auc": [
+  "supp_notes.tex"
+ ],
+ "r3ag.min": [
+  "supp_notes.tex"
+ ],
+ "r3cb.cauc.max": [
+  "body_2.tex"
+ ],
+ "r3cb.cauc.min": [
+  "body_2.tex"
+ ],
+ "r3ctl.keep": [
+  "supp_notes.tex"
+ ],
+ "r3ctl.nabove": [
+  "supp_notes.tex"
+ ],
+ "r3ctl.nkeep": [
+  "supp_notes.tex"
+ ],
+ "r3ctl.s1.nabove": [
+  "supp_notes.tex"
+ ],
+ "r3ctl.s1.nkeep": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.hgb.smax": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.hgb.smin": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.hgb.tmax": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.hgb.tmin": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.lo.smax": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.lo.smin": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.xo.smax": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.M.xo.smin": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.MT.hgbr.smax": [
+  "supp_notes.tex"
+ ],
+ "r3ctlrng.s2.MT.hgbr.smin": [
+  "supp_notes.tex"
+ ],
+ "r3d.MOT.hgb.cellseatedFlight.auc": [
+  "results.tex"
+ ],
+ "r3d.MOT.hgb.cellstandingRace.auc": [
+  "results.tex"
+ ],
+ "r3d.MOT.lr.campaignstanding.auc": [
+  "results.tex"
+ ],
+ "r3d.MOT.lr.campaignstanding.ci": [
+  "results.tex"
+ ],
+ "r3d.MOT.lr.gamerace.auc": [
+  "results.tex"
+ ],
+ "r3d.MOT.lr.gamerace.ci": [
+  "results.tex"
+ ],
+ "r3d.MOTNR.hgb.campaignstanding.auc": [
+  "results.tex"
+ ],
+ "r3d.MOTNR.hgb.campaignstanding.ci": [
+  "results.tex"
+ ],
+ "r3d.MOTNR.hgb.gamerace.auc": [
+  "results.tex"
+ ],
+ "r3d.MOTNR.lr.campaignstanding.auc": [
+  "results.tex"
+ ],
+ "r3d.MOTNR.lr.campaignstanding.ci": [
+  "results.tex"
+ ],
+ "r3d.MOTNR.lr.gamerace.auc": [
+  "results.tex"
+ ],
+ "r3d.SELFZ.hgb.campaignstanding.auc": [
+  "results.tex"
+ ],
+ "r3d.SELFZ.lr.campaignstanding.auc": [
+  "results.tex"
+ ],
+ "r3el.s1.M.lo.ci": [
+  "supp_notes.tex"
+ ],
+ "r3el.s1.M.lo.d": [
+  "supp_notes.tex"
+ ],
+ "r3el.s1.M.lo.n": [
+  "supp_notes.tex"
+ ],
+ "r3el.s1.M.lo.p": [
+  "supp_notes.tex"
+ ],
+ "r3el.s2.M.lo.ci": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3el.s2.M.lo.d": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3el.s2.M.lo.n": [
+  "supp_notes.tex"
+ ],
+ "r3el.s2.M.lo.nr": [
+  "supp_notes.tex"
+ ],
+ "r3el.s2.M.lo.p": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3el.s2.M.xo.d": [
+  "supp_notes.tex"
+ ],
+ "r3el.s2.Z.lo.d": [
+  "supp_notes.tex"
+ ],
+ "r3el.s2.Z.lo.p": [
+  "supp_notes.tex"
+ ],
+ "r3g.s1.cTR.M.lo.c.ci": [
+  "supp_notes.tex"
+ ],
+ "r3g.s1.cTR.M.lo.c.d": [
+  "supp_notes.tex"
+ ],
+ "r3g.s1.cTR.M.xo.n.ci": [
+  "supp_notes.tex"
+ ],
+ "r3g.s1.cTR.M.xo.n.d": [
+  "supp_notes.tex"
+ ],
+ "r3g.s1.pool.M.lo.w.ci": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s1.pool.M.lo.w.d": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s1.wt.M.xo.n.ci": [
+  "supp_notes.tex"
+ ],
+ "r3g.s1.wt.M.xo.n.d": [
+  "supp_notes.tex"
+ ],
+ "r3g.s2.cSF.M.lo.c.dpt": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s2.cSF.M.lo.w.dpt": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s2.cTR.M.lo.o.ci": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s2.cTR.M.lo.o.d": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s2.pool.M.lo.c.ci": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s2.pool.M.lo.c.d": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s2.pool.M.lo.w.ci": [
+  "results_telemetry.tex"
+ ],
+ "r3g.s2.pool.M.lo.w.d": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s1.F.M.lo.c.max": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s1.F.M.lo.c.min": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s1.F.M.lo.n.max": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s1.F.M.lo.n.min": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s1.F.M.lo.w.max": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s1.F.M.lo.w.min": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s2.C.M.lo.o.max": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s2.C.M.lo.o.min": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s2.F.M.lo.c.max": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s2.F.M.lo.c.min": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s2.F.M.lo.n.max": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s2.F.M.lo.n.min": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s2.F.M.lo.w.max": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s2.F.M.lo.w.min": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s2.F.M.lp.c.max": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s2.F.M.lp.c.min": [
+  "supp_notes.tex"
+ ],
+ "r3grng.s2.W.M.lo.o.max": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.s2.W.M.lo.o.min": [
+  "results_telemetry.tex"
+ ],
+ "r3grng.sess.c.max": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3grng.sess.c.min": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3grng.sess.s2.c.max": [
+  "supp_notes.tex"
+ ],
+ "r3grng.sess.s2.c.min": [
+  "supp_notes.tex"
+ ],
+ "r3grng.sess.s2.w.max": [
+  "supp_notes.tex"
+ ],
+ "r3grng.sess.s2.w.min": [
+  "supp_notes.tex"
+ ],
+ "r3grng.sess.w.max": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3grng.sess.w.min": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3mrg.nest": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3n.cSF.np": [
+  "body_2.tex",
+  "results_telemetry.tex"
+ ],
+ "r3n.cSF.np.xo": [
+  "body_2.tex"
+ ],
+ "r3n.cSF.np2.max": [
+  "body_2.tex"
+ ],
+ "r3n.cSF.np2.min": [
+  "body_2.tex"
+ ],
+ "r3n.cSF.pmin": [
+  "body_2.tex",
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.M.c.holmfloor": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.M.c.m": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.M.c.nperm": [
+  "body_2.tex",
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3n.lo.M.c.nsig": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.M.c.nsigraw": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.M.w.m": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.M.w.nsig": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.M.w.nsigraw": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.MNR.c.nsigraw": [
+  "supp_notes.tex"
+ ],
+ "r3n.lo.MNR.w.nsigraw": [
+  "supp_notes.tex"
+ ],
+ "r3n.lo.Z.c.minp": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.Z.c.nsig": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.Z.c.nsigraw": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.Z.w.minp": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.Z.w.nsig": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lo.Z.w.nsigraw": [
+  "results_telemetry.tex"
+ ],
+ "r3n.lp.M.c.nsigraw": [
+  "supp_notes.tex"
+ ],
+ "r3n.lp.M.w.nsigraw": [
+  "supp_notes.tex"
+ ],
+ "r3n.s1.cTR.M.lo.w.ph": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3n.s1.pool.M.lo.w.nm": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.c.m": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.c.minp": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.c.nperm": [
+  "body_2.tex",
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.c.nsig": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.c.nsigraw": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.w.m": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.w.minp": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.w.nsig": [
+  "results_telemetry.tex"
+ ],
+ "r3n.xo.M.w.nsigraw": [
+  "results_telemetry.tex"
+ ],
+ "r3nb.lo.M.c.holmfloor": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3nb.lo.M.c.nperm": [
+  "body_2.tex",
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3nb.lo.M.c.nsigraw": [
+  "supp_notes.tex"
+ ],
+ "r3nb.lo.M.w.nsigraw": [
+  "supp_notes.tex"
+ ],
+ "r3nl.cx.max": [
+  "results_telemetry.tex"
+ ],
+ "r3nl.cx.min": [
+  "results_telemetry.tex"
+ ],
+ "r3nl.s2.cTR.og.nr": [
+  "results_telemetry.tex"
+ ],
+ "r3nl.s2.cTR.og.p": [
+  "results_telemetry.tex"
+ ],
+ "r3nm.lo.M.n.holmfloor": [
+  "supp_notes.tex"
+ ],
+ "r3nm.lo.M.n.m": [
+  "supp_notes.tex"
+ ],
+ "r3nm.lo.M.n.nsigraw": [
+  "supp_notes.tex"
+ ],
+ "r3nw.max": [
+  "results_telemetry.tex"
+ ],
+ "r3nw.med": [
+  "results_telemetry.tex"
+ ],
+ "r3nw.min": [
+  "results_telemetry.tex"
+ ],
+ "r3pair.cells.sg.max": [
+  "body_2.tex"
+ ],
+ "r3pair.cells.sg.min": [
+  "body_2.tex"
+ ],
+ "r3pair.s1.pool.btw": [
+  "body_2.tex"
+ ],
+ "r3pair.s2.pool.btw": [
+  "body_2.tex"
+ ],
+ "r3pw.gsd.max": [
+  "results_telemetry.tex"
+ ],
+ "r3pw.gsd.min": [
+  "results_telemetry.tex"
+ ],
+ "r3pw.mcse": [
+  "results_telemetry.tex"
+ ],
+ "r3pw.n80": [
+  "results_telemetry.tex"
+ ],
+ "r3pw.near50": [
+  "results_telemetry.tex"
+ ],
+ "r3pw.nseeds": [
+  "abstract.tex",
+  "body_2.tex",
+  "conclusion.tex",
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3pwn.lo.65.c.n50d": [
+  "results_telemetry.tex"
+ ],
+ "r3pwn.lo.70.c.n": [
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.70.c.n50d": [
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.70.w.n": [
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.70.w.n50d": [
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.80.c.n": [
+  "abstract.tex",
+  "conclusion.tex",
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.80.c.n50d": [
+  "abstract.tex",
+  "conclusion.tex",
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.80.c.single": [
+  "results_telemetry.tex"
+ ],
+ "r3pwn.lo.80.w.n": [
+  "abstract.tex",
+  "conclusion.tex",
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.80.w.n50d": [
+  "abstract.tex",
+  "conclusion.tex",
+  "results_telemetry.tex",
+  "supplementary.tex"
+ ],
+ "r3pwn.lo.80.w.n50perm": [
+  "results_telemetry.tex"
+ ],
+ "r3pwn.xo.80.c.n": [
+  "results_telemetry.tex"
+ ],
+ "r3pwn.xo.80.c.n50d": [
+  "results_telemetry.tex"
+ ],
+ "r3pwn.xo.80.w.n": [
+  "results_telemetry.tex"
+ ],
+ "r3pwn.xo.80.w.n50d": [
+  "results_telemetry.tex"
+ ],
+ "r3rec.d.max": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3rec.d.min": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3rec.n": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3rec.nsess": [
+  "supp_notes.tex"
+ ],
+ "r3rec.p.max": [
+  "supp_notes.tex"
+ ],
+ "r3rec.p.min": [
+  "supp_notes.tex"
+ ],
+ "r3rec.ph.min": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3recov.alone.c.le70": [
+  "results_telemetry.tex"
+ ],
+ "r3recov.c.n": [
+  "results_telemetry.tex"
+ ],
+ "r3recov.mot.c.le70": [
+  "results_telemetry.tex"
+ ],
+ "r3rng.s1.W.B.cb.max": [
+  "supp_notes.tex"
+ ],
+ "r3rng.s1.W.B.cb.min": [
+  "supp_notes.tex"
+ ],
+ "r3rng.s2.W.M.lo.fprmax": [
+  "results.tex"
+ ],
+ "r3rng.s2.W.M.lo.fprmin": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.B.cb.cmax": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.B.cb.cmin": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.B.cb.max": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.B.cb.min": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.M.lo.fprmax": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.M.lo.fprmin": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.M.lo.max": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.M.lo.min": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.M.lo.recmax": [
+  "results.tex"
+ ],
+ "r3rng.s2.X.M.lo.recmin": [
+  "results.tex"
+ ],
+ "r3rot.const.standing": [
+  "body_1.tex",
+  "results_audit.tex"
+ ],
+ "r3rot.distinct.standing": [
+  "results_audit.tex"
+ ],
+ "r3rot.n.seated": [
+  "body_1.tex",
+  "results_audit.tex"
+ ],
+ "r3rot.nconst": [
+  "results_audit.tex"
+ ],
+ "r3rot.nnr": [
+  "body_2.tex"
+ ],
+ "r3rot.nrot": [
+  "body_2.tex",
+  "results.tex"
+ ],
+ "r3rot.nzero": [
+  "discussion.tex",
+  "results_audit.tex"
+ ],
+ "r3rot.single.max": [
+  "results_audit.tex"
+ ],
+ "r3sat.s1.nboth": [
+  "body_2.tex",
+  "discussion.tex",
+  "results_telemetry.tex"
+ ],
+ "r3sat.s1.nfall": [
+  "discussion.tex",
+  "supp_notes.tex"
+ ],
+ "r3sat.s1.nstep": [
+  "body_2.tex",
+  "discussion.tex",
+  "results_telemetry.tex"
+ ],
+ "r3sat.s1.pairs": [
+  "body_2.tex"
+ ],
+ "r3sat.s2.nboth": [
+  "body_2.tex",
+  "discussion.tex",
+  "results_telemetry.tex"
+ ],
+ "r3sat.s2.nfall": [
+  "discussion.tex",
+  "supp_notes.tex"
+ ],
+ "r3sat.s2.nstep": [
+  "body_2.tex",
+  "discussion.tex",
+  "results_telemetry.tex"
+ ],
+ "r3sat.s2.pairs": [
+  "body_2.tex"
+ ],
+ "r3sec.nperm.need13": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3sec.nperm.need14": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3sec.ph.min": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "r3u.maxdiff": [
+  "supp_notes.tex"
+ ],
+ "r3u.ncomb": [
+  "supp_notes.tex"
+ ],
+ "r3u.nfolds": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "r3u.nident": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "r3u.nprot.allsame": [
+  "supp_notes.tex"
+ ],
+ "r3v.allzero": [
+  "abstract.tex",
+  "conclusion.tex",
+  "discussion.tex",
+  "results_labels_sens.tex",
+  "supp_notes.tex",
+  "supplementary.tex"
+ ],
+ "r3v.allzero.ge2": [
+  "discussion.tex",
+  "results_labels_sens.tex"
+ ],
+ "r3v.cell.seatedFlight": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.cell.seatedRace": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.cell.standingFlight": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.cell.standingRace": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.ge2": [
+  "discussion.tex",
+  "results_labels_sens.tex"
+ ],
+ "r3v.ing_frac_ge2.post.ci": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.ing_frac_ge2.post.rho": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.med.seatedFlight": [
+  "supp_notes.tex"
+ ],
+ "r3v.med.seatedFlight.n": [
+  "supp_notes.tex"
+ ],
+ "r3v.med.seatedRace": [
+  "supp_notes.tex"
+ ],
+ "r3v.med.seatedRace.n": [
+  "supp_notes.tex"
+ ],
+ "r3v.med.standingFlight": [
+  "supp_notes.tex"
+ ],
+ "r3v.med.standingFlight.n": [
+  "supp_notes.tex"
+ ],
+ "r3v.med.standingRace": [
+  "supp_notes.tex"
+ ],
+ "r3v.med.standingRace.n": [
+  "supp_notes.tex"
+ ],
+ "r3v.n": [
+  "abstract.tex",
+  "conclusion.tex",
+  "discussion.tex",
+  "results_labels_sens.tex",
+  "supp_notes.tex",
+  "supplementary.tex"
+ ],
+ "r3v.nw": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.post0": [
+  "supp_notes.tex"
+ ],
+ "r3v.rho.max": [
+  "results_labels_sens.tex"
+ ],
+ "r3v.rho.min": [
+  "results_labels_sens.tex"
+ ],
+ "r3w.s1.pool.nboth": [
+  "body_2.tex"
+ ],
+ "r3w.s2.pool.nboth": [
+  "body_2.tex"
+ ],
+ "repro.ndiff": [
+  "backmatter.tex",
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "repro.nfiles": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "repro.note": [
+  "supp_notes.tex"
+ ],
+ "repro.nvalues": [
+  "backmatter.tex",
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "repro.python": [
+  "supp_notes.tex"
+ ],
+ "rng.s2.A.T.lr.max": [
+  "results.tex"
+ ],
+ "rng.s2.A.T.lr.min": [
+  "results.tex"
+ ],
+ "rng.s2.X.MT.hgbr.max": [
+  "results.tex"
+ ],
+ "rng.s2.X.MT.hgbr.min": [
+  "results.tex"
+ ],
+ "rot.maxnorm": [
+  "body_1.tex"
+ ],
+ "rot.med.flight": [
+  "body_1.tex"
+ ],
+ "rot.med.race": [
+  "body_1.tex"
+ ],
+ "rw.s2.wc.CT.hgb.auc": [
+  "results.tex"
+ ],
+ "rw.s2.wc.MT.hgb.auc": [
+  "results.tex"
+ ],
+ "rw.s2.wc.MT.hgb.cauc": [
+  "results.tex"
+ ],
+ "rw.s2.wc.VRL.stack.auc": [
+  "results.tex"
+ ],
+ "s2.pool.CT.hgbr.auc": [
+  "supp_notes.tex"
+ ],
+ "s2.pool.CT.lr.auc": [
+  "supp_notes.tex"
+ ],
+ "s2.pool.MCT.lr.auc": [
+  "supp_notes.tex"
+ ],
+ "s2.pool.MT.hgbr.auc": [
+  "supp_notes.tex"
+ ],
+ "s2.t2s.MT.hgbr.cauc": [
+  "results.tex"
+ ],
+ "s2.t2s.MT.hgbr.cci": [
+  "results.tex"
+ ],
+ "s2.wc.CT.hgb.auc": [
+  "results.tex"
+ ],
+ "s2.wc.MT.hgb.auc": [
+  "results.tex"
+ ],
+ "s2.wc.MT.hgb.ci": [
+  "results.tex"
+ ],
+ "s2.wc.MT.hgbr.auc": [
+  "results.tex"
+ ],
+ "s2.wc.MT.hgbr.ci": [
+  "results.tex"
+ ],
+ "s2.ws.M.hgb.auc": [
+  "results_telemetry.tex",
+  "supp_notes.tex"
+ ],
+ "s2.ws.MT.hgbr.auc": [
+  "supp_notes.tex"
+ ],
+ "sess.maxdiff": [
+  "supp_notes.tex"
+ ],
+ "sim.M.lroff_ctx_gain": [
+  "results.tex"
+ ],
+ "sim.Me.lroff_session_gain": [
+  "results.tex"
+ ],
+ "sim.Me.lroff_session_gain.r": [
+  "results.tex"
+ ],
+ "sim.Me2.lroff_ctx_gain": [
+  "results.tex"
+ ],
+ "sim.Me2.lroff_ctx_gain.r": [
+  "results.tex"
+ ],
+ "sim.Me2.lroff_session_gain": [
+  "results.tex"
+ ],
+ "sim.Me2.lroff_session_gain.r": [
+  "results.tex"
+ ],
+ "sim.N.D1_grouped_auc": [
+  "results.tex"
+ ],
+ "sim.N.D1_recordwise_auc": [
+  "results.tex"
+ ],
+ "sim.N.D2_prevalence_LOPO_pooled_auc": [
+  "results.tex"
+ ],
+ "sim.N.base_within_session_auc": [
+  "results.tex"
+ ],
+ "sim.N.lroff_ctx_gain": [
+  "results.tex"
+ ],
+ "sim.Ne.lroff_session_gain": [
+  "results.tex"
+ ],
+ "sim.S.lroff_ctx_gain": [
+  "results.tex"
+ ],
+ "sim.npart": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "sim.reps": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "vrl.abl.A.acc": [
+  "results.tex"
+ ],
+ "vrl.abl.B.acc": [
+  "results.tex"
+ ],
+ "vrl.abl.C.acc": [
+  "results.tex"
+ ],
+ "vrl.att1.acc": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "vrl.demo.n": [
+  "body_2.tex"
+ ],
+ "vrl.demo.nprof": [
+  "body_2.tex"
+ ],
+ "vrl.demo.nsess": [
+  "body_2.tex"
+ ],
+ "vrl.gcv.acc": [
+  "discussion.tex",
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "vrl.grp.acc": [
+  "abstract.tex",
+  "conclusion.tex",
+  "discussion.tex",
+  "results.tex"
+ ],
+ "vrl.grp.acc1": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "vrl.majority": [
+  "abstract.tex",
+  "conclusion.tex",
+  "discussion.tex",
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "vrl.ndemo": [
+  "body_2.tex"
+ ],
+ "vrl.nfeat": [
+  "body_2.tex"
+ ],
+ "vrl.rw.acc": [
+  "abstract.tex",
+  "conclusion.tex",
+  "discussion.tex",
+  "results.tex"
+ ],
+ "vrl.s1.wc.VRL.stack.cauc": [
+  "results.tex"
+ ],
+ "vrl.s1.wc.VRL.stack.cci": [
+  "results.tex"
+ ],
+ "vrl.s2.wc.VRL.stack.auc": [
+  "results.tex"
+ ],
+ "vrl.s2.wc.VRL.stack.cauc": [
+  "results.tex"
+ ],
+ "vrl.s2.wc.VRL.stack.cci": [
+  "results.tex"
+ ],
+ "vrl.s2.wc.VRL.stack.ci": [
+  "results.tex"
+ ],
+ "vrlA.s1.wc.VRL.stack.cauc": [
+  "results.tex"
+ ],
+ "vrlA.s1.wc.VRL.stack.cci": [
+  "results.tex"
+ ],
+ "vrlA.s2.wc.VRL.stack.cauc": [
+  "results.tex"
+ ],
+ "vrlA.s2.wc.VRL.stack.cci": [
+  "results.tex"
+ ],
+ "vrlB.s2.wc.VRL.stack.cauc": [
+  "results.tex"
+ ],
+ "vrlB.s2.wc.VRL.stack.cci": [
+  "results.tex"
+ ],
+ "vrlC.s2.wc.VRL.stack.cauc": [
+  "results.tex"
+ ],
+ "vrlC.s2.wc.VRL.stack.cci": [
+  "results.tex"
+ ],
+ "vrlG.s1.wc.VRL.stack.auc": [
+  "supp_notes.tex"
+ ],
+ "vrlG.s1.wc.VRL.stack.ci": [
+  "supp_notes.tex"
+ ],
+ "vrlG.s2.wc.VRL.stack.auc": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "vrlG.s2.wc.VRL.stack.cauc": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "vrlG.s2.wc.VRL.stack.cci": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "vrlG.s2.wc.VRL.stack.ci": [
+  "results.tex",
+  "supp_notes.tex"
+ ],
+ "vrsq.ing_frac_ge2.post.ci": [
+  "results_labels_sens.tex"
+ ],
+ "vrsq.ing_frac_ge2.post.rho": [
+  "results_labels_sens.tex"
+ ],
+ "vrsq.n": [
+  "results_labels_sens.tex"
+ ],
+ "vrsq.rho.max": [
+  "results_labels_sens.tex"
+ ],
+ "vrsq.rho.min": [
+  "results_labels_sens.tex"
+ ],
+ "y.D1_grouped_TIME": [
+  "supp_notes.tex"
+ ],
+ "y.D1_grouped_hgb": [
+  "results.tex"
+ ],
+ "y.D1_grouped_hgb.ci": [
+  "results.tex"
+ ],
+ "y.D1_recordwise_hgb": [
+  "results.tex"
+ ],
+ "y.D3_shifted_hgb": [
+  "results.tex"
+ ],
+ "y.D3_shifted_hgb.ci": [
+  "results.tex"
+ ],
+ "y.D3_true_hgb": [
+  "results.tex"
+ ],
+ "y.D3_true_hgb.ci": [
+  "results.tex"
+ ],
+ "y.commit": [
+  "backmatter.tex",
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "y.id.acc": [
+  "results.tex"
+ ],
+ "y.id.k": [
+  "results.tex"
+ ],
+ "y.id.maj": [
+  "results.tex"
+ ],
+ "y.long.gap": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "y.long.nempty": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "y.n": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "y.nempty": [
+  "supp_notes.tex"
+ ],
+ "y.nempty.other": [
+  "supp_notes.tex"
+ ],
+ "y.nempty.other.np": [
+  "supp_notes.tex"
+ ],
+ "y.nempty.pct": [
+  "body_2.tex"
+ ],
+ "y.nfolders": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "y.nl.D1_grouped_TIME": [
+  "supp_notes.tex"
+ ],
+ "y.nl.nempty.pct": [
+  "supp_notes.tex"
+ ],
+ "y.nout": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "y.nout.ep": [
+  "body_2.tex",
+  "supp_notes.tex"
+ ],
+ "y.nout.np": [
+  "supp_notes.tex"
+ ],
+ "y.npos": [
+  "supp_notes.tex"
+ ],
+ "y.nrec": [
+  "supp_notes.tex"
+ ],
+ "y.off.go": [
+  "results.tex"
+ ],
+ "y.off.go.ci": [
+  "results.tex"
+ ],
+ "y.off.gw": [
+  "results.tex"
+ ],
+ "y.off.gw.ci": [
+  "results.tex"
+ ],
+ "y.prev": [
+  "supp_notes.tex"
+ ],
+ "y.prevalence_score_LOPO_pooled_auc": [
+  "results.tex"
+ ],
+ "y.rate": [
+  "supp_notes.tex",
+  "supplementary.tex"
+ ]
+}

@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Three evaluation-design findings (D1--D3) on a second, independent archive (Yalcin et al. \cite{yalcin2024}: \V{y.n} participants, eye tracking, button presses during a roller-coaster ride) and in simulation with known ground truth (means over \V{sim.reps} replications per scenario; percentiles and episodic-label scenarios in Supplementary Table~S21). Default HGB unless stated. N: no telemetry--label link; S: between-session information only; M: momentary information (0.5\,SD shift of one feature while the label is on). Empty cells: not computed for that setting.}
+\label{tab:second}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.5cm}cccc@{}}
+\toprule
+ & Second archive & \multicolumn{3}{c}{Simulation} \\
+\cmidrule(lr){3-5}
+Finding / quantity & & N & S & M \\
+\midrule
+\multicolumn{5}{@{}l}{\emph{D1: record-wise splits identify sessions}} \\
+Record-wise AUC & \V{y.D1_recordwise_hgb} & \V{sim.N.D1_recordwise_auc} & \V{sim.S.D1_recordwise_auc} & \V{sim.M.D1_recordwise_auc} \\
+Group-disjoint AUC & \V{y.D1_grouped_hgb} & \V{sim.N.D1_grouped_auc} & \V{sim.S.D1_grouped_auc} & \V{sim.M.D1_grouped_auc} \\
+Participant identified (\%) & \V{y.id.acc} & & & \\
+\multicolumn{5}{@{}l}{\emph{D2: prevalence scores fall below 0.5 under grouped cross-validation}} \\
+Prevalence score, pooled leave-one-out & \V{y.prevalence_score_LOPO_pooled_auc} & \V{sim.N.D2_prevalence_LOPO_pooled_auc} & \V{sim.S.D2_prevalence_LOPO_pooled_auc} & \V{sim.M.D2_prevalence_LOPO_pooled_auc} \\
+\multicolumn{5}{@{}l}{\emph{D3: a model survives displaced training labels (between-session learning)}} \\
+AUC, correct labels & \V{y.D3_true_hgb} & \V{sim.N.D1_grouped_auc} & \V{sim.S.D1_grouped_auc} & \V{sim.M.D1_grouped_auc} \\
+AUC, shifted labels & \V{y.D3_shifted_hgb} & \V{sim.N.D3_shifted_auc} & \V{sim.S.D3_shifted_auc} & \V{sim.M.D3_shifted_auc} \\
+\multicolumn{5}{@{}l}{\emph{Offset model: gain over a time-only baseline}} \\
+Overall & \V{y.off.go} & & & \\
+Between sessions & & \V{sim.N.lroff_ctx_gain} & \V{sim.S.lroff_ctx_gain} & \V{sim.M.lroff_ctx_gain} \\
+Within sessions (participants) & \V{y.off.gw} & \V{sim.N.lroff_session_gain} & \V{sim.S.lroff_session_gain} & \V{sim.M.lroff_session_gain} \\
+\bottomrule
+\end{tabular}
+\end{table}

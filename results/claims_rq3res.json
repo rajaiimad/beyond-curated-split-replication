@@ -1,0 +1,19 @@
+{
+ "interval_readings_agree_in_every_planted_test_of_the_main_learner": true,
+ "interval_readings_differ_only_in_one_boosting_entry": true,
+ "interval_readings_change_no_count_of_combinations_declared_in_half": true,
+ "no_real_primary_test_with_holm_below_005": true,
+ "lone_bar_not_below_unadjusted_bar": true,
+ "no_between_session_gain_above_unadjusted_bar": true,
+ "three_within_session_gains_above_unadjusted_bar": true,
+ "no_gain_above_lone_bar": true,
+ "only_sev2_seated_flight_lone_bar_unattainable": true,
+ "overall_null_mean_negative_all_14": true,
+ "sev2_same_setting_observed_overall_inside_null_95": true,
+ "within_session_null_mean_negative_all_14": true,
+ "sev2_pooled_lowest_between_unadjusted_bar": true,
+ "sev2_cells_not_below_campaign_protocols_between_unadjusted_bar": true,
+ "sev1_pooled_lowest_between_unadjusted_bar": true,
+ "sev1_cells_not_below_campaign_protocols_between_unadjusted_bar": true,
+ "between_lone_bar_vs_planted_080_matches_table_viii": true
+}

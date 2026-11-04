@@ -1,0 +1,30 @@
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Recovery of one realization of the planted channel under the bootstrap-only rule: smallest planted within-stratum AUC whose gain over the context baseline has a 95\,\% group-bootstrap interval above 0, between sessions (B) and within sessions (W); ``--'' = not recovered even at 0.80. This rule ignores refitting variability and is looser than the rule applied to the real data (Table~\mref{tab:mde}). Alone: the channel is the only addition to the baseline; among MOT: it is added to the 28 telemetry features. Scaled penalty: $C$ = training sessions / training records (Note~S2). The channel alone and the scaled-penalty model were fitted only in this realization; the replication over \V{r3pw.nseeds} realizations (Table~S18) covers LR+offset and boosting+offset among MOT.}
+\label{tab:supp_recovery}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llcccccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{LR + offset, alone} & \multicolumn{2}{c}{LR + offset, among MOT} & \multicolumn{2}{c}{Boosting + offset, among MOT} & \multicolumn{2}{c}{LR + offset (scaled penalty), among MOT} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+Label & Protocol & B & W & B & W & B & W & B & W \\
+\midrule
+\sevtwo{} & Within seated & 0.70 & 0.80 & 0.80 & -- & -- & -- & 0.70 & 0.80 \\
+ & Within standing & 0.60 & 0.60 & 0.80 & 0.80 & 0.80 & 0.65 & 0.80 & 0.80 \\
+ & All cells (pooled) & 0.65 & 0.70 & 0.65 & 0.80 & 0.70 & 0.80 & 0.65 & 0.70 \\
+ & Seated, flight game & n/e & n/e & n/e & n/e & n/e & n/e & n/e & n/e \\
+ & Seated, racing game & 0.80 & 0.80 & 0.80 & -- & -- & -- & 0.80 & 0.80 \\
+ & Standing, flight game & 0.60 & 0.65 & 0.70 & -- & -- & -- & 0.65 & -- \\
+ & Standing, racing game & -- & 0.70 & 0.80 & 0.80 & 0.80 & 0.80 & 0.80 & 0.65 \\
+\midrule
+\sevone{} & Within seated & 0.60 & -- & 0.70 & -- & 0.80 & -- & 0.70 & -- \\
+ & Within standing & 0.65 & 0.80 & 0.65 & -- & 0.80 & 0.80 & 0.65 & 0.80 \\
+ & All cells (pooled) & 0.60 & 0.80 & 0.65 & -- & 0.65 & 0.80 & 0.60 & 0.80 \\
+ & Seated, flight game & 0.65 & -- & 0.70 & -- & -- & -- & 0.70 & -- \\
+ & Seated, racing game & 0.80 & -- & -- & -- & 0.80 & -- & -- & -- \\
+ & Standing, flight game & 0.65 & -- & -- & -- & -- & -- & -- & -- \\
+ & Standing, racing game & 0.65 & 0.60 & -- & 0.55 & 0.65 & 0.55 & -- & 0.60 \\
+\bottomrule
+\end{tabular}
+\end{table}

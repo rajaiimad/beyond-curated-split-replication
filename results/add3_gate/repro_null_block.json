@@ -1,0 +1,11 @@
+{
+ "source": "rev3_null_lroff_block.json",
+ "target": "add3_null_lroff_block.json",
+ "re_run_sims": [
+  0,
+  199
+ ],
+ "fields_compared": 302,
+ "max_abs_diff": 0.0,
+ "identical": true
+}

@@ -1,0 +1,22 @@
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Post hoc (specified after the main results; addendum 3, P5): VRSQ files that are zero in every item. Top: all-zero files by the highest in-game rating of the session (\V{a3.vrsq.n} sessions with a VRSQ file); rating $\geq$2 against $<$2: difference in shares \V{a3.vrsq.diff} percentage points, 95\,\% group-bootstrap interval \V{a3.vrsq.diff.ci}, Fisher's exact test $p=\V{a3.vrsq.fisher.p}$. Bottom: Spearman's $\rho$ [95\,\% group-bootstrap interval] (Holm-adjusted two-sided bootstrap $p$ within each column set; exploratory). Without all-zero files the correlations select on a VRSQ total above 0; the all-zero indicator column does not condition on it.}
+\label{tab:a3_vrsq}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Highest in-game rating & 0 & 1 & 2 & 3 & \\
+All-zero / sessions & 7/16 & 9/16 & 5/13 & 11/25 & \\
+\midrule
+ & \multicolumn{2}{c}{All files} & \multicolumn{2}{c}{Without all-zero files} & All-zero \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+In-game summary & Post & Change & Post & Change & indicator \\
+\midrule
+Highest rating & 0.18 [$-$0.03, 0.44] (0.293) & 0.23 [0.03, 0.48] (0.145) & 0.46 [0.15, 0.74] (0.011) & 0.51 [0.22, 0.76] (0.001) & $-$0.03 [$-$0.31, 0.17] (0.743) \\
+Mean rating & 0.23 [$-$0.02, 0.48] (0.293) & 0.27 [0.01, 0.51] (0.195) & 0.36 [0.01, 0.66] (0.125) & 0.40 [0.08, 0.67] (0.062) & $-$0.16 [$-$0.39, 0.05] (0.409) \\
+Share $\geq$1 & 0.18 [$-$0.04, 0.39] (0.293) & 0.20 [$-$0.03, 0.42] (0.293) & 0.13 [$-$0.20, 0.43] (0.574) & 0.17 [$-$0.16, 0.46] (0.574) & $-$0.16 [$-$0.36, 0.02] (0.363) \\
+Share $\geq$2 & 0.30 [0.05, 0.56] (0.143) & 0.34 [0.10, 0.59] (0.051) & 0.55 [0.24, 0.81] ($<$0.001) & 0.59 [0.31, 0.81] ($<$0.001) & $-$0.12 [$-$0.40, 0.12] (0.641) \\
+\bottomrule
+\end{tabular}
+\end{table}

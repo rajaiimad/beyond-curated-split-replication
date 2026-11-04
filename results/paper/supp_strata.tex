@@ -1,0 +1,24 @@
+\begin{table}[h]
+\centering
+\footnotesize
+\caption{Strata behind the context-stratified AUCs: per protocol and label, the number of strata (test fold $\times$ campaign $\times$ game $\times$ 30-s exposure bin) that contain both positive and negative target records, and the number of positive--negative pairs compared, per repeat (mean over the five repeats). Strata depend only on the folds and the labels, so they are the same for every feature set and learner of a protocol.}
+\label{tab:supp_strata}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+ & \multicolumn{2}{c}{\sevtwo{}} & \multicolumn{2}{c}{\sevone{}} \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Protocol & Strata & Pairs & Strata & Pairs \\
+\midrule
+Curated release (seated) & 31 & 83,800 & 60 & 220,303 \\
+Within seated & 31 & 78,826 & 63 & 230,185 \\
+Within standing & 50 & 140,109 & 60 & 209,682 \\
+Within flight game & 41 & 124,837 & 72 & 280,910 \\
+Within racing game & 43 & 95,509 & 55 & 148,616 \\
+All cells (pooled) & 72 & 241,297 & 115 & 463,437 \\
+Seated \ra{} standing & 50 & 140,109 & 60 & 209,682 \\
+Standing \ra{} seated & 31 & 78,826 & 63 & 230,185 \\
+Flight \ra{} racing & 43 & 95,509 & 55 & 148,616 \\
+Racing \ra{} flight & 41 & 124,837 & 72 & 280,910 \\
+\bottomrule
+\end{tabular}
+\end{table}

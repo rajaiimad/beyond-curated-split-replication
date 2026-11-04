@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\footnotesize
+\caption{Post hoc (addendum 3, P6): the re-implemented VR-LENS detector under the original record-wise 10-fold protocol with and without the \V{vrl.ndemo} demographic answers, and under group-disjoint evaluation. Four-class accuracy; AUC and context-stratified AUC (fold $\times$ context stratum) for \sevtwo{}. The record-wise run without demographic answers is new; the other rows are the stored runs.}
+\label{tab:a3_vrlens}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Evaluation & Acc (\%) & AUC & Ctx-strat. \\
+\midrule
+Record-wise, all ten inputs & 86 & 0.949 & 0.87 \\
+Record-wise, without demographic answers & 73.3 & 0.90 & 0.70 \\
+Group-disjoint, all ten inputs & 53 & 0.77 & 0.61 \\
+Majority class & 55.8 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

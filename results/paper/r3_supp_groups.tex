@@ -1,0 +1,50 @@
+\begin{table*}[ht]
+\centering
+\scriptsize
+\caption{Sensitivity to the grouping. Telemetry gain over the context baseline between sessions (B) and within sessions (W), with 95\,\% bootstrap intervals over the units of each grouping: inferred groups (main, 38), every session its own group (lenient, 74 units) and groups merged when their answers differ in at most one item (strict, 7 groups). n/e: not estimable (a protocol without scored records); $^\dagger$: fewer than three units with a positive record, so no interval is reported (point estimate shown). The merged grouping leaves only \V{grp.mrg.all} units, so its intervals are descriptive. Last rows: overall AUC of HGB-reg on MOT+TIME and CTX+TIME.}
+\label{tab:supp_groups}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llcccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Inferred} & \multicolumn{2}{c}{Session} & \multicolumn{2}{c}{Merged} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+Label & Protocol & B & W & B & W & B & W \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{LR + offset}} \\
+\sevtwo{} & Within seated & $-$0.00 [$-$0.13, 0.11] & $-$0.04 [$-$0.10, 0.00] & $-$0.02 [$-$0.12, 0.11] & $-$0.02 [$-$0.09, 0.05] & n/e & n/e \\
+ & Within standing & $-$0.00 [$-$0.18, 0.18] & $-$0.07 [$-$0.15, 0.01] & +0.07 [$-$0.09, 0.19] & $-$0.08 [$-$0.16, 0.00] & +0.00$^\dagger$ & +0.15$^\dagger$ \\
+ & All cells (pooled) & $-$0.03 [$-$0.10, 0.08] & $-$0.03 [$-$0.08, 0.01] & +0.04 [$-$0.07, 0.14] & $-$0.03 [$-$0.08, 0.01] & +0.02$^\dagger$ & +0.08$^\dagger$ \\
+ & Seated, flight game & +0.22$^\dagger$ & +0.04$^\dagger$ & +0.23$^\dagger$ & +0.04$^\dagger$ & n/e & n/e \\
+ & Seated, racing game & $-$0.04 [$-$0.13, 0.03] & $-$0.05 [$-$0.10, $-$0.01] & +0.06 [$-$0.09, 0.19] & $-$0.02 [$-$0.08, 0.05] & n/e & n/e \\
+ & Standing, flight game & +0.08 [$-$0.05, 0.16] & $-$0.16 [$-$0.30, $-$0.02] & +0.09 [$-$0.17, 0.28] & $-$0.13 [$-$0.26, $-$0.01] & +0.02$^\dagger$ & +0.20$^\dagger$ \\
+ & Standing, racing game & +0.07 [$-$0.19, 0.20] & +0.03 [$-$0.15, 0.28] & +0.03 [$-$0.33, 0.12] & +0.04 [$-$0.12, 0.29] & n/e & n/e \\
+\sevone{} & Within seated & $-$0.07 [$-$0.17, 0.04] & $-$0.05 [$-$0.09, $-$0.01] & $-$0.00 [$-$0.12, 0.11] & $-$0.04 [$-$0.09, 0.02] & $-$0.05 [$-$0.48, $-$0.05] & $-$0.27 [$-$0.29, $-$0.00] \\
+ & Within standing & +0.11 [$-$0.03, 0.21] & +0.00 [$-$0.06, 0.07] & +0.11 [$-$0.05, 0.22] & +0.00 [$-$0.07, 0.07] & +0.06$^\dagger$ & $-$0.03$^\dagger$ \\
+ & All cells (pooled) & +0.02 [$-$0.08, 0.10] & $-$0.00 [$-$0.03, 0.02] & +0.00 [$-$0.09, 0.09] & $-$0.00 [$-$0.04, 0.03] & $-$0.06 [$-$0.39, $-$0.05] & $-$0.15 [$-$0.16, 0.03] \\
+ & Seated, flight game & $-$0.00 [$-$0.11, 0.11] & $-$0.16 [$-$0.24, $-$0.08] & +0.09 [$-$0.09, 0.22] & $-$0.14 [$-$0.22, $-$0.06] & $-$0.06 [$-$0.79, $-$0.06] & $-$0.36 [$-$0.38, $-$0.07] \\
+ & Seated, racing game & +0.01 [$-$0.29, 0.12] & $-$0.06 [$-$0.19, 0.03] & +0.01 [$-$0.14, 0.17] & $-$0.01 [$-$0.11, 0.10] & n/e & n/e \\
+ & Standing, flight game & +0.08 [$-$0.25, 0.26] & $-$0.09 [$-$0.16, 0.01] & +0.04 [$-$0.16, 0.21] & $-$0.07 [$-$0.14, 0.02] & +0.09$^\dagger$ & $-$0.00$^\dagger$ \\
+ & Standing, racing game & $-$0.16 [$-$0.32, $-$0.02] & +0.16 [0.04, 0.30] & $-$0.01 [$-$0.15, 0.15] & +0.18 [0.04, 0.29] & n/e & n/e \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{Boosting + offset}} \\
+\sevtwo{} & Within seated & $-$0.09 [$-$0.28, $-$0.01] & $-$0.07 [$-$0.11, $-$0.02] & $-$0.10 [$-$0.20, 0.00] & $-$0.03 [$-$0.08, 0.02] & n/e & n/e \\
+ & Within standing & $-$0.05 [$-$0.23, 0.12] & $-$0.00 [$-$0.03, 0.03] & +0.06 [$-$0.20, 0.31] & $-$0.02 [$-$0.08, 0.05] & $-$0.07$^\dagger$ & $-$0.02$^\dagger$ \\
+ & All cells (pooled) & +0.01 [$-$0.10, 0.14] & $-$0.05 [$-$0.08, $-$0.01] & +0.03 [$-$0.09, 0.14] & $-$0.04 [$-$0.08, $-$0.00] & $-$0.01$^\dagger$ & +0.02$^\dagger$ \\
+ & Seated, flight game & +0.00$^\dagger$ & +0.00$^\dagger$ & +0.00$^\dagger$ & +0.00$^\dagger$ & n/e & n/e \\
+ & Seated, racing game & $-$0.15 [$-$0.33, $-$0.09] & $-$0.09 [$-$0.17, 0.00] & $-$0.07 [$-$0.19, 0.08] & $-$0.05 [$-$0.10, 0.01] & n/e & n/e \\
+ & Standing, flight game & +0.02 [$-$0.23, 0.22] & $-$0.05 [$-$0.14, 0.05] & +0.08 [$-$0.17, 0.29] & $-$0.05 [$-$0.18, 0.06] & $-$0.06$^\dagger$ & +0.01$^\dagger$ \\
+ & Standing, racing game & $-$0.10 [$-$0.22, 0.04] & $-$0.05 [$-$0.15, 0.19] & $-$0.02 [$-$0.19, 0.12] & +0.01 [$-$0.08, 0.24] & n/e & n/e \\
+\sevone{} & Within seated & $-$0.10 [$-$0.25, 0.03] & $-$0.07 [$-$0.11, $-$0.03] & $-$0.07 [$-$0.17, 0.03] & $-$0.06 [$-$0.10, $-$0.02] & $-$0.03 [$-$0.41, 0.01] & $-$0.22 [$-$0.23, $-$0.00] \\
+ & Within standing & +0.09 [$-$0.10, 0.20] & +0.03 [$-$0.01, 0.09] & +0.04 [$-$0.13, 0.21] & +0.02 [$-$0.02, 0.08] & $-$0.07$^\dagger$ & $-$0.01$^\dagger$ \\
+ & All cells (pooled) & +0.01 [$-$0.08, 0.07] & $-$0.02 [$-$0.04, 0.00] & $-$0.01 [$-$0.10, 0.08] & $-$0.01 [$-$0.05, 0.03] & $-$0.07 [$-$0.38, $-$0.06] & $-$0.10 [$-$0.10, 0.01] \\
+ & Seated, flight game & $-$0.14 [$-$0.28, 0.15] & $-$0.14 [$-$0.19, $-$0.08] & $-$0.06 [$-$0.22, 0.09] & $-$0.11 [$-$0.16, $-$0.06] & $-$0.05 [$-$0.53, 0.05] & $-$0.28 [$-$0.31, $-$0.00] \\
+ & Seated, racing game & $-$0.06 [$-$0.27, 0.02] & $-$0.05 [$-$0.14, $-$0.02] & $-$0.09 [$-$0.19, 0.05] & $-$0.08 [$-$0.14, $-$0.00] & n/e & n/e \\
+ & Standing, flight game & +0.01 [$-$0.18, 0.12] & $-$0.02 [$-$0.08, 0.07] & $-$0.07 [$-$0.23, 0.10] & $-$0.01 [$-$0.07, 0.07] & $-$0.10$^\dagger$ & +0.02$^\dagger$ \\
+ & Standing, racing game & +0.07 [$-$0.08, 0.19] & +0.19 [0.12, 0.34] & +0.14 [$-$0.01, 0.25] & +0.18 [0.14, 0.23] & n/e & n/e \\
+\midrule
+\multicolumn{8}{@{}l}{\emph{HGB-reg, overall AUC (MOT+TIME / CTX+TIME), \sevtwo{}}} \\
+ & Within seated & \multicolumn{2}{c}{0.83 / 0.88} & \multicolumn{2}{c}{0.84 / 0.88} & \multicolumn{2}{c}{n/e / n/e} \\
+ & All cells (pooled) & \multicolumn{2}{c}{0.68 / 0.78} & \multicolumn{2}{c}{0.68 / 0.81} & \multicolumn{2}{c}{n/e / n/e} \\
+\bottomrule
+\end{tabular}
+\end{table*}

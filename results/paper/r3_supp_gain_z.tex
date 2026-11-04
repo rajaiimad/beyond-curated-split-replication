@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{As Table~\mref{tab:gain} for the self-normalized features (SELFZ) instead of MOT (\sevtwo{}).}
+\label{tab:supp_gain_z}
+\setlength{\tabcolsep}{1.5pt}
+\begin{tabular}{@{}lrcccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Overall ROC-AUC} & \multicolumn{3}{c}{Telemetry gain, $\Delta$AUC [95\,\% CI] ($p_{\mathrm{Holm}}$)} & \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-7}
+Protocol & Prev. (\%) & Baseline & Telemetry & Overall & Between sessions & Within sessions & Rec. / FPR (\%) \\
+\midrule
+\multicolumn{8}{l}{\emph{Same setting, held-out groups}} \\
+Curated release (seated) & 15.9 & 0.87 & 0.86 & $-$0.01 [$-$0.05, 0.04] & +0.04 [$-$0.10, 0.10] & $-$0.03 [$-$0.10, 0.07] & 56.4 / 10.8 \\
+Within seated & 15.1 & 0.89 & 0.86 & $-$0.02 [$-$0.07, 0.03] & +0.01 [$-$0.11, 0.11] (1.000) & $-$0.03 [$-$0.11, 0.08] (1.000) & 54.2 / 11.2 \\
+Within standing & 19.2 & 0.72 & 0.74 & +0.03 [$-$0.04, 0.10] & +0.08 [$-$0.03, 0.17] (0.671) & +0.00 [$-$0.08, 0.11] (1.000) & 27.2 / 8.2 \\
+Within flight game & 13.1 & 0.84 & 0.85 & +0.02 [$-$0.03, 0.06] & +0.07 [$-$0.05, 0.18] & +0.05 [$-$0.05, 0.15] & 38.8 / 9.4 \\
+Within racing game & 23.8 & 0.81 & 0.77 & $-$0.03 [$-$0.09, 0.03] & $-$0.00 [$-$0.14, 0.09] & $-$0.04 [$-$0.11, 0.06] & 31.4 / 11.3 \\
+All cells (pooled) & 17.0 & 0.81 & 0.81 & +0.00 [$-$0.04, 0.03] & +0.06 [$-$0.02, 0.12] (0.468) & $-$0.02 [$-$0.08, 0.05] (1.000) & 32.6 / 8.1 \\
+\multicolumn{8}{l}{\emph{One game--campaign cell (context constant)}} \\
+Seated, flight game & 0.7 & 0.32$^\dagger$ & 0.40$^\dagger$ & +0.08$^\dagger$ & +0.29$^\dagger$ (0.448) & +0.04$^\dagger$ (0.780) & -- / -- \\
+Seated, racing game & 36.3 & 0.74 & 0.66 & $-$0.08 [$-$0.14, 0.08] & $-$0.01 [$-$0.07, 0.12] (1.000) & $-$0.06 [$-$0.16, 0.08] (1.000) & 4.5 / 6.3 \\
+Standing, flight game & 25.7 & 0.65 & 0.66 & +0.01 [$-$0.11, 0.12] & +0.05 [$-$0.08, 0.16] (1.000) & $-$0.02 [$-$0.13, 0.13] (1.000) & 22.1 / 10.2 \\
+Standing, racing game & 5.8 & 0.67 & 0.64 & $-$0.03 [$-$0.17, 0.24] & $-$0.10 [$-$0.40, 0.10] (1.000) & $-$0.03 [$-$0.18, 0.29] (1.000) & 14.5 / 11.8 \\
+\multicolumn{8}{l}{\emph{Shifted setting (campaign or game), held-out groups}} \\
+Seated \ra{} standing & 19.2 & 0.32 & 0.30 & $-$0.02 [$-$0.08, 0.03] & $-$0.07 [$-$0.18, 0.06] & $-$0.01 [$-$0.10, 0.06] & 1.2 / 10.5 \\
+Standing \ra{} seated & 15.1 & 0.14 & 0.15 & +0.02 [$-$0.02, 0.04] & +0.05 [$-$0.15, 0.21] & +0.00 [$-$0.06, 0.02] & 0.0 / 0.4 \\
+Flight \ra{} racing & 23.8 & 0.21 & 0.33 & +0.12 [0.04, 0.20] & +0.08 [$-$0.07, 0.21] & +0.15 [0.03, 0.23] & 4.7 / 12.9 \\
+Racing \ra{} flight & 13.1 & 0.20 & 0.22 & +0.02 [0.00, 0.03] & +0.06 [$-$0.02, 0.10] & +0.01 [$-$0.01, 0.02] & 0.0 / 0.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,539 @@
+{
+ "source": "github.com/m1237/automatic-cybersickness-detection",
+ "commit": "14a242a451c15a7954f4bdd6fe085543676db437",
+ "participants": {
+  "1": {
+   "n_presses": 297,
+   "presses_outside_span": 0,
+   "duration_s": 148.157,
+   "positive_seconds": 8,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 45,
+   "first_gap_s": 46.585,
+   "samples_per_s": 34.28795129491013,
+   "flag_long": false
+  },
+  "2": {
+   "n_presses": 21,
+   "presses_outside_span": 0,
+   "duration_s": 605.664,
+   "positive_seconds": 1,
+   "press_episodes": 1,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 498,
+   "first_gap_s": 475.03,
+   "samples_per_s": 8.69128757859143,
+   "flag_long": true
+  },
+  "3": {
+   "n_presses": 719,
+   "presses_outside_span": 0,
+   "duration_s": 104.347,
+   "positive_seconds": 17,
+   "press_episodes": 2,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.002,
+   "samples_per_s": 50.01581262518329,
+   "flag_long": false
+  },
+  "4": {
+   "n_presses": 636,
+   "presses_outside_span": 0,
+   "duration_s": 103.023,
+   "positive_seconds": 12,
+   "press_episodes": 2,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.035,
+   "samples_per_s": 50.01795715519835,
+   "flag_long": false
+  },
+  "5": {
+   "n_presses": 925,
+   "presses_outside_span": 0,
+   "duration_s": 119.603,
+   "positive_seconds": 19,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.004,
+   "samples_per_s": 50.015467839435466,
+   "flag_long": false
+  },
+  "6": {
+   "n_presses": 747,
+   "presses_outside_span": 0,
+   "duration_s": 107.297,
+   "positive_seconds": 24,
+   "press_episodes": 11,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.03,
+   "samples_per_s": 50.010717913827975,
+   "flag_long": false
+  },
+  "7": {
+   "n_presses": 10,
+   "presses_outside_span": 10,
+   "duration_s": 108.225,
+   "positive_seconds": 0,
+   "press_episodes": 1,
+   "press_episodes_outside_span": 1,
+   "empty_bins": 0,
+   "first_gap_s": 0.002,
+   "samples_per_s": 50.016170016170015,
+   "flag_long": false
+  },
+  "8": {
+   "n_presses": 730,
+   "presses_outside_span": 52,
+   "duration_s": 103.357,
+   "positive_seconds": 17,
+   "press_episodes": 6,
+   "press_episodes_outside_span": 1,
+   "empty_bins": 0,
+   "first_gap_s": 0.005,
+   "samples_per_s": 50.011126483934326,
+   "flag_long": false
+  },
+  "9": {
+   "n_presses": 118,
+   "presses_outside_span": 0,
+   "duration_s": 112.574,
+   "positive_seconds": 6,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.006,
+   "samples_per_s": 50.011547959564375,
+   "flag_long": false
+  },
+  "10": {
+   "n_presses": 995,
+   "presses_outside_span": 0,
+   "duration_s": 110.525,
+   "positive_seconds": 19,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.027,
+   "samples_per_s": 50.006785795068986,
+   "flag_long": false
+  },
+  "11": {
+   "n_presses": 201,
+   "presses_outside_span": 0,
+   "duration_s": 103.288,
+   "positive_seconds": 6,
+   "press_episodes": 2,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.005,
+   "samples_per_s": 50.01549066687321,
+   "flag_long": false
+  },
+  "12": {
+   "n_presses": 369,
+   "presses_outside_span": 0,
+   "duration_s": 101.054,
+   "positive_seconds": 8,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.002,
+   "samples_per_s": 50.01286440912779,
+   "flag_long": false
+  },
+  "13": {
+   "n_presses": 621,
+   "presses_outside_span": 0,
+   "duration_s": 104.676,
+   "positive_seconds": 13,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.025,
+   "samples_per_s": 50.01146394589018,
+   "flag_long": false
+  },
+  "14": {
+   "n_presses": 478,
+   "presses_outside_span": 1,
+   "duration_s": 171.554,
+   "positive_seconds": 13,
+   "press_episodes": 7,
+   "press_episodes_outside_span": 1,
+   "empty_bins": 0,
+   "first_gap_s": 0.031,
+   "samples_per_s": 50.00757778891777,
+   "flag_long": false
+  },
+  "15": {
+   "n_presses": 0,
+   "presses_outside_span": 0,
+   "duration_s": 104.355,
+   "positive_seconds": 0,
+   "press_episodes": 0,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.005,
+   "samples_per_s": 50.021561017680035,
+   "flag_long": false
+  },
+  "16": {
+   "excluded": "byte-identical copy of folder 13 (eye-tracking and button files)"
+  },
+  "17": {
+   "n_presses": 287,
+   "presses_outside_span": 0,
+   "duration_s": 104.037,
+   "positive_seconds": 8,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.027,
+   "samples_per_s": 50.0110537597201,
+   "flag_long": false
+  },
+  "18": {
+   "n_presses": 221,
+   "presses_outside_span": 0,
+   "duration_s": 100.835,
+   "positive_seconds": 6,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.009,
+   "samples_per_s": 50.01239648931423,
+   "flag_long": false
+  },
+  "19": {
+   "n_presses": 481,
+   "presses_outside_span": 0,
+   "duration_s": 109.561,
+   "positive_seconds": 11,
+   "press_episodes": 4,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.024,
+   "samples_per_s": 50.00867096868411,
+   "flag_long": false
+  },
+  "20": {
+   "n_presses": 453,
+   "presses_outside_span": 0,
+   "duration_s": 102.654,
+   "positive_seconds": 11,
+   "press_episodes": 3,
+   "press_episodes_outside_span": 0,
+   "empty_bins": 0,
+   "first_gap_s": 0.027,
+   "samples_per_s": 50.012663900091574,
+   "flag_long": false
+  }
+ },
+ "duplicate_check": {
+  "13_vs_16_eyetracking_sha256_equal": true
+ },
+ "main": {
+  "D1_recordwise_hgb": {
+   "auc": 0.9501711481359287
+  },
+  "D1_grouped_hgb": {
+   "auc": 0.7932961846424302,
+   "ci": [
+    0.7387075494121589,
+    0.8410662674616395
+   ],
+   "within_session_auc": 0.7967058007628671,
+   "within_session_ci": [
+    0.7477508195460818,
+    0.841140021006027
+   ]
+  },
+  "D1_recordwise_logreg": {
+   "auc": 0.8383578027053777
+  },
+  "D1_grouped_logreg": {
+   "auc": 0.7669439257462789,
+   "ci": [
+    0.7248913619005453,
+    0.8142072576289658
+   ],
+   "within_session_auc": 0.7940060434933373,
+   "within_session_ci": [
+    0.7571731074741745,
+    0.8270766868936285
+   ]
+  },
+  "D1_grouped_TIME": {
+   "auc": 0.30109373560051245,
+   "ci": [
+    0.25799318534424504,
+    0.3982727592032223
+   ],
+   "within_session_auc": 0.36261950760390355,
+   "within_session_ci": [
+    0.3000041784472445,
+    0.4277541786938431
+   ]
+  },
+  "D1_participant_identification": {
+   "accuracy": 0.9556135357368755,
+   "n_classes": 19,
+   "majority_share": 0.2298937784522003
+  },
+  "D2": {
+   "prevalence_score_LOPO_pooled_auc": 0.24149986700016293,
+   "hgb_LOPO_pooled_auc": 0.8164457907098067,
+   "hgb_LOPO_within_participant_auc": 0.8162678951800664,
+   "hgb_grouped5_within_fold_auc": 0.7932961846424302
+  },
+  "D3_true_hgb": {
+   "auc": 0.7932961846424302,
+   "ci": [
+    0.7387075494121589,
+    0.8410662674616395
+   ],
+   "within_session_auc": 0.7967058007628671,
+   "within_session_ci": [
+    0.7477508195460818,
+    0.841140021006027
+   ]
+  },
+  "D3_shifted_hgb": {
+   "auc": 0.4658178569464712,
+   "ci": [
+    0.3840215501013829,
+    0.5630922657653136
+   ],
+   "within_session_auc": 0.4508049734977956,
+   "within_session_ci": [
+    0.3771844252372012,
+    0.5273288722215562
+   ]
+  },
+  "D3_true_logreg": {
+   "auc": 0.7669439257462789,
+   "ci": [
+    0.7248913619005453,
+    0.8142072576289658
+   ],
+   "within_session_auc": 0.7940060434933373,
+   "within_session_ci": [
+    0.7571731074741745,
+    0.8270766868936285
+   ]
+  },
+  "D3_shifted_logreg": {
+   "auc": 0.2452918218442504,
+   "ci": [
+    0.16977084637153728,
+    0.3221176271224182
+   ],
+   "within_session_auc": 0.2391440035666518,
+   "within_session_ci": [
+    0.20444523480508037,
+    0.27802539578919283
+   ]
+  },
+  "D3_label_agreement_after_shift": 0.8543247344461306,
+  "offset": {
+   "baseline": {
+    "auc": 0.7503308039024453,
+    "ci": [
+     0.6758424379728392,
+     0.7996185317917173
+    ],
+    "within_participant_auc": 0.7111012037449843,
+    "within_participant_ci": [
+     0.6458464272838959,
+     0.7735973744657554
+    ]
+   },
+   "offset": {
+    "auc": 0.8202365038296179,
+    "ci": [
+     0.7521573017480581,
+     0.8620475529083488
+    ],
+    "within_participant_auc": 0.7825729429831079,
+    "within_participant_ci": [
+     0.7194981846119942,
+     0.8298359082161109
+    ]
+   },
+   "gain_overall": {
+    "delta": 0.06990569992717255,
+    "ci": [
+     0.015911245983586647,
+     0.1257686155702539
+    ]
+   },
+   "gain_within_participant": {
+    "delta": 0.07147173923812356,
+    "ci": [
+     0.020660909700917298,
+     0.1223892549507325
+    ]
+   }
+  },
+  "n_records": 2636,
+  "n_participants": 19,
+  "prevalence": 0.07549317147192716,
+  "participants_with_positives": 17
+ },
+ "without_long_recordings": {
+  "excluded": [
+   2
+  ],
+  "D1_recordwise_hgb": {
+   "auc": 0.9406996939872633
+  },
+  "D1_grouped_hgb": {
+   "auc": 0.795086530122233,
+   "ci": [
+    0.7478522501431404,
+    0.8430916611470898
+   ],
+   "within_session_auc": 0.8051475845163927,
+   "within_session_ci": [
+    0.7626634440577011,
+    0.8460399784856609
+   ]
+  },
+  "D1_recordwise_logreg": {
+   "auc": 0.8138284674551319
+  },
+  "D1_grouped_logreg": {
+   "auc": 0.7800667791776807,
+   "ci": [
+    0.7354802424169262,
+    0.8381568325613212
+   ],
+   "within_session_auc": 0.816545807374119,
+   "within_session_ci": [
+    0.7846591847065478,
+    0.8507539404714204
+   ]
+  },
+  "D1_grouped_TIME": {
+   "auc": 0.7149103858488051,
+   "ci": [
+    0.6649548782489955,
+    0.781435472231786
+   ],
+   "within_session_auc": 0.7345521397201512,
+   "within_session_ci": [
+    0.6861997941879415,
+    0.7869983042852541
+   ]
+  },
+  "D1_participant_identification": {
+   "accuracy": 0.9408866995073891,
+   "n_classes": 18,
+   "majority_share": 0.08472906403940887
+  },
+  "D2": {
+   "prevalence_score_LOPO_pooled_auc": 0.3177655374707776,
+   "hgb_LOPO_pooled_auc": 0.8046430461823476,
+   "hgb_LOPO_within_participant_auc": 0.8259115514247779,
+   "hgb_grouped5_within_fold_auc": 0.795086530122233
+  },
+  "D3_true_hgb": {
+   "auc": 0.795086530122233,
+   "ci": [
+    0.7478522501431404,
+    0.8430916611470898
+   ],
+   "within_session_auc": 0.8051475845163927,
+   "within_session_ci": [
+    0.7626634440577011,
+    0.8460399784856609
+   ]
+  },
+  "D3_shifted_hgb": {
+   "auc": 0.2987469064071964,
+   "ci": [
+    0.21523590083990393,
+    0.40047202207389787
+   ],
+   "within_session_auc": 0.28783576754161977,
+   "within_session_ci": [
+    0.21735813260808226,
+    0.37336940573213995
+   ]
+  },
+  "D3_true_logreg": {
+   "auc": 0.7800667791776807,
+   "ci": [
+    0.7354802424169262,
+    0.8381568325613212
+   ],
+   "within_session_auc": 0.816545807374119,
+   "within_session_ci": [
+    0.7846591847065478,
+    0.8507539404714204
+   ]
+  },
+  "D3_shifted_logreg": {
+   "auc": 0.259989563762871,
+   "ci": [
+    0.20584438322740783,
+    0.31252799631003486
+   ],
+   "within_session_auc": 0.2581758758043101,
+   "within_session_ci": [
+    0.2129815446986148,
+    0.2982635293910518
+   ]
+  },
+  "D3_label_agreement_after_shift": 0.8167487684729065,
+  "offset": {
+   "baseline": {
+    "auc": 0.7189720333448368,
+    "ci": [
+     0.6499783939941638,
+     0.791346442605443
+    ],
+    "within_participant_auc": 0.7146971708712083,
+    "within_participant_ci": [
+     0.6499977241966232,
+     0.7856594752669595
+    ]
+   },
+   "offset": {
+    "auc": 0.7975568929812169,
+    "ci": [
+     0.7448666627941795,
+     0.8487618444552588
+    ],
+    "within_participant_auc": 0.8069962210193035,
+    "within_participant_ci": [
+     0.7570616340674533,
+     0.8504344177137446
+    ]
+   },
+   "gain_overall": {
+    "delta": 0.07858485963638007,
+    "ci": [
+     0.0328838129328729,
+     0.1320963731007763
+    ]
+   },
+   "gain_within_participant": {
+    "delta": 0.09229905014809514,
+    "ci": [
+     0.04985351953335932,
+     0.1296203348314913
+    ]
+   }
+  },
+  "n_records": 2030,
+  "n_participants": 18,
+  "prevalence": 0.09753694581280788,
+  "participants_with_positives": 16
+ }
+}

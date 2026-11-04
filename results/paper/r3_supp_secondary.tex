@@ -1,0 +1,30 @@
+\begin{table*}[ht]
+\centering
+\scriptsize
+\caption{Secondary analyses of the telemetry gain (main learner unless stated; gain [95\,\% group-bootstrap interval] and, in parentheses, Holm-adjusted permutation $p$ within the family of 14; 13 for falling sessions, because for \sevone{} no session of the seated flight-game cell has a falling rating). Main: Holm $p$ of families A (between sessions) and B (within sessions) against the session-level label-transplant null (\V{r3n.lo.M.c.nperm} permutations). Group-block null: the same gains against a null that transplants whole groups (\V{r3nb.lo.M.c.nperm} permutations). Falling sessions: within-session gain on the sessions whose rating also falls, where exposure time does not order the records (\V{r3nm.lo.M.n.nperm} permutations). Scaled penalty: LR+offset with $C$ = training sessions / training records (\V{r3n.lp.M.c.nperm} permutations). Without rotation: the 14 telemetry features not derived from the rotation fields (\V{r3n.lo.MNR.c.nperm} permutations). With \V{r3nb.lo.M.c.nperm} permutations the smallest attainable Holm-adjusted $p$ is \V{r3nb.lo.M.c.holmfloor} (\V{r3nm.lo.M.n.holmfloor} for falling sessions), so no test of the secondary analyses could pass the decision rule; they are descriptive. n/e: not estimable (fewer than three groups with a positive record, or no falling session); $^\dagger$: fewer than three groups with a positive record, so no interval is reported (the seated flight-game cell for \sevtwo{} stays in its families as planned). Intervals of the gains without rotation: Table~S23.}
+\label{tab:supp_secondary}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}llcccccccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Main ($p_\mathrm{Holm}$)} & \multicolumn{2}{c}{Group-block null ($p_\mathrm{Holm}$)} & Falling sessions & \multicolumn{2}{c}{Scaled penalty} & Without rotation \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-7}\cmidrule(lr){8-9}\cmidrule(lr){10-10}
+Label & Protocol & B & W & B & W & W & B & W & B / W \\
+\midrule
+\sevtwo{} & Within seated & 1.000 & 1.000 & 1.000 & 1.000 & $-$0.04 [$-$0.11, 0.02] (1.000) & +0.02 [$-$0.09, 0.12] (1.000) & $-$0.01 [$-$0.04, 0.01] (1.000) & +0.02 (1.000) / $-$0.04 (1.000) \\
+ & Within standing & 1.000 & 1.000 & 1.000 & 1.000 & $-$0.03 [$-$0.11, 0.05] (1.000) & $-$0.01 [$-$0.19, 0.17] (1.000) & $-$0.05 [$-$0.10, 0.01] (1.000) & +0.00 (1.000) / $-$0.06 (1.000) \\
+ & All cells (pooled) & 1.000 & 1.000 & 1.000 & 1.000 & $-$0.04 [$-$0.12, 0.03] (1.000) & $-$0.04 [$-$0.12, 0.09] (1.000) & $-$0.02 [$-$0.06, 0.02] (1.000) & +0.01 (1.000) / $-$0.02 (1.000) \\
+ & Seated, flight game & 1.000 & 0.364 & 0.575 & 0.557 & +0.04$^\dagger$ (0.619) & +0.06$^\dagger$ (1.000) & +0.00$^\dagger$ (0.279) & +0.09$^\dagger$ (1.000) / +0.02$^\dagger$ (1.000) \\
+ & Seated, racing game & 1.000 & 1.000 & 1.000 & 1.000 & $-$0.02 [$-$0.10, 0.04] (1.000) & $-$0.02 [$-$0.22, 0.05] (1.000) & $-$0.01 [$-$0.05, 0.02] (1.000) & $-$0.02 (1.000) / $-$0.04 (1.000) \\
+ & Standing, flight game & 1.000 & 1.000 & 1.000 & 1.000 & $-$0.08 [$-$0.19, 0.04] (1.000) & +0.08 [$-$0.04, 0.18] (1.000) & $-$0.15 [$-$0.29, $-$0.03] (1.000) & +0.09 (1.000) / $-$0.16 (1.000) \\
+ & Standing, racing game & 1.000 & 1.000 & 1.000 & 1.000 & +0.03 [$-$0.15, 0.28] (1.000) & +0.00 [$-$0.18, 0.11] (1.000) & $-$0.00 [$-$0.09, 0.10] (1.000) & $-$0.05 (1.000) / +0.02 (1.000) \\
+\midrule
+\sevone{} & Within seated & 1.000 & 1.000 & 1.000 & 1.000 & +0.01 [$-$0.32, 0.21] (1.000) & $-$0.07 [$-$0.17, 0.04] (1.000) & $-$0.02 [$-$0.06, 0.01] (0.597) & +0.07 (1.000) / $-$0.01 (0.930) \\
+ & Within standing & 1.000 & 1.000 & 1.000 & 1.000 & +0.07 [$-$0.02, 0.16] (0.711) & +0.10 [$-$0.05, 0.21] (1.000) & +0.02 [$-$0.03, 0.07] (1.000) & +0.10 (0.955) / +0.01 (1.000) \\
+ & All cells (pooled) & 1.000 & 0.336 & 1.000 & 0.557 & +0.03 [$-$0.03, 0.07] (1.000) & +0.02 [$-$0.08, 0.12] (1.000) & +0.01 [$-$0.02, 0.03] (0.279) & +0.02 (1.000) / +0.01 (0.348) \\
+ & Seated, flight game & 1.000 & 1.000 & 1.000 & 1.000 & n/e & $-$0.01 [$-$0.11, 0.11] (1.000) & $-$0.11 [$-$0.19, $-$0.04] (1.000) & +0.10 (0.905) / $-$0.06 (1.000) \\
+ & Seated, racing game & 1.000 & 1.000 & 1.000 & 1.000 & $-$0.03 [$-$0.35, 0.07] (1.000) & +0.02 [$-$0.29, 0.11] (1.000) & +0.01 [$-$0.10, 0.04] (1.000) & +0.05 (1.000) / +0.00 (0.711) \\
+ & Standing, flight game & 1.000 & 1.000 & 1.000 & 1.000 & $-$0.05 [$-$0.22, 0.22] (1.000) & +0.06 [$-$0.26, 0.22] (1.000) & $-$0.04 [$-$0.10, 0.05] (1.000) & +0.12 (0.905) / $-$0.09 (1.000) \\
+ & Standing, racing game & 1.000 & 0.515 & 1.000 & 1.000 & +0.18 [0.06, 0.34] (0.657) & $-$0.22 [$-$0.37, $-$0.13] (1.000) & +0.08 [$-$0.01, 0.15] (1.000) & +0.07 (1.000) / +0.15 (0.711) \\
+\bottomrule
+\end{tabular}
+\end{table*}
