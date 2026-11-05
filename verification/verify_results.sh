@@ -11,29 +11,19 @@
 # Finally it lists every regenerated file that differs from the shipped version (expected: none, apart from the
 # creation-date metadata inside the PDF figures).
 #
-# Why step 1 runs on a filtered view of results/preds/: src/fa_stats.py computes the statistics of the earlier
-# analysis. It skips the learners of the present analysis (lroff, lroffp, xgboff, ctxb), whose statistics come from
-# src/fa_rev3_stats.py, but it predates the strongly penalized learner of addendum 3 (lroffs, 14 prediction files,
-# statistics in src/fa_add3_stats.py) and does not skip it. Given all prediction files it therefore adds 14 configs
-# that src/fa_report.py cannot place (KeyError: 'CTXB+MOT'); this is also why scripts/check_results.sh, kept unchanged
-# from development, fails. Given the files it was written for (all except *__lroffs.npz), it reproduces the shipped
-# results/stats.json byte for byte. No research code is changed.
+# Step 1: src/fa_stats.py computes the statistics of the earlier analysis and skips the learners whose statistics come
+# from src/fa_rev3_stats.py and src/fa_add3_stats.py. Until 5 November 2026 its skip list lacked the addendum-3 learner
+# lroffs, so this script used to give it a filtered view of results/preds/ (see verification/README.md, "Corrected
+# defect"). With lroffs on the skip list it reads results/preds/ directly and reproduces results/stats.json byte for byte.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-ROOT=$(pwd)
 [ -d data/raw/UFFCSData/RAW_DATABASE/RAW_DATABASE ] || { echo "run scripts/prepare_data.sh first"; exit 1; }
 [ -f .env ] || cp .env.example .env
 set -a; . ./.env; set +a
 [ -z "${OMP_NUM_THREADS:-}" ] && unset OMP_NUM_THREADS
 
-echo "== 1/6 fa_stats.py (earlier analysis; predictions of the learners it covers)"
-VIEW=$(mktemp -d); trap 'rm -rf "$VIEW"' EXIT
-mkdir -p "$VIEW/results/preds"
-for f in "$ROOT"/results/preds/*.npz; do
-  case "$f" in *__lroffs.npz) ;; *) ln -s "$f" "$VIEW/results/preds/" 2>/dev/null || cp "$f" "$VIEW/results/preds/";; esac
-done
-python src/fa_stats.py data "$VIEW/results"
-cp "$VIEW/results/stats.json" results/stats.json
+echo "== 1/6 fa_stats.py (earlier analysis)"
+python src/fa_stats.py data results
 
 echo "== 2/6 fa_report.py (values, tables, figures, claims)"
 python src/fa_report.py . "$UFFCS_RAW_DIR" "$UFFCS_SELECTED_DIR" "$UFFCS_DATASET_CSV"

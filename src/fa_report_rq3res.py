@@ -192,6 +192,7 @@ PRINTED = {
                                 "r3pwn.lo.80.c.n50d", "r3r.s2.pool.c.b05", "r3r.s2.pool.c.b14",
                                 "r3r.c.b05.min", "r3r.c.b05.max", "r3r.c.b14.min", "r3r.c.b14.max"],
     "manuscript, Table IX": ["r3pwn.lo.80.c.n50d", "r3pwn.lo.80.c.n", "r3r.c.b14.min", "r3r.c.b14.max"],
+    "manuscript, Table VII": ["r3pair.s2.btw.min", "r3pair.s2.btw.max"],      # caption: share of between-session pairs
     "manuscript, Section VII": ["r3r.c.b05.min", "r3r.c.b05.max", "r3r.c.b14.min", "r3r.c.b14.max",
                                 "r3pw.nseeds", "r3pwn.lo.80.c.n50d", "r3pwn.lo.80.c.n", "r3pwn.lo.80.w.n50d",
                                 "r3pwn.lo.80.w.n"],

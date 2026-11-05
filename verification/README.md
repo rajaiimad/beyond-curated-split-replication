@@ -1,6 +1,6 @@
 # Verification
 
-There are two scripts. Both use the research code unchanged.
+There are two scripts. Both run the research code in `src/` as it is; neither modifies it.
 
 ## `verify_data.sh`: are the data exact? (seconds)
 
@@ -25,7 +25,7 @@ It regenerates every printed value, table and figure from the shipped result fil
 
 | Step | Program | What it does |
 |---|---|---|
-| 1 | `src/fa_stats.py` | Group-bootstrap intervals and tests of the earlier analysis (`results/stats.json`). It is given the prediction files of the learners it covers; see "Known defect" below. |
+| 1 | `src/fa_stats.py` | Group-bootstrap intervals and tests of the earlier analysis (`results/stats.json`); see "Corrected defect" below. |
 | 2 | `src/fa_report.py` (calls `src/fa_report_rev3.py`) | Every printed value (`results/paper/values.json`), all tables (`results/paper/*.tex`), the figures and the automatic claim checks |
 | 3 | `src/fa_report_add3.py` | Addendum 3 (post hoc P1–P7): `values_add3.json`, `tab_a3_*.tex` |
 | 4 | `src/fa_report_rq3res.py` | RQ3 resolution summary (Table S38): `values_rq3res.json` |
@@ -48,18 +48,18 @@ Then the script lists every regenerated file that differs from the shipped versi
 - **Data and results:** no file differs.
 - **PDF figures:** they can show as modified, because matplotlib writes the creation date into the file. Their drawn content is the same, which you can confirm by rendering them, for example with `pdftoppm`.
 
-## Known defect in the original check script
+## Corrected defect (5 November 2026)
 
-`scripts/check_results.sh`, kept unchanged from development, runs `fa_stats.py` on the full `results/preds/` folder and then stops in `fa_report.py` with `KeyError: 'CTXB+MOT'`.
+In the first release (commit `c9f1b0f`), `scripts/check_results.sh` ran `fa_stats.py` on the full `results/preds/` folder and then stopped in `fa_report.py` with `KeyError: 'CTXB+MOT'`.
 
 **Cause:**
 - `fa_stats.py` computes the statistics of the earlier analysis.
-- It skips the learners of the present analysis, but it was written before the addendum-3 learner `lroffs` (LR+offset with a ten-times-stronger penalty), whose 14 prediction files it therefore picks up.
+- It skips the learners of the present analysis, but it was written before the addendum-3 learner `lroffs` (LR+offset with a ten-times-stronger penalty), whose 14 prediction files it therefore picked up.
 - `fa_report.py` has no place for these configurations.
 
-**Workaround:** `verify_results.sh` gives `fa_stats.py` all prediction files except `*__lroffs.npz` (through symbolic links in a temporary folder). This reproduces the shipped `results/stats.json` byte for byte. The statistics of `lroffs` are computed by `fa_add3_stats.py` (`results/add3_stats.json`) and checked by `fa_verify.py` step [2d].
+**Correction:** `lroffs` is now on the skip list of `fa_stats.py`, as `lroffp` was on 10 October 2026. The statistics of `lroffs` are computed by `fa_add3_stats.py` (`results/add3_stats.json`) and checked by `fa_verify.py` step [2d]. In the first release, `verify_results.sh` worked around the defect by giving `fa_stats.py` all prediction files except `*__lroffs.npz`; both ways give the same `results/stats.json`, byte for byte.
 
-**Effect on results:** none. No research code was changed.
+**Effect on results:** none. `scripts/check_results.sh` now runs to the end. It runs only `fa_stats.py`, `fa_report.py` and `fa_verify.py`, so `verify_results.sh`, which also regenerates the addendum-3, RQ3-resolution and sample files, remains the complete check.
 
 ## What the verification does not cover
 

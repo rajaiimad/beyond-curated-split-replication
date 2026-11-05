@@ -166,7 +166,7 @@ def main(DATA, R):
     t0 = time.time(); P = R / "preds"
     F, S = load_frame(DATA)
     files = {m.group(0): m.groupdict() for f in sorted(P.glob("*.npz"))
-             if (m := KEY.match(f.stem)) and m.group("mn") not in ("lroff", "lroffp", "xgboff", "ctxb")}   # revision 3: fa_rev3_stats.py
+             if (m := KEY.match(f.stem)) and m.group("mn") not in ("lroff", "lroffp", "xgboff", "ctxb", "lroffs")}   # revision 3: fa_rev3_stats.py; lroffs: fa_add3_stats.py
     out = {"B": B, "stratum_seconds": STRATUM_S, "auc_definition": "within-fold pairs, mean over repeats",
            "configs": {}, "tests": {}, "pooled_on_target": {}}
     arrays = {}

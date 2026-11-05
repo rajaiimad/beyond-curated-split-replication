@@ -19,7 +19,7 @@ The manuscript and supplement themselves are not included.
 |---|---|
 | Dataset | UFFCSData (Porcino et al.), the 74-session raw archive and the 35-session curated release, at the upstream commit used in the paper. The files are unmodified and redistributed under their AGPL-3.0 licence. |
 | Second archive | Yalcin et al. (2024), used for three evaluation-design findings. It is fetched from its authors at a fixed commit and checked by checksums; it is not redistributed (see [Data](#3-data)). |
-| Code | The 18 analysis scripts in `src/`, byte-identical to the versions that produced the results |
+| Code | The 18 analysis scripts in `src/`: the versions that produced the results, with two later corrections that change no reported value (see [Corrections](#corrections-5-november-2026)) |
 | Results | Every result file (JSON), the 1,756 saved out-of-group predictions, the generated value files and tables, and the figures |
 | Verification | `verification/verify_data.sh` (data checksums) and `verification/verify_results.sh` (regenerate and verify everything) |
 | Documentation | `docs/REPRODUCTION_GUIDE.md`, `docs/MANUSCRIPT_TRACEABILITY.md`, `docs/DATA_DICTIONARY.md`, `docs/PROVENANCE.md`, `docs/REPRODUCIBILITY_AUDIT.md` (how this repository was tested before publication) and the written analysis plans |
@@ -83,6 +83,7 @@ python -m venv .venv
 source .venv/bin/activate              # Windows PowerShell: .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 pip install -r requirements-optional.txt   # xgboost: only for refitting the boosting learner and VR-LENS
+pip install pytest                     # only for the smoke tests (step 2)
 bash scripts/prepare_data.sh           # unpack UFFCSData, check every file, create .env
 ```
 
@@ -101,9 +102,11 @@ bash scripts/prepare_data.sh           # unpack UFFCSData, check every file, cre
 
 `docs/REPRODUCTION_GUIDE.md` gives the full order, every stage, the runtimes, the seeds and how to compare a re-run with the shipped files.
 
+**Before refitting any model (steps 5 and 6),** set the threads as `scripts/run_rev3.sh` does: `export OMP_NUM_THREADS=1 FA_NJOBS=4`. Loading `.env` alone leaves `OMP_NUM_THREADS` set but empty, and parallel fits can then oversubscribe the CPU and run many times slower.
+
 ## 7. Reproducing the manuscript's tables and figures
 
-`verification/verify_results.sh` regenerates every table and figure into `results/paper/` (LaTeX tables, from which the manuscript's tables were typeset) and `figures/` (PDF). It runs, unchanged:
+`verification/verify_results.sh` regenerates every table and figure into `results/paper/` (LaTeX tables, from which the manuscript's tables were typeset) and `figures/` (PDF). It runs:
 - `src/fa_stats.py`;
 - `src/fa_report.py` (which calls `src/fa_report_rev3.py`);
 - `src/fa_report_add3.py`, `src/fa_report_rq3res.py` and `src/fa_report_sample.py`.
@@ -151,14 +154,19 @@ At the end, `verify_results.sh` lists any regenerated file that differs from the
   - With the pinned versions, the shipped result files are expected to be reproduced exactly. `docs/REPRODUCIBILITY_AUDIT.md` records what was reproduced, and how, before publication.
   - One stage is not reproducible bit for bit: the VR-LENS re-implementation. Two re-runs on the same machine with identical versions differed in the sixth decimal of the record-wise AUCs, and no printed value changed (Supplementary Note S2). `results/reproducibility.json` documents the first re-run comparison: 14,933 values, 5 differing beyond 10⁻⁹, all in the VR-LENS file.
   - With other library versions, small numerical differences are possible.
-- **Known defect in an original check script.** `scripts/check_results.sh`, kept unchanged from development, stops with `KeyError: 'CTXB+MOT'`.
-  - **Cause:** `src/fa_stats.py` predates the addendum-3 learner `lroffs` and does not skip its 14 prediction files.
-  - **Use instead:** `verification/verify_results.sh`. It runs the same programs, giving `fa_stats.py` only the prediction files it was written for, and that reproduces the shipped `results/stats.json` byte for byte.
-  - **Effect on results:** none; no research code was changed.
 - **The first, leave-one-group-out run** (Supplementary Table S4) is read from its archived output in `results_logo/`; its predictions are not included.
 - **The second archive** must be fetched from its authors (step 4). If that repository becomes unavailable, `src/fa_yalcin.py` cannot be re-run, but its results remain in `results/rev3_yalcin.json`.
 - **Timing of the analysis plans.** The plans were committed in the authors' private development repository. `docs/PROVENANCE.md` lists the commit dates. They are self-reported, not an independent registration; the full history is available to the editor on request.
 - **VR-LENS** is a re-implementation from its paper. No public code was found, and its authors were not contacted (Supplementary Note S2).
+
+## Corrections (5 November 2026)
+
+The first release of this repository is commit `c9f1b0f` (4 November 2026). Two defects found in its audit were then corrected, in this repository and in the development repository. Neither changes any reported value:
+
+1. **`scripts/check_results.sh` stopped with `KeyError: 'CTXB+MOT'`.** `src/fa_stats.py`, which computes the statistics of the earlier analysis, predated the addendum-3 learner `lroffs` and did not skip its 14 prediction files (their statistics come from `src/fa_add3_stats.py`). `lroffs` is now on its skip list, as `lroffp` was on 10 October 2026. `results/stats.json` is reproduced byte for byte, and `verification/verify_results.sh` no longer needs its earlier workaround.
+2. **The generated caption of Table VII printed a range over both labels.** The caption of `results/paper/r3_tab_gain.tex` gave the share of between-session pairs over both labels (80–98%), although the table is for severity ≥ 2. `src/fa_report_rev3.py` now stores the range for each label (`r3pair.s1.btw.min/max`, `r3pair.s2.btw.min/max`), and the caption prints the severity ≥ 2 range (80–97%), as the manuscript does. `src/fa_report_rq3res.py` lists the two keys as printed in Table VII, so `src/fa_verify.py` checks them.
+
+What changed in the generated files: four new keys in `results/paper/values.json` and `values.tex`, the two key names in the caption of `r3_tab_gain.tex`, and two entries in `paper_keys_rq3res.json`. Every other value, table, result file and figure is unchanged. `docs/REPRODUCIBILITY_AUDIT.md` (section 7) records the re-verification.
 
 ## Licences
 

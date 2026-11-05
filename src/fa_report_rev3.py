@@ -131,7 +131,7 @@ def table_gain(V, lab="s2", ln="lo", fs="M", label="tab:gain", star=True, captio
     env = "table*" if star else "table"
     cap = caption or (r"Telemetry beyond context (" + ("\\sevtwo{}" if lab == "s2" else "\\sevone{}") + r"). The context baseline knows only game, campaign and exposure time; the telemetry model is the same baseline plus the 28 telemetry features, which can only add to it (logistic regression with the baseline as a fixed offset). "
                       r"Gain = telemetry model minus baseline on identical records, with 95\,\% group-bootstrap intervals and, in parentheses, the Holm-adjusted permutation $p$ against the label-transplant null where it was run. "
-                      r"Between sessions: context-stratified AUC (positive and negative records of the same game, campaign and 30-s bin, mostly from different sessions, \V{r3pair.btw.min}--\V{r3pair.btw.max}\,\%). Within sessions: only records of the same session are compared. Prev.: share of target records with the label. Recall and false-positive rate of the telemetry model at a threshold set for a 10\,\% false-alarm budget on training groups. $^\dagger$: fewer than three groups with a positive record, so no interval is reported; the point estimate is shown, and the cell's tests stay in the families. ``--'': no threshold could be evaluated.")
+                      r"Between sessions: context-stratified AUC (positive and negative records of the same game, campaign and 30-s bin, mostly from different sessions, \V{r3pair." + lab + r".btw.min}--\V{r3pair." + lab + r".btw.max}\,\%). Within sessions: only records of the same session are compared. Prev.: share of target records with the label. Recall and false-positive rate of the telemetry model at a threshold set for a 10\,\% false-alarm budget on training groups. $^\dagger$: fewer than three groups with a positive record, so no interval is reported; the point estimate is shown, and the cell's tests stay in the families. ``--'': no threshold could be evaluated.")
     L = [f"\\begin{{{env}}}[t]", r"\centering", r"\footnotesize", f"\\caption{{{cap}}}", f"\\label{{{label}}}",
          r"\setlength{\tabcolsep}{1.5pt}", r"\begin{tabular}{@{}lrcccccc@{}}", r"\toprule",
          r" & & \multicolumn{2}{c}{Overall ROC-AUC} & \multicolumn{3}{c}{Telemetry gain, $\Delta$AUC [95\,\% CI] ($p_{\mathrm{Holm}}$)} & \\",
@@ -715,6 +715,9 @@ def addendum_values(V, R, st, F):
     V.put("r3pair.cells.sg.min", pct(min(sg), 0)); V.put("r3pair.cells.sg.max", pct(max(sg), 0))
     bt = [v["share_between_sessions"] for k, v in pr_.items() if not ne(*[int(k[3]), k.split("__")[1]])]
     V.put("r3pair.btw.min", pct(min(bt), 0)); V.put("r3pair.btw.max", pct(max(bt), 0))
+    for lab in (1, 2):                                        # per label: the range printed in the caption of each gain table
+        bl = [v["share_between_sessions"] for k, v in pr_.items() if k.startswith(f"sev{lab}__") and not ne(lab, k.split("__")[1])]
+        V.put(f"r3pair.s{lab}.btw.min", pct(min(bl), 0)); V.put(f"r3pair.s{lab}.btw.max", pct(max(bl), 0))
     # B3: sessions whose label is a single upward step (exposure time ranks them perfectly)
     t = F.t_elapsed.to_numpy()
     for lab in (1, 2):
