@@ -53,7 +53,9 @@ def main(root):
         allvals.update(json.loads((P / "values_add3.json").read_text()))
     # RQ3 resolution summary (post hoc, descriptive): values_rq3res.json (keys r3r.*) and the keys printed since
     # sample description (descriptive): values_sample.json (keys smp.*) and the keys printed since
-    for vf, kf in (("values_rq3res.json", "paper_keys_rq3res.json"), ("values_sample.json", "paper_keys_sample.json")):
+    # version 10: archive facts, quoted values and the two post hoc runs added after the review (values_v10.json)
+    for vf, kf in (("values_rq3res.json", "paper_keys_rq3res.json"), ("values_sample.json", "paper_keys_sample.json"),
+                   ("values_v10.json", "paper_keys_v10.json")):
         if (P / vf).exists():
             allvals.update(json.loads((P / vf).read_text()))
             for k, v in json.loads((P / kf).read_text()).items():
@@ -85,7 +87,7 @@ def main(root):
     checked = bad_n = 0
     for k in sorted(used):
         if not (k.endswith(".auc") or k.endswith(".cauc")) or k.startswith(("cur", "aud", "vrsq", "t.", "logo", "null", "ins",
-                                                                            "r3", "y.", "sim.", "a3.")):   # revision 3: step [2b]; addendum 3: step [2d]
+                                                                            "r3", "y.", "sim.", "a3.", "v10")):   # revision 3: [2b]; addendum 3: [2d]; version 10: [2g]
             continue
         parts = k.split(".")
         metric = parts[-1]; parts = parts[:-1]
@@ -223,6 +225,10 @@ def main(root):
     # [2f] the sample's demographic answers (descriptive): the values in results/paper/values_sample.json
     if (P / "values_sample.json").exists():
         bad_n += verify_sample(root, P, vals)
+
+    # [2g] version 10 (post hoc, after the review): archive facts recounted, the two runs recomputed from their predictions
+    if (P / "values_v10.json").exists():
+        bad_n += verify_v10(root, P)
 
     # [4] qualitative statements at full precision (revision 2)
     st = json.loads((root / "results" / "stats.json").read_text())
@@ -545,6 +551,68 @@ def verify_sample(root, P, vals):
 
 from fa_report import PR as PR_  # noqa: E402
 
+
+
+def verify_v10(root, P):
+    """[2g] values_v10.json: the archive facts are recounted here from data/sessions.csv by separate code, the quoted
+    values are checked against their source list, and the two post hoc runs of src/fa_v10.py are recomputed from their
+    stored predictions (four-class accuracy and within-fold AUCs). Intervals are read, not recomputed."""
+    V = json.loads((P / "values_v10.json").read_text()); src = json.loads((P / "values_v10_sources.json").read_text())
+    S = pd.read_csv(root / "data" / "sessions.csv"); bad = []
+    g = S.fingerprint.str.split("|").str[0]; a = S.fingerprint.str.split("|").str[1]
+    sets = {"stand": S.campaign == "standing", "seat": S.campaign == "seated", "cur": S.curated_release,
+            "seatx": (S.campaign == "seated") & ~S.curated_release}
+    n = 0
+    for name, m in sets.items():
+        exp = {"n": int(m.sum()), "race": int((m & (S.game == "Race")).sum()), "flight": int((m & (S.game == "Flight")).sum()),
+               "m": int((m & (g == "masculino")).sum()), "f": int((m & (g == "feminino")).sum()),
+               "age1836": int((m & (a == "18 A 36")).sum()), "age3750": int((m & (a == "37 A 50")).sum()), "age50p": int((m & (a == "+50")).sum())}
+        for k, x in exp.items():
+            n += 1
+            if V.get(f"v10a.{name}.{k}") != str(x):
+                bad.append((f"v10a.{name}.{k}", V.get(f"v10a.{name}.{k}"), x))
+    C = S[S.curated_release]
+    for game in ("race", "flight"):
+        d = C[C.game.str.lower() == game]; has = d.vrsq_post_total.notna()
+        nz = has & ~((d.vrsq_post_raw_sum == 0) & (d.vrsq_pre_total == 0))
+        for k, x in (("files", int(has.sum())), ("nofile", int((~has).sum())), ("nonzero", int(nz.sum()))):
+            n += 1
+            if V.get(f"v10a.cur.{game}.vrsq.{k}") != str(x):
+                bad.append((f"v10a.cur.{game}.vrsq.{k}", V.get(f"v10a.cur.{game}.vrsq.{k}"), x))
+    lit_missing = [k for k in V if k.startswith("v10l.") and k not in src]
+    # the two runs
+    R = root / "results" / "v10" / "preds"; nr = 0
+    if R.is_dir():
+        Fs = pd.read_csv(root / "data" / "features_w30.csv.gz", usecols=["session_id", "severity"])
+        for unit, u in (("groups", "grp"), ("sessions", "sess")):
+            z = np.load(R / f"v10vrl_{unit}__within_curated.npz"); pr, fold, idx = z["proba"], z["fold"], z["idx"]
+            y4 = Fs.severity.to_numpy()[idx].astype(int)
+            acc = np.mean([(pr[r].argmax(1) == y4).mean() for r in range(pr.shape[0])])
+            nr += 1
+            if f"{100 * acc:.1f}" != V[f"v10r.vrl.{u}.acc"]:
+                bad.append((f"v10r.vrl.{u}.acc", V[f"v10r.vrl.{u}.acc"], f"{100 * acc:.1f}"))
+            for lab in (1, 2):
+                yy = (y4 >= lab).astype(int)
+                auc = np.mean([wf_auc(yy, pr[r][:, lab:].sum(1), fold[r]) for r in range(pr.shape[0])])
+                nr += 1
+                if f"{auc:.2f}" != V[f"v10r.vrl.{u}.s{lab}.auc"]:
+                    bad.append((f"v10r.vrl.{u}.s{lab}.auc", V[f"v10r.vrl.{u}.s{lab}.auc"], f"{auc:.2f}"))
+        cur = pd.read_csv(root / "data" / "sessions.csv").set_index("session_id").curated_release
+        tgt = Fs.session_id.map(cur).astype(bool).to_numpy()
+        for f in sorted(R.glob("v10sess_sev*__within_curated__*__hgbreg.npz")):
+            lab = int(f.name.split("sev")[1][0]); fs = f.name.split("__")[2]; z = np.load(f)
+            yy = (Fs.severity.to_numpy()[tgt] >= lab).astype(int)
+            auc = np.mean([wf_auc(yy, z["p"][r][tgt], z["fold"][r][tgt]) for r in range(z["p"].shape[0])])
+            nr += 1
+            if f"{auc:.2f}" != V[f"v10r.t6s.{fs}.s{lab}.auc"]:
+                bad.append((f"v10r.t6s.{fs}.s{lab}.auc", V[f"v10r.t6s.{fs}.s{lab}.auc"], f"{auc:.2f}"))
+    else:
+        print("[2g] results/v10/preds not found; the two runs are not checked")
+    print(f"[2g] version 10: {len(V)} values; archive facts recounted {n}; quoted values without a listed source "
+          f"{len(lit_missing)}; run values recomputed from predictions {nr}; mismatches {len(bad)}")
+    for b in bad + [(k, "no source", "") for k in lit_missing]:
+        print("    MISMATCH", b)
+    return len(bad) + len(lit_missing)
 
 if __name__ == "__main__":
     sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "."))

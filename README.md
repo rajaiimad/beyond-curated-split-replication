@@ -19,7 +19,7 @@ The manuscript and supplement themselves are not included.
 |---|---|
 | Dataset | UFFCSData (Porcino et al.), the 74-session raw archive and the 35-session curated release, at the upstream commit used in the paper. The files are unmodified and redistributed under their AGPL-3.0 licence. |
 | Second archive | Yalcin et al. (2024), used for three evaluation-design findings. It is fetched from its authors at a fixed commit and checked by checksums; it is not redistributed (see [Data](#3-data)). |
-| Code | The 18 analysis scripts in `src/`: the versions that produced the results, with two later corrections that change no reported value (see [Corrections](#corrections-5-november-2026)) |
+| Code | The 20 analysis scripts in `src/`: the 18 that produced the results of version 9, with two later corrections that change no reported value (see [Corrections](#corrections-5-november-2026)), and the two scripts added for version 10 (see [Version 10](#version-10-13-november-2026)) |
 | Results | Every result file (JSON), the 1,756 saved out-of-group predictions, the generated value files and tables, and the figures |
 | Verification | `verification/verify_data.sh` (data checksums) and `verification/verify_results.sh` (regenerate and verify everything) |
 | Documentation | `docs/REPRODUCTION_GUIDE.md`, `docs/MANUSCRIPT_TRACEABILITY.md`, `docs/DATA_DICTIONARY.md`, `docs/PROVENANCE.md`, `docs/REPRODUCIBILITY_AUDIT.md` (how this repository was tested before publication) and the written analysis plans |
@@ -122,8 +122,9 @@ bash scripts/prepare_data.sh           # unpack UFFCSData, check every file, cre
 | Fig. 1 (pipeline schematic) | `figures/fig_pipeline.pdf` (source `figures/fig_pipeline.tex`) |
 | Fig. 2 | `figures/fig_archive.pdf` |
 | Fig. 3 | `figures/fig_vrsq.pdf` |
+| Fig. 4 (Supplementary Fig. S2 up to version 9) | `figures/fig_gain_null.pdf` |
 | Fig. S1 | `figures/fig_null.pdf` |
-| Fig. S2 | `figures/fig_gain_null.pdf` |
+| Supplementary Table S1 (not printed in the supplement since version 10) | `results/paper/supp_table.tex` |
 | Not in the manuscript | `figures/fig_auc.pdf` (generated, not printed) |
 
 ## 8. Verifying the reported results
@@ -167,6 +168,20 @@ The first release of this repository is commit `c9f1b0f` (4 November 2026). Two 
 2. **The generated caption of Table VII printed a range over both labels.** The caption of `results/paper/r3_tab_gain.tex` gave the share of between-session pairs over both labels (80–98%), although the table is for severity ≥ 2. `src/fa_report_rev3.py` now stores the range for each label (`r3pair.s1.btw.min/max`, `r3pair.s2.btw.min/max`), and the caption prints the severity ≥ 2 range (80–97%), as the manuscript does. `src/fa_report_rq3res.py` lists the two keys as printed in Table VII, so `src/fa_verify.py` checks them.
 
 What changed in the generated files: four new keys in `results/paper/values.json` and `values.tex`, the two key names in the caption of `r3_tab_gain.tex`, and two entries in `paper_keys_rq3res.json`. Every other value, table, result file and figure is unchanged. `docs/REPRODUCIBILITY_AUDIT.md` (section 7) records the re-verification.
+
+## Version 10 (13 November 2026)
+
+After a referee report on version 9 of the manuscript, the description of the archive was checked against the creators' own papers ([9]; its conference version, ICEC 2021; and the XR in Games Workshop paper [10]). Two runs were then added. Both are **post hoc**: they were fixed after the report and are not part of any analysis plan.
+
+- **`src/fa_v10.py`** repeats two curated-release results with every curated session as its own unit, which is participant-level under the creators' account. It runs (1) the re-implemented VR-LENS detector with the inferred groups, only to keep its per-record predictions; it reproduces the stored accuracy exactly. It also runs (2) VR-LENS and (3) HGB-reg on TIME, CTX+TIME, MOT+TIME and MOT+CTX+TIME with sessions as units. The predictions are in `results/v10/preds/`, apart from `results/preds/`, so `src/fa_stats.py` and every earlier result file are unchanged. Summary: `results/v10/v10_runs.json`. About 15 minutes on 4 cores.
+- **`src/fa_report_v10.py`** writes `results/paper/values_v10.json` with three kinds of value:
+  - the archive facts of the manuscript's Section III-B, counted from `data/sessions.csv` and the raw files;
+  - the numbers the manuscript quotes from the creators' papers and the VR-LENS paper, each with its source in `values_v10_sources.json`;
+  - the values of the two runs.
+
+  It needs no model fit. `verification/verify_results.sh` runs it as step 6, and `src/fa_verify.py` step [2g] recounts the archive facts and recomputes the run values from the stored predictions.
+
+The manuscript's Section III-B states which links between the archive and the creators' protocols are inferences from matching counts. The flight-game questionnaire files do not reproduce the creators' per-participant scores (Supplementary Note S8).
 
 ## Licences
 

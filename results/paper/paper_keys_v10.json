@@ -1,0 +1,364 @@
+{
+ "a3.vrsq.max3.az": [
+  "manuscript v10"
+ ],
+ "a3.vrsq.max3.n": [
+  "manuscript v10"
+ ],
+ "aud.cur.nsess": [
+  "manuscript v10"
+ ],
+ "aud.ngroups": [
+  "manuscript v10"
+ ],
+ "aud.nsess": [
+  "manuscript v10"
+ ],
+ "cur.raceshare": [
+  "manuscript v10"
+ ],
+ "r3pwn.lo.70.c.n50d": [
+  "manuscript v10"
+ ],
+ "r3pwn.lo.70.w.n50d": [
+  "manuscript v10"
+ ],
+ "r3pwn.lo.80.c.n": [
+  "manuscript v10"
+ ],
+ "r3pwn.lo.80.c.n50d": [
+  "manuscript v10"
+ ],
+ "r3pwn.lo.80.w.n": [
+  "manuscript v10"
+ ],
+ "r3pwn.lo.80.w.n50d": [
+  "manuscript v10"
+ ],
+ "r3r.c.b14.max": [
+  "manuscript v10"
+ ],
+ "r3r.c.b14.min": [
+  "manuscript v10"
+ ],
+ "v10a.cur.age1836": [
+  "manuscript v10"
+ ],
+ "v10a.cur.age3750": [
+  "manuscript v10"
+ ],
+ "v10a.cur.age50p": [
+  "manuscript v10"
+ ],
+ "v10a.cur.agediff": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10a.cur.flight": [
+  "manuscript v10"
+ ],
+ "v10a.cur.flight.dates": [
+  "manuscript v10"
+ ],
+ "v10a.cur.flight.vrsq.files": [
+  "supplement v10"
+ ],
+ "v10a.cur.flight.vrsq.nofile": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10a.cur.flight.vrsq.nonzero": [
+  "manuscript v10"
+ ],
+ "v10a.cur.flight.vrsq.pos": [
+  "supplement v10"
+ ],
+ "v10a.cur.n": [
+  "manuscript v10"
+ ],
+ "v10a.cur.race": [
+  "manuscript v10"
+ ],
+ "v10a.cur.race.date": [
+  "manuscript v10"
+ ],
+ "v10a.cur.race.vrsq.files": [
+  "supplement v10"
+ ],
+ "v10a.cur.race.vrsq.nonzero": [
+  "manuscript v10"
+ ],
+ "v10a.cur.race.vrsq.pos": [
+  "supplement v10"
+ ],
+ "v10a.maxlen": [
+  "manuscript v10"
+ ],
+ "v10a.seat.n": [
+  "manuscript v10"
+ ],
+ "v10a.seated.flight.fov": [
+  "manuscript v10"
+ ],
+ "v10a.seated.race.fov": [
+  "manuscript v10"
+ ],
+ "v10a.seatx.gap": [
+  "manuscript v10"
+ ],
+ "v10a.seatx.len.max": [
+  "manuscript v10"
+ ],
+ "v10a.seatx.len.min": [
+  "manuscript v10"
+ ],
+ "v10a.stand.age1836": [
+  "manuscript v10"
+ ],
+ "v10a.stand.age3750": [
+  "manuscript v10"
+ ],
+ "v10a.stand.age50p": [
+  "manuscript v10"
+ ],
+ "v10a.stand.f": [
+  "manuscript v10"
+ ],
+ "v10a.stand.flight": [
+  "manuscript v10"
+ ],
+ "v10a.stand.m": [
+  "manuscript v10"
+ ],
+ "v10a.stand.n": [
+  "manuscript v10"
+ ],
+ "v10a.stand.race": [
+  "manuscript v10"
+ ],
+ "v10a.standing.constrot": [
+  "manuscript v10"
+ ],
+ "v10a.standing.nopos": [
+  "manuscript v10"
+ ],
+ "v10a.t4.flight.n": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10a.t4.flight.vrsq": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10a.t4.race.n": [
+  "manuscript v10"
+ ],
+ "v10l.c9.loso.flight.dt": [
+  "manuscript v10"
+ ],
+ "v10l.c9.loso.flight.rf": [
+  "manuscript v10"
+ ],
+ "v10l.c9.loso.race.dt": [
+  "manuscript v10"
+ ],
+ "v10l.c9.loso.race.rf": [
+  "manuscript v10"
+ ],
+ "v10l.c9.min": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.age1836": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.age3750": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.age50p": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.f": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.flight": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.m": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.n": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.race": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.rift": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p5.vive": [
+  "manuscript v10"
+ ],
+ "v10l.c9.p6.min": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10l.c9.p6.n": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10l.c9.pilot.n": [
+  "supplement v10"
+ ],
+ "v10l.c9.volunteers": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10l.icec.loso.flight.dt": [
+  "manuscript v10"
+ ],
+ "v10l.icec.loso.flight.rf": [
+  "manuscript v10"
+ ],
+ "v10l.icec.loso.race.dt": [
+  "manuscript v10"
+ ],
+ "v10l.icec.loso.race.rf": [
+  "manuscript v10"
+ ],
+ "v10l.vrl.participants": [
+  "supplement v10"
+ ],
+ "v10l.vrl.reduced.acc": [
+  "manuscript v10"
+ ],
+ "v10l.vrl.used": [
+  "supplement v10"
+ ],
+ "v10r.t6s.CTX+TIME.s1.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.CTX+TIME.s1.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.CTX+TIME.s2.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.CTX+TIME.s2.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.CTX+TIME.s2.ctx": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+CTX+TIME.s1.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+CTX+TIME.s1.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+CTX+TIME.s2.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+CTX+TIME.s2.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+CTX+TIME.s2.ctx": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+TIME.s1.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+TIME.s1.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+TIME.s2.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+TIME.s2.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.MOT+TIME.s2.ctx": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.TIME.s1.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.TIME.s1.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.TIME.s2.auc": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.TIME.s2.ci": [
+  "manuscript v10"
+ ],
+ "v10r.t6s.TIME.s2.ctx": [
+  "manuscript v10"
+ ],
+ "v10r.vrl.grp.acc": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.grp.acc.ci": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.grp.units": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.majority": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.acc": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.acc.ci": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.s1.auc": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.s1.ci": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.s1.ctx": [
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.s2.auc": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.s2.ci": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.s2.ctx": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.s2.ctxci": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "v10r.vrl.sess.units": [
+  "manuscript v10",
+  "supplement v10"
+ ],
+ "vrl.grp.acc1": [
+  "manuscript v10"
+ ],
+ "vrl.majority": [
+  "manuscript v10"
+ ],
+ "vrl.rw.acc": [
+  "manuscript v10"
+ ],
+ "vrl.s2.wc.VRL.stack.auc": [
+  "manuscript v10"
+ ]
+}

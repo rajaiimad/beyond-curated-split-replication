@@ -6,6 +6,8 @@ fresh snapshot of the files the submitted manuscript relies on, taken from that 
 changes are two lists recording where values are printed (`results/paper/paper_keys_rq3res.json`,
 `results/paper/paper_keys_sample.json`). No analysis code, result file or value changed between the two commits.
 
+**Version 10 (13 November 2026), post hoc.** After a referee report on version 9, two runs were added (`src/fa_v10.py`, `src/fa_report_v10.py`; results in `results/v10/` and `results/paper/values_v10.json`). They were fixed after the report and are not part of any analysis plan. No earlier result file changed.
+
 **Corrections after the first release (5 November 2026).** The first release of this repository is commit `c9f1b0f`.
 Two defects found in its audit were then corrected in the development repository (commit `2b0aed9`, 5 November 2026)
 and copied here; `src/` now matches that commit. `src/fa_stats.py` skips the addendum-3 learner `lroffs`, so that

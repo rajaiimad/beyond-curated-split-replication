@@ -30,6 +30,12 @@ This file maps every table, figure and supplementary note of the submitted manus
 
 The stage that writes a result file has the same name, for example stage `posctl_seeds` → `results/rev3_posctl_seeds.json`.
 
+## Version 10
+
+- **Section III-B (data collection, curated release, recording day and field of view, other sessions):** archive facts in `values_v10.json` (`v10a.*`, from `src/fa_report_v10.py`); numbers quoted from the creators' papers and the VR-LENS paper in `values_v10.json` (`v10l.*`), each with its source in `values_v10_sources.json`.
+- **Section V-F (sessions as participant-level units):** `values_v10.json` (`v10r.*`, from `results/v10/v10_runs.json`), together with the existing session-level results of Supplementary Tables S8, S11, S31 and S32.
+- **Every key printed by the v10 text:** `results/paper/paper_keys_v10.json`; `src/fa_verify.py` step [1] checks that each exists and step [2g] recounts or recomputes the v10 values.
+
 ## Main manuscript
 
 | Item | Content | Generated file | Written by (function) | Principal inputs | Status |
@@ -39,13 +45,14 @@ The stage that writes a result file has the same name, for example stage `posctl
 | Table III | Session-level condition fields | `tab_fields.tex` | `fa_report.py` (`table_fields`, `field_table`) | raw `FILE.xml` files | Descriptive |
 | Table IV | What the telemetry encodes | `r3_tab_decode.tex` | `fa_report_rev3.py` (`table_decode`) | `results/rev3_decode.json`, `rev3_decode_nr.json` (stages `decode`, `decode_nr`) | Planned; the no-rotation columns are from addendum 1 |
 | Table V | Rating–VRSQ correlations | `tab_vrsq.tex` | `fa_report.py` (`table_vrsq`) | `results/vrsq.json`, `results/session_level.csv`, `rev3_vrsq0.json` | Descriptive; the tests in Table S34 are post hoc |
-| Table VI | Curated release under different protocols; VR-LENS | `tab_curated.tex` | `fa_report.py` (`table_curated`) | `results/stats.json`, `hgbreg.json`, `main.json`, `rowwise_reference.json`, `vrlens.json` | Earlier analysis (exploratory); VR-LENS post hoc there |
+| Table VI | Curated release under different protocols; VR-LENS | `tab_curated.tex` | `fa_report.py` (`table_curated`) | `results/stats.json`, `hgbreg.json`, `main.json`, `rowwise_reference.json`, `vrlens.json` | Earlier analysis (exploratory); VR-LENS post hoc there; session-disjoint rows (version 10, post hoc): `results/v10/v10_runs.json` → `values_v10.json` (`v10r.t6s.*`, `v10r.vrl.sess.*`), entered in the table from the value file |
 | Table VII | Telemetry gain over the context baseline (severity ≥ 2) | `r3_tab_gain.tex` | `fa_report_rev3.py` (`table_gain`) | `rev3_main.json`, `rev3_stats.json`, `rev3_null_lroff.json`; caption range of between-session pairs: `rev3_pairs.json` → `r3pair.s2.btw.min/max` in `values.json` | Planned |
 | Table VIII | Power of the decision rule | `r3_tab_mde.tex` | `fa_report_rev3.py` (`table_power`) | `rev3_posctl_seeds.json`, `rev3_stats.json` | Addendum 1 |
 | Table IX | Principal claims, evidence and status | none: composed by the authors | — | The values it prints are in `values.json` (`cur.raceshare`, `vrl.rw.acc`, `vrl.grp.acc`, `vrl.majority`, `r3pwn.lo.80.*`) and `values_rq3res.json` (`r3r.c.b14.min/max`) | — |
 | Fig. 1 | Study pipeline (schematic) | `figures/fig_pipeline.pdf` (TikZ source `fig_pipeline.tex`) | drawn by hand | `aud.nsess`, `aud.nrec`, `aud.nvrsq`, `aud.ngroups` in `values.json` | — |
 | Fig. 2 | The four game–campaign cells | `figures/fig_archive.pdf` | `fa_report.py` (`fig_archive`) | `data/features_w30.csv.gz` | Descriptive |
 | Fig. 3 | Highest in-game rating vs post-exposure VRSQ | `figures/fig_vrsq.pdf` | `fa_report.py` (`fig_vrsq`) | `results/session_level.csv` | Descriptive |
+| Fig. 4 | Telemetry gain against its null (Supplementary Fig. S2 up to version 9) | `figures/fig_gain_null.pdf` | `fa_report_rev3.py` (`fig_gain_null`) | `rev3_main.json`, `rev3_null_lroff.json`, `rev3_stats.json` | Specified before being run |
 
 **Text of the main manuscript.** Every number in the Abstract and Sections I–VIII is held under a key in:
 - `results/paper/values.json` (written by `fa_report.py` and `fa_report_rev3.py`);
@@ -75,7 +82,7 @@ The stage that writes a result file has the same name, for example stage `posctl
 
 | Item | Content | Generated file | Written by (function) | Principal inputs | Status |
 |---|---|---|---|---|---|
-| Table S1 | Every model of the earlier learners | `supp_table.tex` | `fa_report.py` (`supp_table`) | `results/stats.json` | Earlier analysis |
+| Table S1 | Every model of the earlier learners (in this repository only, since version 10) | `supp_table.tex` | `fa_report.py` (`supp_table`) | `results/stats.json` | Earlier analysis |
 | Table S2 | Secondary label, HGB-reg | `supp_main_s1.tex` | `fa_report.py` (`table_main`) | `stats.json`, `hgbreg.json` | Earlier analysis |
 | Table S3 | Primary label, logistic regression | `supp_main_lr.tex` | `fa_report.py` (`table_main`) | `stats.json`, `main.json` | Earlier analysis |
 | Table S4 | Comparison family, first (leave-one-group-out) run | `supp_firstrun.tex` | `fa_report.py` (`supp_firstrun`) | `results_logo/stats.json`, `stats.json` | Earlier analysis (exploratory) |
@@ -115,7 +122,7 @@ The stage that writes a result file has the same name, for example stage `posctl
 | Table S38 | Resolution of the primary RQ3 tests | `tab_rq3_resolution.tex` | `fa_report_rq3res.py` (`table`) | `rev3_null_lroff.json`, `rev3_posctl_seeds.json`, `rev3_stats.json` → `results/rq3_resolution.json` | Post hoc, descriptive |
 | Table S39 | Sample description | `tab_sample.tex` | `fa_report_sample.py` (`table`) | `data/sessions.csv` (recounted from the raw files by `fa_verify.py` [2f]) | Descriptive |
 | Fig. S1 | Earlier analysis: null and positive control | `figures/fig_null.pdf` | `fa_report.py` (`fig_null`) | `null.json`, `null_lr.json`, `posctl.json`, `stats.json` | Earlier analysis |
-| Fig. S2 | Telemetry gain against its null | `figures/fig_gain_null.pdf` | `fa_report_rev3.py` (`fig_gain_null`) | `rev3_main.json`, `rev3_null_lroff.json`, `rev3_stats.json` | Planned |
+| Fig. S2 | Moved to the main text as Fig. 4 in version 10 | — | — | — | — |
 | — | AUCs of the earlier learners | `figures/fig_auc.pdf` | `fa_report.py` (`fig_auc`) | `stats.json` | Generated but **not** in the manuscript |
 
 **Supplementary notes:**

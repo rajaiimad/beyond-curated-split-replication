@@ -30,7 +30,8 @@ It regenerates every printed value, table and figure from the shipped result fil
 | 3 | `src/fa_report_add3.py` | Addendum 3 (post hoc P1–P7): `values_add3.json`, `tab_a3_*.tex` |
 | 4 | `src/fa_report_rq3res.py` | RQ3 resolution summary (Table S38): `values_rq3res.json` |
 | 5 | `src/fa_report_sample.py` | Sample description (Table S39): `values_sample.json` |
-| 6 | `src/fa_verify.py` | Independent check; its output is saved to `verification/fa_verify_output.txt` |
+| 6 | `src/fa_report_v10.py` | Version 10 (post hoc): archive facts, quoted values and the two runs of `src/fa_v10.py`: `values_v10.json` |
+| 7 | `src/fa_verify.py` | Independent check; its output is saved to `verification/fa_verify_output.txt` |
 
 `fa_verify.py` prints one line per check:
 - **[1]** every value key the paper prints exists (`missing: 0`);
@@ -41,6 +42,7 @@ It regenerates every printed value, table and figure from the shipped result fil
 - **[2d]** addendum-3 values, permutation tests, Holm adjustments and power are recomputed (`mismatches 0`);
 - **[2e]** the RQ3 resolution summary is recomputed by a separate code path (`mismatches 0`);
 - **[2f]** the sample description is recounted from the 74 raw session files (`mismatches 0`);
+- **[2g]** version 10: the archive facts are recounted from `data/sessions.csv`, every quoted value must have a listed source, and the values of the two post hoc runs are recomputed from `results/v10/preds/` (`mismatches 0`);
 - **[4a]–[4c]** qualitative statements are re-checked at full precision; [4c] only lists printed intervals with a bound shown as 0.50, for a wording check;
 - **the last line must be `RESULT: PASS`**.
 

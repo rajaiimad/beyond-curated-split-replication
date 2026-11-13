@@ -110,3 +110,14 @@ Made in the development repository (commit `2b0aed9`) and copied here; `src/` no
 | `verification/verify_results.sh` in the working copy | `RESULT: PASS` in 8 min 7 s; step [1] checks 738 printed keys (before: 736), none missing; every recomputation step 0 mismatches. |
 | Fresh clone of commit `cdb30e1`, new environment set up as the README says | Install (with the pytest line), `prepare_data.sh`, smoke tests (6 passed), `fetch_second_archive.sh` (40 of 40 files match) and `verify_data.sh` all pass. `verify_results.sh`: `RESULT: PASS` in 7 min 39 s, 738 printed keys, 0 mismatches. `scripts/check_results.sh`: `RESULT: PASS` in 7 min 38 s. After both, no file differs from the commit except the five PDF figures, by their creation date. This row was added afterwards, in the next commit, which changes only this file. |
 | Regenerated files compared with the first release | `results/stats.json` byte-identical. Changed, exactly as intended: `values.json` (4 new keys), `values.tex` (4 new definitions), `r3_tab_gain.tex` (the two key names in its caption) and `paper_keys_rq3res.json` (2 new entries). Every other value file, table and result file is byte-identical; the PDF figures differ only in their creation date. |
+
+## 8. Version 10 (13 November 2026)
+
+After a referee report on version 9, the description of the archive was checked against the creators' papers, and two post hoc runs were added (README, "Version 10").
+
+| Check | Result |
+|---|---|
+| New runs (`src/fa_v10.py`, 4 cores) | VR-LENS with the inferred groups reproduced the stored four-class accuracy exactly (53.1%) and the stored AUCs to the fifth decimal; VR-LENS and HGB-reg with sessions as units ran without error. About 13 minutes in all. |
+| `verification/verify_results.sh` with the new step 6 (`fa_report_v10.py`) | `RESULT: PASS`; step [1] checks 835 printed keys, none missing; step [2g] recounts 38 archive facts and recomputes 14 values of the new runs from their predictions, 0 mismatches. |
+| Earlier result files | Unchanged: `results/stats.json` and every value file, table and result file of version 9 are byte-identical after regeneration; the new predictions are stored in `results/v10/preds/`, which `src/fa_stats.py` does not read. |
+

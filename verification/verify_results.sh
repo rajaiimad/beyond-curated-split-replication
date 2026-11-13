@@ -7,7 +7,9 @@
 #   3 src/fa_report_add3.py    addendum 3 (post hoc P1-P7)                     -> results/paper/values_add3.json
 #   4 src/fa_report_rq3res.py  RQ3 resolution summary (Table S38)              -> results/paper/values_rq3res.json
 #   5 src/fa_report_sample.py  sample description (Table S39)                  -> results/paper/values_sample.json
-#   6 src/fa_verify.py         recomputes printed values independently; must end with "RESULT: PASS"
+#   6 src/fa_report_v10.py     version 10 (post hoc, after the review): archive facts, quoted values and the two runs of
+#                              src/fa_v10.py (stored in results/v10/)  -> results/paper/values_v10.json
+#   7 src/fa_verify.py         recomputes printed values independently; must end with "RESULT: PASS"
 # Finally it lists every regenerated file that differs from the shipped version (expected: none, apart from the
 # creation-date metadata inside the PDF figures).
 #
@@ -22,18 +24,20 @@ cd "$(dirname "$0")/.."
 set -a; . ./.env; set +a
 [ -z "${OMP_NUM_THREADS:-}" ] && unset OMP_NUM_THREADS
 
-echo "== 1/6 fa_stats.py (earlier analysis)"
+echo "== 1/7 fa_stats.py (earlier analysis)"
 python src/fa_stats.py data results
 
-echo "== 2/6 fa_report.py (values, tables, figures, claims)"
+echo "== 2/7 fa_report.py (values, tables, figures, claims)"
 python src/fa_report.py . "$UFFCS_RAW_DIR" "$UFFCS_SELECTED_DIR" "$UFFCS_DATASET_CSV"
-echo "== 3/6 fa_report_add3.py"
+echo "== 3/7 fa_report_add3.py"
 python src/fa_report_add3.py .
-echo "== 4/6 fa_report_rq3res.py"
+echo "== 4/7 fa_report_rq3res.py"
 python src/fa_report_rq3res.py .
-echo "== 5/6 fa_report_sample.py"
+echo "== 5/7 fa_report_sample.py"
 python src/fa_report_sample.py .
-echo "== 6/6 fa_verify.py"
+echo "== 6/7 fa_report_v10.py (version 10)"
+python src/fa_report_v10.py . data "$UFFCS_RAW_DIR"
+echo "== 7/7 fa_verify.py"
 python src/fa_verify.py . | tee verification/fa_verify_output.txt
 
 if git rev-parse --git-dir >/dev/null 2>&1; then
