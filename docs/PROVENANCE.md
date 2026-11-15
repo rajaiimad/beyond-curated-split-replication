@@ -6,13 +6,15 @@ fresh snapshot of the files the submitted manuscript relies on, taken from that 
 changes are two lists recording where values are printed (`results/paper/paper_keys_rq3res.json`,
 `results/paper/paper_keys_sample.json`). No analysis code, result file or value changed between the two commits.
 
-**Version 10 (13 November 2026), post hoc.** After a referee report on version 9, two runs were added (`src/fa_v10.py`, `src/fa_report_v10.py`; results in `results/v10/` and `results/paper/values_v10.json`). They were fixed after the report and are not part of any analysis plan. No earlier result file changed.
+**Version 10 (13 November 2026), post hoc.** After a further internal pre-submission review of the manuscript, two runs were added (`src/fa_v10.py`, `src/fa_report_v10.py`; results in `results/v10/` and `results/paper/values_v10.json`). They were fixed after that review and are not part of any analysis plan. No earlier result file changed.
+
+**Check of 14 November 2026, post hoc.** `src/fa_check_rowwise_ctx.py` explains a value already printed: the context-stratified AUC below 0.5 of the record-wise CTX+TIME model (manuscript Section 5.4; Online Resource 1, Table S40). It reads stored predictions only, fits no model and writes no file (`README.md`, "Check of 14 November 2026").
 
 **Corrections after the first release (5 November 2026).** The first release of this repository is commit `c9f1b0f`.
 Two defects found in its audit were then corrected in the development repository (commit `2b0aed9`, 5 November 2026)
 and copied here; `src/` now matches that commit. `src/fa_stats.py` skips the addendum-3 learner `lroffs`, so that
 `scripts/check_results.sh` runs again, and `src/fa_report_rev3.py` stores the share of between-session pairs per label,
-which the caption of Table VII prints (`README.md`, "Corrections"). No result changed: `results/stats.json` is
+which the caption of Table 7 prints (`README.md`, "Corrections"). No result changed: `results/stats.json` is
 reproduced byte for byte, and the value files only gain the new keys.
 
 The manuscript distinguishes planned analyses from analyses specified after results were known (post hoc). That
@@ -52,7 +54,7 @@ A plan was sometimes edited after its results were known. Those edits are listed
 | `audit_addendum3.md` | `197ff2a` | 2026-10-16 08:52 | Audit of addendum 3: named P2 and P4 outputs extracted from add3_stats.json, verifier checks them and that no overall-gain decision is printed; audit note with re-runs, deviations, corrected timing of the n/e change and compute time; no existing result file changed |
 | `audit_addendum3.md` | `98136a3` | 2026-10-16 16:25 | Verification of addendum 3: memo numbers checked against the result files (P6 five inputs, P7 shift range corrected), code-availability wording, three-decimal macro F1 key, Table S36 caption prints the number of demographic answers; verifier passes |
 
-**Revision 2 (the paper's "earlier analysis"):** `ANALYSIS_PLAN_REVISION2.md` arrived in the repository's initial commit (28 September 2026), together with the code and the results of that analysis. The history therefore cannot show that this plan preceded its results. The manuscript treats the comparison family of the earlier analysis as exploratory (Section IV-E; Supplementary Notes S2 and S4).
+**Revision 2 (the paper's "earlier analysis"):** `ANALYSIS_PLAN_REVISION2.md` arrived in the repository's initial commit (28 September 2026), together with the code and the results of that analysis. The history therefore cannot show that this plan preceded its results. The manuscript treats the comparison family of the earlier analysis as exploratory (Section 4.5; Online Resource 1, Notes S2 and S4).
 
 ## Result files: date of first commit
 

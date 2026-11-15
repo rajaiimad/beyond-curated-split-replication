@@ -1,6 +1,6 @@
 """
-fa_v10.py -- two runs added after the referee report on manuscript v9, once the creators' account of the
-data collection had been checked. They are NOT part of any analysis plan or addendum: post hoc.
+fa_v10.py -- two runs added after a further internal pre-submission review (13 November 2026), once the
+creators' account of the data collection had been checked. They are NOT part of any analysis plan or addendum: post hoc.
 
 Under the creators' account [9], [ICEC 2021] every curated session is one participant who played one game,
 so a split by session is a split by participant. The inferred groups of the paper merge sessions with
@@ -117,8 +117,8 @@ if __name__ == "__main__":
     RAWDIR, SELDIR, CSV, DATA, R = map(Path, sys.argv[1:6]); stages = sys.argv[6:] or ["vrlens", "tab6sess"]
     f = R / "v10" / "v10_runs.json"; f.parent.mkdir(parents=True, exist_ok=True)
     res = json.load(open(f)) if f.exists() else {}
-    res["status"] = ("post hoc: added after the referee report on manuscript v9, once the creators' protocol had "
-                     "been checked; not part of any analysis plan")
+    res["status"] = ("post hoc: added after a further internal pre-submission review (13 November 2026), once the "
+                     "creators' protocol had been checked; not part of any analysis plan")
     for st in stages:
         t0 = time.time()
         {"vrlens": stage_vrlens, "tab6sess": stage_tab6sess}[st](RAWDIR, SELDIR, CSV, DATA, R, res)

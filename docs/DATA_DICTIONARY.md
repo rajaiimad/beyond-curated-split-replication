@@ -24,7 +24,7 @@ There are seven per session, the same on every record, self-reported, with no na
 
 ### Session conditions
 
-These fields are the same on every record of a session (see the manuscript's Table III).
+These fields are the same on every record of a session (see the manuscript's Table 3).
 
 | Field | Values | Meaning in this archive |
 |---|---|---|
@@ -129,7 +129,7 @@ All features use only the current and earlier records of the same session. Windo
 | `*.selection.json` | HGB-reg only: the hyperparameters chosen by the inner group-validated search in each outer fold |
 
 - **`<label>`:** `sev1` or `sev2`.
-- **`<protocol>`:** for example `within_seated`, `pooled`, `cell_standing_race` or `seated_to_standing` (manuscript Table II).
+- **`<protocol>`:** for example `within_seated`, `pooled`, `cell_standing_race` or `seated_to_standing` (manuscript Table 2).
 - **`<learner>`:**
   - `hgb`, `hgbreg`, `logreg` and `mlp`: the earlier analysis;
   - `ctxb`: the context baseline;

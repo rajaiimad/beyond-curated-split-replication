@@ -113,7 +113,7 @@ Made in the development repository (commit `2b0aed9`) and copied here; `src/` no
 
 ## 8. Version 10 (13 November 2026)
 
-After a referee report on version 9, the description of the archive was checked against the creators' papers, and two post hoc runs were added (README, "Version 10").
+After a further internal pre-submission review of the manuscript (13 November 2026), the description of the archive was checked against the creators' papers, and two post hoc runs were added (README, "Version 10").
 
 | Check | Result |
 |---|---|

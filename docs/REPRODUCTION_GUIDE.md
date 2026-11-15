@@ -90,7 +90,7 @@ Each command below writes the file named on its right. Compare it with the shipp
 
 **Notes:**
 - **Resumable stages:** the fitting stages skip models whose prediction file already exists. To refit one, delete or move its `.npz` file in `results/preds/` first; otherwise the stage only re-summarises the shipped predictions.
-- **VR-LENS:** not reproducible bit for bit. Expect differences in the fourth to sixth decimal and no change in any printed value (Supplementary Note S2).
+- **VR-LENS:** not reproducible bit for bit. Expect differences in the fourth to sixth decimal and no change in any printed value (Online Resource 1, Note S2).
 - **Leakage gate:** every fitting stage runs it and the mutation test first. Stage `checks` runs them alone: `python src/fa_run.py "$UFFCS_RAW_DIR" "$UFFCS_SELECTED_DIR" data results checks`.
 
 ## Tier 3 — the full pipeline (several days of CPU time)
@@ -142,7 +142,7 @@ python src/fa_add3_outputs.py results          # results/add3_family6.json, add3
 
 This is how `results/reproducibility.json` was made: 14,933 values compared, 5 differing beyond 10⁻⁹, all in the VR-LENS file. The script overwrites that file; restore the shipped version with `git checkout results/reproducibility.json`.
 
-**Not re-run by the pipeline:** the first, leave-one-group-out run of the earlier analysis (Supplementary Table S4). Its results are read from `results_logo/`.
+**Not re-run by the pipeline:** the first, leave-one-group-out run of the earlier analysis (Online Resource 1, Table S4). Its results are read from `results_logo/`.
 
 ## The written plans and what each stage implements
 

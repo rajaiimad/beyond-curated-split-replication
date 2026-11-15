@@ -2,6 +2,8 @@
 
 This file maps every table, figure and supplementary note of the submitted manuscript to the code and files behind it.
 
+**Numbering.** This file follows the numbering of the submitted journal version of the manuscript: Tables 1–9, Figs. 1–4 and Sections 1–8 of the main text; Notes S1–S8, Tables S2–S40 and Fig. S1 of Online Resource 1 (the supplementary PDF); and Table S1 as Online Resource 2 (a CSV export of `results/paper/supp_table.tex`). The two check records dated 4 November 2026 below, and the dated documents in `docs/` (analysis plans, addenda and audits), keep the numbering of the manuscript version they were written for: Roman table numbers (Table VII), lettered sections (Section III-B) and numbered references.
+
 **How the outputs are made.** Every number printed in the manuscript and its supplement is generated from result files:
 - **Printed values:** the report scripts write each value under a key in `results/paper/values*.json`.
 - **Tables:** they write each table as a LaTeX file in `results/paper/*.tex`; the manuscript's tables were typeset from these files.
@@ -32,57 +34,57 @@ The stage that writes a result file has the same name, for example stage `posctl
 
 ## Version 10
 
-- **Section III-B (data collection, curated release, recording day and field of view, other sessions):** archive facts in `values_v10.json` (`v10a.*`, from `src/fa_report_v10.py`); numbers quoted from the creators' papers and the VR-LENS paper in `values_v10.json` (`v10l.*`), each with its source in `values_v10_sources.json`.
-- **Section V-F (sessions as participant-level units):** `values_v10.json` (`v10r.*`, from `results/v10/v10_runs.json`), together with the existing session-level results of Supplementary Tables S8, S11, S31 and S32.
+- **Section 3.2 (data collection, curated release, recording day and field of view, other sessions):** archive facts in `values_v10.json` (`v10a.*`, from `src/fa_report_v10.py`); numbers quoted from the creators' papers and the VR-LENS paper in `values_v10.json` (`v10l.*`), each with its source in `values_v10_sources.json`.
+- **Section 5.6 (sessions as participant-level units):** `values_v10.json` (`v10r.*`, from `results/v10/v10_runs.json`), together with the existing session-level results of Tables S8, S11, S31 and S32 of Online Resource 1.
 - **Every key printed by the v10 text:** `results/paper/paper_keys_v10.json`; `src/fa_verify.py` step [1] checks that each exists and step [2g] recounts or recomputes the v10 values.
 
 ## Main manuscript
 
 | Item | Content | Generated file | Written by (function) | Principal inputs | Status |
 |---|---|---|---|---|---|
-| Table I | The raw archive by game–campaign cell | `results/paper/tab_archive.tex` | `fa_report.py` (`audit`) | raw archive; `data/sessions.csv`; `data/features_w30.csv.gz` | Descriptive |
-| Table II | Evaluation protocols | `tab_protocols.tex` | `fa_report.py` (`table_protocols`) | `data/features_w30.csv.gz`; protocols in `fa_run.domains` | — |
-| Table III | Session-level condition fields | `tab_fields.tex` | `fa_report.py` (`table_fields`, `field_table`) | raw `FILE.xml` files | Descriptive |
-| Table IV | What the telemetry encodes | `r3_tab_decode.tex` | `fa_report_rev3.py` (`table_decode`) | `results/rev3_decode.json`, `rev3_decode_nr.json` (stages `decode`, `decode_nr`) | Planned; the no-rotation columns are from addendum 1 |
-| Table V | Rating–VRSQ correlations | `tab_vrsq.tex` | `fa_report.py` (`table_vrsq`) | `results/vrsq.json`, `results/session_level.csv`, `rev3_vrsq0.json` | Descriptive; the tests in Table S34 are post hoc |
-| Table VI | Curated release under different protocols; VR-LENS | `tab_curated.tex` | `fa_report.py` (`table_curated`) | `results/stats.json`, `hgbreg.json`, `main.json`, `rowwise_reference.json`, `vrlens.json` | Earlier analysis (exploratory); VR-LENS post hoc there; session-disjoint rows (version 10, post hoc): `results/v10/v10_runs.json` → `values_v10.json` (`v10r.t6s.*`, `v10r.vrl.sess.*`), entered in the table from the value file |
-| Table VII | Telemetry gain over the context baseline (severity ≥ 2) | `r3_tab_gain.tex` | `fa_report_rev3.py` (`table_gain`) | `rev3_main.json`, `rev3_stats.json`, `rev3_null_lroff.json`; caption range of between-session pairs: `rev3_pairs.json` → `r3pair.s2.btw.min/max` in `values.json` | Planned |
-| Table VIII | Power of the decision rule | `r3_tab_mde.tex` | `fa_report_rev3.py` (`table_power`) | `rev3_posctl_seeds.json`, `rev3_stats.json` | Addendum 1 |
-| Table IX | Principal claims, evidence and status | none: composed by the authors | — | The values it prints are in `values.json` (`cur.raceshare`, `vrl.rw.acc`, `vrl.grp.acc`, `vrl.majority`, `r3pwn.lo.80.*`) and `values_rq3res.json` (`r3r.c.b14.min/max`) | — |
+| Table 1 | The raw archive by game–campaign cell | `results/paper/tab_archive.tex` | `fa_report.py` (`audit`) | raw archive; `data/sessions.csv`; `data/features_w30.csv.gz` | Descriptive |
+| Table 2 | Evaluation protocols | `tab_protocols.tex` | `fa_report.py` (`table_protocols`) | `data/features_w30.csv.gz`; protocols in `fa_run.domains` | — |
+| Table 3 | Session-level condition fields | `tab_fields.tex` | `fa_report.py` (`table_fields`, `field_table`) | raw `FILE.xml` files | Descriptive |
+| Table 4 | What the telemetry encodes | `r3_tab_decode.tex` | `fa_report_rev3.py` (`table_decode`) | `results/rev3_decode.json`, `rev3_decode_nr.json` (stages `decode`, `decode_nr`) | Planned; the no-rotation columns are from addendum 1 |
+| Table 5 | Rating–VRSQ correlations | `tab_vrsq.tex` | `fa_report.py` (`table_vrsq`) | `results/vrsq.json`, `results/session_level.csv`, `rev3_vrsq0.json` | Descriptive; the tests in Table S34 are post hoc |
+| Table 6 | Curated release under different protocols; VR-LENS | `tab_curated.tex` | `fa_report.py` (`table_curated`) | `results/stats.json`, `hgbreg.json`, `main.json`, `rowwise_reference.json`, `vrlens.json` | Earlier analysis (exploratory); VR-LENS post hoc there; session-disjoint rows (version 10, post hoc): `results/v10/v10_runs.json` → `values_v10.json` (`v10r.t6s.*`, `v10r.vrl.sess.*`), entered in the table from the value file |
+| Table 7 | Telemetry gain over the context baseline (severity ≥ 2) | `r3_tab_gain.tex` | `fa_report_rev3.py` (`table_gain`) | `rev3_main.json`, `rev3_stats.json`, `rev3_null_lroff.json`; caption range of between-session pairs: `rev3_pairs.json` → `r3pair.s2.btw.min/max` in `values.json` | Planned |
+| Table 8 | Power of the decision rule | `r3_tab_mde.tex` | `fa_report_rev3.py` (`table_power`) | `rev3_posctl_seeds.json`, `rev3_stats.json` | Addendum 1 |
+| Table 9 | Principal claims, evidence and status | none: composed by the authors | — | The values it prints are in `values.json` (`cur.raceshare`, `vrl.rw.acc`, `vrl.grp.acc`, `vrl.majority`, `r3pwn.lo.80.*`) and `values_rq3res.json` (`r3r.c.b14.min/max`) | — |
 | Fig. 1 | Study pipeline (schematic) | `figures/fig_pipeline.pdf` (TikZ source `fig_pipeline.tex`) | drawn by hand | `aud.nsess`, `aud.nrec`, `aud.nvrsq`, `aud.ngroups` in `values.json` | — |
 | Fig. 2 | The four game–campaign cells | `figures/fig_archive.pdf` | `fa_report.py` (`fig_archive`) | `data/features_w30.csv.gz` | Descriptive |
 | Fig. 3 | Highest in-game rating vs post-exposure VRSQ | `figures/fig_vrsq.pdf` | `fa_report.py` (`fig_vrsq`) | `results/session_level.csv` | Descriptive |
 | Fig. 4 | Telemetry gain against its null (Supplementary Fig. S2 up to version 9) | `figures/fig_gain_null.pdf` | `fa_report_rev3.py` (`fig_gain_null`) | `rev3_main.json`, `rev3_null_lroff.json`, `rev3_stats.json` | Specified before being run |
 
-**Text of the main manuscript.** Every number in the Abstract and Sections I–VIII is held under a key in:
+**Text of the main manuscript.** Every number in the Abstract and Sections 1–8 is held under a key in:
 - `results/paper/values.json` (written by `fa_report.py` and `fa_report_rev3.py`);
 - `values_add3.json` (`fa_report_add3.py`);
 - `values_rq3res.json` (`fa_report_rq3res.py`);
 - `values_sample.json` (`fa_report_sample.py`).
 
 `docs/DATA_DICTIONARY.md` (section 8) explains the key prefixes. The section-by-section sources are as follows:
-- **Section III-B, Participants** (58, 61, 47 of 74 sessions): `values_sample.json` (`smp.*`), from `data/sessions.csv`. `fa_verify.py` step [2f] recounts them from the raw files.
-- **Section V-A, audit:** `aud.*`, `cur.*` (`fa_report.py`).
-- **Section V-B, decoding:** `r3d.*` (`rev3_decode*.json`).
-- **Section V-C, questionnaire:** `vrsq.*`, `r3v.*`, `a3.vrsq.*` (`vrsq.json`, `rev3_vrsq0.json`, `add3_vrsq.json`).
-- **Section V-D, evaluation design:**
+- **Section 3.2, Participants** (58, 61, 47 of 74 sessions): `values_sample.json` (`smp.*`), from `data/sessions.csv`. `fa_verify.py` step [2f] recounts them from the raw files.
+- **Section 5.1, audit:** `aud.*`, `cur.*` (`fa_report.py`).
+- **Section 5.2, decoding:** `r3d.*` (`rev3_decode*.json`).
+- **Section 5.3, questionnaire:** `vrsq.*`, `r3v.*`, `a3.vrsq.*` (`vrsq.json`, `rev3_vrsq0.json`, `add3_vrsq.json`).
+- **Section 5.4, evaluation design:**
   - earlier-analysis models: `t.*`, `s1.*`, `s2.*`;
   - VR-LENS: `vrl*.*`;
   - second archive: `y.*` (`rev3_yalcin.json`);
   - simulation: `sim.*` (`rev3_sim.json`).
-- **Section V-E, telemetry beyond context:**
+- **Section 5.5, telemetry beyond context:**
   - AUCs and gains: `r3.*`, `r3g.*`;
   - nulls: `r3n.*`;
   - power: `r3pw.*`, `r3pwn.*`;
   - resolution: `r3r.*`;
   - secondary and post hoc: `a3.*`.
-- **Sections VI–VIII:** the same keys as the results they summarise.
+- **Sections 6–8:** the same keys as the results they summarise.
 
-## Supplementary material
+## Online Resources 1 and 2 (supplementary material)
 
 | Item | Content | Generated file | Written by (function) | Principal inputs | Status |
 |---|---|---|---|---|---|
-| Table S1 | Every model of the earlier learners (in this repository only, since version 10) | `supp_table.tex` | `fa_report.py` (`supp_table`) | `results/stats.json` | Earlier analysis |
+| Table S1 | Every model of the earlier learners (Online Resource 2; not printed in Online Resource 1 since version 10) | `supp_table.tex` | `fa_report.py` (`supp_table`) | `results/stats.json` | Earlier analysis |
 | Table S2 | Secondary label, HGB-reg | `supp_main_s1.tex` | `fa_report.py` (`table_main`) | `stats.json`, `hgbreg.json` | Earlier analysis |
 | Table S3 | Primary label, logistic regression | `supp_main_lr.tex` | `fa_report.py` (`table_main`) | `stats.json`, `main.json` | Earlier analysis |
 | Table S4 | Comparison family, first (leave-one-group-out) run | `supp_firstrun.tex` | `fa_report.py` (`supp_firstrun`) | `results_logo/stats.json`, `stats.json` | Earlier analysis (exploratory) |
@@ -95,9 +97,9 @@ The stage that writes a result file has the same name, for example stage `posctl
 | Table S11 | Sensitivity to the grouping | `r3_supp_groups.tex` | `fa_report_rev3.py` (`table_groups`) | `rev3_sens_group.json`, `rev3_stats.json` | Planned |
 | Table S12 | The second archive in full | `r3_supp_second.tex` | `fa_report_rev3.py` (`table_second_full`) | `rev3_yalcin.json` | Planned |
 | Table S13 | Exploratory comparison family | `tab_tests.tex` (same numbers in `supp_tests.tex`) | `fa_report.py` (`table_tests`) | `stats.json` (tests) | Earlier analysis (exploratory) |
-| Table S14 | As Table VII, severity ≥ 1 | `r3_supp_gain_s1.tex` | `fa_report_rev3.py` (`table_gain`) | `rev3_main.json`, `rev3_stats.json`, `rev3_null_lroff.json` | Planned |
-| Table S15 | As Table VII, self-normalized features | `r3_supp_gain_z.tex` | `fa_report_rev3.py` (`table_gain`) | same | Planned (secondary) |
-| Table S16 | As Table VII, boosting+offset | `r3_supp_gain_xgb.tex` | `fa_report_rev3.py` (`table_gain`) | `rev3_main.json`, `rev3_stats.json`, `rev3_null_xgboff.json` | Planned (secondary) |
+| Table S14 | As Table 7, severity ≥ 1 | `r3_supp_gain_s1.tex` | `fa_report_rev3.py` (`table_gain`) | `rev3_main.json`, `rev3_stats.json`, `rev3_null_lroff.json` | Planned |
+| Table S15 | As Table 7, self-normalized features | `r3_supp_gain_z.tex` | `fa_report_rev3.py` (`table_gain`) | same | Planned (secondary) |
+| Table S16 | As Table 7, boosting+offset | `r3_supp_gain_xgb.tex` | `fa_report_rev3.py` (`table_gain`) | `rev3_main.json`, `rev3_stats.json`, `rev3_null_xgboff.json` | Planned (secondary) |
 | Table S17 | Positive control of the earlier analysis | `supp_posctl.tex` (from `tab_posctl.tex`; its numbers are filled in through value macros) | `fa_report.py` (`table_posctl`) | `posctl.json`, `posctl_reg.json` | Post hoc in the earlier analysis |
 | Table S18 | Power of the decision rule in full | `r3_supp_power.tex` | `fa_report_rev3.py` (`table_power_full`) | `rev3_posctl_seeds.json`, `rev3_posctl.json` | Addendum 1 |
 | Table S19 | Recovery of one realization of the planted channel | `r3_supp_recovery.tex` | `fa_report_rev3.py` (`table_recovery`) | `rev3_posctl.json` | Planned |
@@ -121,11 +123,12 @@ The stage that writes a result file has the same name, for example stage `posctl
 | Table S37 | Evaluation-design findings D1–D3 | none: composed by the authors | — | printed values from `rev3_sim.json` (`sim.*`), `rev3_yalcin.json` (`y.*`) and the UFFCSData results | Planned on the second archive and in simulation |
 | Table S38 | Resolution of the primary RQ3 tests | `tab_rq3_resolution.tex` | `fa_report_rq3res.py` (`table`) | `rev3_null_lroff.json`, `rev3_posctl_seeds.json`, `rev3_stats.json` → `results/rq3_resolution.json` | Post hoc, descriptive |
 | Table S39 | Sample description | `tab_sample.tex` | `fa_report_sample.py` (`table`) | `data/sessions.csv` (recounted from the raw files by `fa_verify.py` [2f]) | Descriptive |
+| Table S40 | Provenance of the analyses: date, document, what was known, what was specified or run, status | none: composed by the authors | — | commit dates in `docs/PROVENANCE.md`; the plan documents in `docs/` | — |
 | Fig. S1 | Earlier analysis: null and positive control | `figures/fig_null.pdf` | `fa_report.py` (`fig_null`) | `null.json`, `null_lr.json`, `posctl.json`, `stats.json` | Earlier analysis |
 | Fig. S2 | Moved to the main text as Fig. 4 in version 10 | — | — | — | — |
 | — | AUCs of the earlier learners | `figures/fig_auc.pdf` | `fa_report.py` (`fig_auc`) | `stats.json` | Generated but **not** in the manuscript |
 
-**Supplementary notes:**
+**Notes of Online Resource 1:**
 
 | Note | Title | Main sources |
 |---|---|---|
@@ -158,6 +161,6 @@ The stage that writes a result file has the same name, for example stage `posctl
 ## What is not reproduced from code
 
 - **Hand-composed elements:**
-  - **Composed by the authors:** Table IX, S28, S29 and S37, and the Fig. 1 schematic. Their numbers come from the value files above, and Table S28 summarises the literature.
+  - **Composed by the authors:** Table 9, Tables S28, S29, S37 and S40, and the Fig. 1 schematic. Their numbers come from the value files above; Table S28 summarises the literature, and Table S40 lists dates and documents.
 - **The first run (Table S4):** read from its archived output in `results_logo/`. Its predictions are not included, so `fa_verify.py` cannot recompute those AUCs. Re-running it is part of the full pipeline.
-- **VR-LENS stage:** not reproducible bit for bit. Re-runs differ in the sixth decimal of the record-wise AUCs, and no printed value changes (Supplementary Note S2).
+- **VR-LENS stage:** not reproducible bit for bit. Re-runs differ in the sixth decimal of the record-wise AUCs, and no printed value changes (Online Resource 1, Note S2).
