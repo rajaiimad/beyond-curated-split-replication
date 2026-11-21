@@ -67,4 +67,4 @@ In the first release (commit `c9f1b0f`), `scripts/check_results.sh` ran `fa_stat
 
 - **Intervals:** bootstrap intervals and the permutation p-values of the primary families are read from the result files and regenerated (steps 1–5), not recomputed by a second implementation.
 - **The first run (Table S4):** read from `results_logo/`; its predictions are not included.
-- **Refitting:** no model is refitted. Refitting is Tier 2 and Tier 3 in `docs/REPRODUCTION_GUIDE.md`.
+- **Refitting:** no model is refitted. To refit, see step 5 ("Order of execution") of the main `README.md`.

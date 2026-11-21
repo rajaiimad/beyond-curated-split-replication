@@ -58,7 +58,6 @@ These recordings belong to other researchers and their participants, so they are
 - **What each session records:** seven self-reported demographic answers, in Portuguese: gender, age band, previous VR experience, flicker sensitivity, glasses use, vision problems and eye dominance. Each session also records posture, which marks the recording campaign.
 - **No identifiers:** the archive has no names or participant identifiers. Sessions with identical answers form the paper's 38 *inferred groups*; these are answer profiles, not confirmed identities.
 - **Already published:** the archive's authors publish these data openly. Nothing beyond the published archive is included here.
-- **Field definitions:** see `docs/DATA_DICTIONARY.md`.
 
 ## Credit
 
